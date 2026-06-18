@@ -1,32 +1,25 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-   {
-  "@type": "Event",
-  "@id": "#production-abaporu-2010",
-  "name": "Production of Abaporu (2010)",
-  "agent": {"@id": "#alexandre-mury"},
-  "startDate": "2010",
-  "location": {"name": "São Fidélis, RJ, Brazil"},
-  "result": {"@id": "#abaporu2010"}
-}
+    {
+      "@type": "Event",
+      "@id": "#production-abaporu-2010",
+      "name": "Production of Abaporu (2010)",
+      "agent": {"@id": "#alexandre-mury"},
+      "startDate": "2010",
+      "location": {"name": "São Fidélis, RJ, Brazil"},
+      "result": {"@id": "#abaporu2010"}
+    },
     {
       "@type": "WebPage",
       "@id": "https://www.alexandremury.art/obras-de-arte/abaporu/dados-estruturados",
       "url": "https://www.alexandremury.art/obras-de-arte/abaporu/dados-estruturados",
       "name": "Abaporu | Alexandre Mury",
-      "isPartOf": {
-        "@id": "https://www.alexandremury.art"
-      },
-      "about": {
-        "@id": "#abaporu2010"
-      },
-      "primaryImageOfPage": {
-        "@id": "#imagem-principal"
-      },
+      "isPartOf": {"@id": "https://www.alexandremury.art"},
+      "about": {"@id": "#abaporu2010"},
+      "primaryImageOfPage": {"@id": "#imagem-principal"},
       "dateModified": "2026-06-17"
     },
-
     {
       "@type": "Person",
       "@id": "#alexandre-mury",
@@ -50,35 +43,8 @@
           "propertyID": "ISNI",
           "value": "0000000129843253"
         }
-        {
-  "@context": {
-    "crm": "http://www.cidoc-crm.org/cidoc-crm/",
-    "amo": "https://www.alexandremury.art/id/ontology/"
-  },
-  "@id": "#abaporu2010",
-  "crm:P1_is_identified_by": [
-    "Q136803576",
-    "MAM-Rio:30054",
-    "BN:000679706",
-    "https://www.alexandremury.art/id/artwork/abaporu-2010"
-  ],
-  "crm:P108i_was_produced_by": {"@id": "#production-abaporu-2010"},
-  "crm:P67_refers_to": {"@id": "#abaporu1928"},
-  "amo:mobilizesConcept": [
-    {"@id": "#cultural-self-phagy"},
-    {"@id": "#image-disappropriation"}
-  ],
-  "amo:hasInterpretiveRegime": [
-    {"name": "Reinterpretation"},
-    {"name": "Visual Citation"},
-    {"name": "Intertextuality"},
-    {"name": "Reenactment"},
-    {"name": "Self-representation"}
-  ]
-}
       ]
     },
-
     {
       "@type": "Person",
       "@id": "#tarsila",
@@ -88,210 +54,105 @@
         "https://pt.wikipedia.org/wiki/Tarsila_do_Amaral"
       ]
     },
-
     {
       "@type": "VisualArtwork",
       "@id": "#abaporu1928",
       "name": "Abaporu",
       "dateCreated": "1928",
-      "creator": {
-        "@id": "#tarsila"
-      },
+      "creator": {"@id": "#tarsila"},
       "sameAs": "https://www.wikidata.org/wiki/Q3626516"
     },
-
     {
       "@type": "ImageObject",
       "@id": "#imagem-principal",
       "url": "https://www.alexandremury.art/obras-de-arte/abaporu",
       "contentUrl": "https://lh3.googleusercontent.com/sitesv/AA5AbUAMaFsU5e079qOHW2op259SRvk8X7OavA0B8HwOI1xJcHX3sQAW_kKxngAIF8bMtU2fb9PvUYstClTJrQ9LO9E4BRqrh5a3idyXSIwb9Ow1-jyq-F-azG4qvV-KWxOJKEcCg_4tV7JhzVkkT7aGmUENDxwLpkkVVMqIKKri0wRVaAiQwkay41WJgGK7JQOS094XNgdJEsDWuelblEIleFkt9LkNSsCsCKEyTMI2j5w=w1280",
-      "caption": "Fotografia performática intitulada Abaporu (2010), de Alexandre Mury. A imagem apresenta o artista em autorretrato performático com nudez artística, sentado sobre um pequeno monte de terra avermelhada em paisagem aberta. O corpo aparece em perfil, com as pernas dobradas e a cabeça apoiada sobre a mão esquerda, em atitude contemplativa. Ao fundo, um céu azul em transição para tons amarelados encontra o horizonte. O sol, posicionado entre a cabeça da figura e um grande cacto em contraluz, produz um efeito luminoso em forma de estrela. Galhos secos, folhas e vegetação esparsa compõem a paisagem. A fotografia estabelece diálogo intertextual com a pintura Abaporu (1928), de Tarsila do Amaral, reinterpretando elementos do modernismo brasileiro por meio da fotografia contemporânea, da performance e da autorrepresentação.",
+      "caption": "Fotografia performática intitulada Abaporu (2010), de Alexandre Mury.",
       "description": "Abaporu (2010), autorretrato performático de Alexandre Mury",
       "license": "https://www.alexandremury.art/copyright"
     },
-
     {
       "@type": "DefinedTermSet",
       "@id": "#epistemology-of-the-image",
       "name": "Epistemology of the Image",
-      "description": "Conceitos teóricos desenvolvidos por Alexandre Mury no campo da imagem contemporânea."
+      "description": "Conceitos teóricos desenvolvidos por Alexandre Mury."
     },
-
     {
       "@type": "DefinedTerm",
       "@id": "#cultural-self-phagy",
       "name": "Cultural Self-Phagy",
-      "alternateName": ["Autofagia Cultural", "cultural self-devouring", "symbolic self-phagy", "epistemic self-phagy"],
-      "description": "Artistic and epistemological process in which a culture turns its anthropophagic gesture inward, digesting its own myths, images, and discourses.",
+      "alternateName": ["Autofagia Cultural"],
+      "description": "Artistic and epistemological process in which a culture turns its anthropophagic gesture inward.",
       "sameAs": "https://www.wikidata.org/wiki/Q136831273",
-      "inDefinedTermSet": {
-        "@id": "#epistemology-of-the-image"
-      }
+      "inDefinedTermSet": {"@id": "#epistemology-of-the-image"}
     },
-
     {
       "@type": "DefinedTerm",
       "@id": "#image-disappropriation",
       "name": "Image Disappropriation",
-      "alternateName": ["Desapropriação Imagética", "imagetic disappropriation", "performative image displacement", "symbolic autonomy operation", "disappropriated image"],
-      "description": "Artistic operation that displaces an image from its symbolic origin to establish autonomous signification, distinct from appropriation art through symbolic autonomy rather than citational commentary.",
+      "alternateName": ["Desapropriação Imagética"],
+      "description": "Artistic operation that displaces an image from its symbolic origin to establish autonomous signification.",
       "sameAs": "https://www.wikidata.org/wiki/Q136744908",
-      "inDefinedTermSet": {
-        "@id": "#epistemology-of-the-image"
-      }
+      "inDefinedTermSet": {"@id": "#epistemology-of-the-image"}
     },
-
     {
       "@type": "VisualArtwork",
       "@id": "#abaporu2010",
       "name": "Abaporu",
-      "alternateName": [
-        "Abaporu (2010)",
-        "Abaporu de Alexandre Mury"
-      ],
-      "creator": {
-        "@id": "#alexandre-mury"
-      },
+      "alternateName": ["Abaporu (2010)", "Abaporu de Alexandre Mury"],
+      "creator": {"@id": "#alexandre-mury"},
       "dateCreated": "2010",
-      "artform": [
-        "Photography",
-        "Performance Art",
-        "Post-Conceptual Art"
-      ],
+      "artform": ["Photography", "Performance Art", "Post-Conceptual Art"],
       "artMedium": "Chromogenic Print (C-print)",
-      "genre": [
-        "Contemporary Art",
-        "Performance Photography",
-        "Post-Conceptual Art",
-        "Contemporary Photography"
-      ],
-      "description": "Photographic and performative reinterpretation of Abaporu (1928), by Tarsila do Amaral. Through self-representation, contemporary photography and post-conceptual strategies, the work revisits one of the most iconic images of Brazilian modernism, operating through Image Disappropriation and Cultural Self-Phagy — concepts developed by the artist — to explore cultural memory, identity, authorship and the symbolic autonomy of images in contemporary culture.",
-      "keywords": [
-        "Abaporu",
-        "Alexandre Mury",
-        "Brazilian Art",
-        "Contemporary Art",
-        "Photography",
-        "Post-Conceptual Art",
-        "Performance Art",
-        "Anthropophagy",
-        "Brazilian Modernism",
-        "Tarsila do Amaral",
-        "Self-Portrait",
-        "Artistic Nudity",
-        "Appropriation Art",
-        "Intertextuality",
-        "Contemporary Photography",
-        "Brazilian Contemporary Art",
-        "Cultural Self-Phagy",
-        "Image Disappropriation",
-        "Expanded Field",
-        "Post-media"
-      ],
+      "genre": ["Contemporary Art", "Performance Photography"],
+      "description": "Photographic and performative reinterpretation of Abaporu (1928), by Tarsila do Amaral.",
+      "keywords": ["Abaporu", "Alexandre Mury", "Brazilian Art", "Contemporary Art", "Photography"],
       "about": [
-        {
-          "@id": "#cultural-self-phagy"
-        },
-        {
-          "@id": "#image-disappropriation"
-        },
-        {
-          "@type": "Thing",
-          "name": "Anthropophagy",
-          "sameAs": "https://www.wikidata.org/wiki/Q790061"
-        },
-        {
-          "@type": "Thing",
-          "name": "Brazilian Modernism",
-          "sameAs": "https://www.wikidata.org/wiki/Q3642037"
-        },
-        {
-          "@type": "Thing",
-          "name": "Self-representation",
-          "sameAs": "https://www.wikidata.org/wiki/Q21070568"
-        },
-        {
-          "@type": "Thing",
-          "name": "Cultural Memory",
-          "sameAs": "https://www.wikidata.org/wiki/Q1361315"
-        },
-        {
-          "@type": "Thing",
-          "name": "Intertextuality",
-          "sameAs": "https://www.wikidata.org/wiki/Q192468"
-        }
+        {"@id": "#cultural-self-phagy"},
+        {"@id": "#image-disappropriation"},
+        {"@type": "Thing", "name": "Anthropophagy", "sameAs": "https://www.wikidata.org/wiki/Q790061"},
+        {"@type": "Thing", "name": "Brazilian Modernism", "sameAs": "https://www.wikidata.org/wiki/Q3642037"}
       ],
-      "image": {
-        "@id": "#imagem-principal"
-      },
-      "copyrightHolder": {
-        "@id": "#alexandre-mury"
-      },
+      "image": {"@id": "#imagem-principal"},
+      "copyrightHolder": {"@id": "#alexandre-mury"},
       "copyrightNotice": "© Alexandre Mury",
-      "inspiredBy": {
-        "@id": "#abaporu1928"
-      },
-      "subjectOf": {
-        "@type": "CreativeWork",
-        "@id": "#dossie-abaporu",
-        "name": "Dossiê Digital da Obra Abaporu"
-      },
-      "sameAs": [
-        "https://www.wikidata.org/wiki/Q136803576"
-      ],
+      "inspiredBy": {"@id": "#abaporu1928"},
+      "sameAs": ["https://www.wikidata.org/wiki/Q136803576"],
       "identifier": [
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Wikidata",
-          "value": "Q136803576"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "MAM Rio",
-          "value": "30054"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Biblioteca Nacional",
-          "value": "000679706"
-        }
+        {"@type": "PropertyValue", "propertyID": "Wikidata", "value": "Q136803576"},
+        {"@type": "PropertyValue", "propertyID": "MAM Rio", "value": "30054"},
+        {"@type": "PropertyValue", "propertyID": "Biblioteca Nacional", "value": "000679706"}
       ],
-      "isAccessibleForFree": true,
-      "audience": {
-        "@type": "Audience",
-        "name": "Researchers, curators, art historians and institutions interested in Brazilian contemporary art and cultural heritage"
-      },
-      "locationCreated": {
-        "@type": "Place",
-        "name": "Brazil"
-      }
+      "isAccessibleForFree": true
     },
-
+    {
+      "@context": {"crm": "http://www.cidoc-crm.org/cidoc-crm/", "amo": "https://www.alexandremury.art/id/ontology/"},
+      "@id": "#abaporu2010",
+      "crm:P1_is_identified_by": ["Q136803576", "MAM-Rio:30054", "BN:000679706"],
+      "crm:P108i_was_produced_by": {"@id": "#production-abaporu-2010"},
+      "crm:P67_refers_to": {"@id": "#abaporu1928"},
+      "amo:mobilizesConcept": [{"@id": "#cultural-self-phagy"}, {"@id": "#image-disappropriation"}],
+      "amo:hasInterpretiveRegime": [
+        {"name": "Reinterpretation"},
+        {"name": "Visual Citation"},
+        {"name": "Intertextuality"},
+        {"name": "Reenactment"},
+        {"name": "Self-representation"}
+      ]
+    },
     {
       "@type": "Collection",
       "@id": "#colecao-gilberto",
       "name": "Coleção Gilberto Chateaubriand",
       "description": "One of the most important collections of Brazilian modern and contemporary art.",
-      "holdingArchive": {
-        "@id": "#mam-rio"
-      },
-      "hasPart": {
-        "@id": "#abaporu2010"
-      }
+      "hasPart": {"@id": "#abaporu2010"}
     },
-
     {
       "@type": "Collection",
       "@id": "#colecao-paula-silvio",
       "name": "Coleção Paula e Silvio Frota",
-      "holdingArchive": {
-        "@id": "#mff"
-      },
-      "hasPart": {
-        "@id": "#abaporu2010"
-      }
+      "hasPart": {"@id": "#abaporu2010"}
     },
-
     {
       "@type": "Museum",
       "@id": "#mam-rio",
@@ -300,25 +161,11 @@
       "sameAs": "https://www.wikidata.org/wiki/Q2551336",
       "url": "https://mamrio.org.br"
     },
-
     {
       "@type": "Museum",
       "@id": "#mff",
       "name": "Museu da Fotografia Fortaleza",
-      "alternateName": "MFF",
       "sameAs": "https://www.wikidata.org/wiki/Q97551496"
-    },
-
-    {
-      "@type": "CreativeWork",
-      "@id": "#dossie-abaporu",
-      "name": "Dossiê Digital da Obra Abaporu",
-      "about": {
-        "@id": "#abaporu2010"
-      },
-      "creator": {
-        "@id": "#alexandre-mury"
-      }
     }
   ]
 }
