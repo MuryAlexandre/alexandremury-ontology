@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.alexandremury.art/id/artwork/abaporu-2010",
+      "name": "Abaporu",
+      "dateCreated": "2010",
+      "creator": {
+        "@type": "Person",
+        "name": "Alexandre Mury"
+      },
+      "sameAs": "https://www.wikidata.org/wiki/Q136803576"
+    }
+  ]
+}
