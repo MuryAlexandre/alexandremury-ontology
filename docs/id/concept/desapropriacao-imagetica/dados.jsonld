@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+    "amo": "https://www.alexandremury.art/ns/amo#"
+  },
+  "@id": "https://www.alexandremury.art/id/concept/desapropriacao-imagetica",
+  "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+  "skos:prefLabel": "Desapropriação Imagética",
+  "skos:definition": "Operação teórica-estética que desloca uma imagem de seu sistema de referência canônico, anulando sua carga simbólica original para re-inscrevê-la em um novo regime de significação autoral.",
+  "skos:inScheme": {
+    "@id": "https://www.alexandremury.art/id/ontology/AMO"
+  },
+  "crm:P3_has_note": "Conceito fundamentado na prática da reversão arqueológica das imagens.",
+  "amo:hasGenealogy": {
+    "@id": "https://www.alexandremury.art/id/concept/autofagia-cultural",
+    "skos:note": "A Desapropriação Imagética atua como o motor técnico da Autofagia Cultural."
+  }
+}
