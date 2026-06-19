@@ -1,0 +1,90 @@
+{
+  "@context": {
+    "am": "https://www.alexandremury.art/id/",
+    "amo": "https://www.alexandremury.art/id/ontology/",
+    "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "en": "en-US",
+    "pt": "pt-BR"
+  },
+  "@graph": [
+    {
+      "@id": "am:concept/image-disappropriation",
+      "@type": [
+        "crm:E28_Conceptual_Object",
+        "skos:Concept"
+      ],
+      "skos:prefLabel": [
+        { "@language": "en", "@value": "Image Disappropriation" },
+        { "@language": "pt", "@value": "Desapropriação Imagética" },
+        { "@language": "fr", "@value": "Désappropriation Imagétique" },
+        { "@language": "de", "@value": "Bildliche Disappropriation" },
+        { "@language": "es", "@value": "Desapropiación Imagética" },
+        { "@language": "it", "@value": "Disappropriazione Imagetica" },
+        { "@language": "ar", "@value": "نزع الملكية التصويري" },
+        { "@language": "ja", "@value": "形象的非所有" },
+        { "@language": "ru", "@value": "Образная дизаппроприация" },
+        { "@language": "zh", "@value": "图像剥夺" }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Image disappropriation names the operation by which an image is displaced from its symbolic origin without the intention to reproduce it, quote it ironically, or negate its historical significance. Rather, disappropriation establishes autonomous signification through displacement, creating new meanings that exist independently of the source image."
+        }
+      ],
+      "skos:scopeNote": [
+        {
+          "@language": "en",
+          "@value": "This concept applies to artistic operations where the relationship with a pre-existing image acts as a motor for new symbolic autonomy, beyond parody or homage [6]."
+        }
+      ],
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "HISTORIOGRAPHY: Distinguished from artistic appropriation (Duchamp, Levine, Prince) which operates through irony or institutional commentary. In disappropriation, the source work is not quoted but displaced, allowing the new work to establish its own symbolic field. Related to but distinct from concepts of reinterpretation, citation, and intertextuality."
+        }
+      ],
+      "skos:inScheme": { "@id": "am:epistemologia-da-imagem" },
+      "schema:author": { "@id": "am:person/alexandre-mury" },
+      "schema:citation": [
+        { "@id": "https://doi.org/10.5281/zenodo.17548245" },
+        { "@id": "https://doi.org/10.5281/zenodo.17458777" },
+        { "@id": "https://doi.org/10.5281/zenodo.17637511" }
+      ],
+      "skos:narrower": [
+        { "@id": "am:concept/cultural-self-phagy" }
+      ],
+      "skos:related": [
+        { "@id": "am:concept/critical-fiction" },
+        { "@id": "am:concept/theoretical-disappropriation" },
+        { "@id": "am:relation/visual-intertextuality" }
+      ],
+      "amo:hasInterpretiveRegime": [
+        { "@id": "am:relation/reinterpretation" },
+        { "@id": "am:relation/performative-reenactment" },
+        { "@id": "am:relation/self-representation" }
+      ],
+      "rdfs:isDefinedBy": { "@id": "amo:Ontology" }
+    },
+    {
+      "@id": "am:person/alexandre-mury",
+      "@type": [ "crm:E39_Actor", "schema:Person" ],
+      "schema:name": "Alexandre Mury",
+      "schema:identifier": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "ORCID",
+          "schema:value": "0009-0008-9355-4876"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "ISNI",
+          "schema:value": "0000 0001 2984 3253"
+        }
+      ]
+    }
+  ]
+}
