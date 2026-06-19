@@ -5,7 +5,10 @@
     "amo": "https://www.alexandremury.art/ns/amo#"
   },
   "@id": "https://www.alexandremury.art/id/concept/desapropriacao-imagetica",
-  "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+  "@type": [
+    "skos:Concept",
+    "crm:E28_Conceptual_Object"
+  ],
   "skos:prefLabel": "Desapropriação Imagética",
   "skos:definition": "Operação teórica-estética que desloca uma imagem de seu sistema de referência canônico, anulando sua carga simbólica original para re-inscrevê-la em um novo regime de significação autoral.",
   "skos:inScheme": {
