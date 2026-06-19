@@ -2,41 +2,52 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Desapropriação Imagética | Alexandre Mury Ontology</title>
+    <title>AMO: desapropriacao-imagetica</title>
     <style>
-        body { font-family: 'Georgia', serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; }
-        h1 { border-bottom: 2px solid #333; padding-bottom: 10px; }
-        .metadata { background: #f4f4f4; padding: 15px; border-radius: 5px; font-size: 0.9em; }
-        .relations { margin-top: 20px; border-top: 1px solid #ccc; padding-top: 10px; }
+        body { 
+            background-color: #ffffff; 
+            color: #000000; 
+            font-family: 'Courier New', Courier, monospace; 
+            line-height: 1.2; 
+            max-width: 800px; 
+            margin: 40px; 
+        }
+        pre { white-space: pre-wrap; word-wrap: break-word; }
+        .metadata { border-bottom: 1px solid #000; padding-bottom: 20px; margin-bottom: 20px; }
+        a { color: #000; text-decoration: underline; }
+        .data-link { margin-top: 40px; font-size: 0.8em; border-top: 1px solid #000; padding-top: 10px; }
     </style>
     <link rel="alternate" type="application/ld+json" href="dados.jsonld" />
 </head>
 <body>
-    <h1>Desapropriação Imagética</h1>
 
-    <div class="metadata">
-        <p><strong>URI:</strong> <a href="https://www.alexandremury.art/id/concept/desapropriacao-imagetica">https://www.alexandremury.art/id/concept/desapropriacao-imagetica</a></p>
-        <p><strong>Autoria intelectual:</strong> Alexandre Mury</p>
-        <p><strong>Documentação primária:</strong> <em>Da Blasfêmia à Canonização</em> (2025); <em>Desapropriação Teórica</em> (2025)</p>
-    </div>
+<div class="metadata">
+    ID: alexandremury.art/id/concept/desapropriacao-imagetica<br>
+    PREFIX: am:desapropriacao-imagetica<br>
+    AUTHOR: Alexandre Mury<br>
+    SOURCE: Da Blasfêmia à Canonização (2025); Desapropriação Teórica (2025)
+</div>
 
-    <p>A desapropriação imagética nomeia a operação pela qual uma imagem é deslocada de seu contexto simbólico de origem sem intenção de reproduzi-lo, citá-lo ironicamente ou negar sua validade histórica. O resultado não é paródia, homenagem, pastiche nem negação: é diferença instituída. A imagem se descola de sua matriz para adquirir autonomia simbólica própria.</p>
+<main>
+    <p>DEFINIÇÃO: A desapropriação imagética nomeia a operação pela qual uma imagem é deslocada de seu contexto simbólico de origem sem intenção de reproduzi-lo, citá-lo ironicamente ou negar sua validade histórica. O resultado não é paródia, homenagem, pastiche nem negação: é diferença instituída. A imagem se descola de sua matriz para adquirir autonomia simbólica própria. O prefixo "des-" não indica destruição, mas desprendimento; não negação, mas liberação de um vínculo que, mantido, impediria a imagem de pensar por si mesma.</p>
 
-    <p>Essa operação distingue-se da apropriação artística em sentido historiográfico... [Adicione aqui o restante do texto do Claude]</p>
+    <p>HISTORIOGRAFIA: Essa operação distingue-se da apropriação artística em sentido historiográfico — que desde Duchamp (1917), Levine (1981) e Prince opera pela ironia, pelo comentário institucional ou pelo cinismo pós-moderno. Na apropriação, a obra de origem é o argumento; na desapropriação, é o ponto de ignição. A genealogia permanece visível, mas não governa o destino da imagem resultante. A referência à origem funciona como motor, não como fundamento.</p>
 
-    <h3>Nota de escopo</h3>
-    <p>O conceito aplica-se a qualquer operação artística em que a relação com uma imagem preexistente seja o motor de uma autonomia simbólica nova...</p>
+    <p>TEORIA: O conceito dialoga com a noção agambeniana de profanação — o gesto que devolve ao uso comum o que fora separado como sagrado — sem coincidir com ela. Enquanto a profanação aponta para o uso, a desapropriação aponta para o discurso autônomo: a imagem não retorna ao uso comum, mas instaura uma nova economia simbólica. Da mesma forma, o campo político aberto por Rancière — a redistribuição do sensível — pode ser lido como horizonte do gesto desapropriador: ao deslocar a imagem de seu regime devocional ou canônico para um regime estético e reflexivo, a desapropriação intervém na distribuição do que pode ser visto e pensado.</p>
 
-    <div class="relations">
-        <h3>Relações Semânticas</h3>
-        <ul>
-            <li><strong>skos:narrower:</strong> Autofagia Cultural</li>
-            <li><strong>amo:hasInterpretiveRegime:</strong> Releitura, Reencenação, Autorrepresentação</li>
-            <li><strong>skos:related:</strong> Ficção Crítica, Desapropriação Teórica, Intertextualidade</li>
-        </ul>
-    </div>
+    <p>PLANO OPERATIVO: Não exige suporte específico. Manifesta-se em fotografia, performance, escultura, vídeo ou texto. O que a define é a estrutura do gesto — separação seguida de autonomia.</p>
 
-    <hr>
-    <p><a href="dados.jsonld">Ver dados estruturados (JSON-LD)</a></p>
+    <p>NOTA DE ESCOPO: Aplica-se a operações em que a relação com imagem preexistente é motor de autonomia simbólica nova. Exclui referências decorativas, citações ilustrativas e trabalhos cujo sentido dependa integralmente da origem.</p>
+
+    <p>RELAÇÕES:<br>
+    skos:narrower -> Autofagia Cultural<br>
+    amo:hasInterpretiveRegime -> Releitura, Reencenação, Autorrepresentação<br>
+    skos:related -> Ficção Crítica, Desapropriação Teórica, Intertextualidade</p>
+</main>
+
+<div class="data-link">
+    [SERIALIZED]: <a href="dados.jsonld">application/ld+json</a>
+</div>
+
 </body>
 </html>
