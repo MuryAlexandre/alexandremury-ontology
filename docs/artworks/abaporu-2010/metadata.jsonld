@@ -73,8 +73,8 @@
     },
     {
       "@type": "DefinedTerm",
-      "@id": "#cultural-self-phagy",
-      "name": "Cultural Self-Phagy",
+      "@id": "#cultural-autophagy",
+      "name": "Cultural Autophagy",
       "alternateName": ["Autofagia Cultural"],
       "description": "Artistic and epistemological process in which a culture turns its anthropophagic gesture inward, digesting its own myths, images, and discourses.",
       "sameAs": "https://www.wikidata.org/wiki/Q136831273",
@@ -160,11 +160,11 @@
         "Tarsila do Amaral",
         "Self-Portrait",
         "Intertextuality",
-        "Cultural Self-Phagy",
+        "Cultural Autophagy",
         "Image Disappropriation"
       ],
       "about": [
-        {"@id": "#cultural-self-phagy"},
+        {"@id": "#cultural-autophagy"},
         {"@id": "#image-disappropriation"},
         {"@type": "Thing", "name": "Anthropophagy", "sameAs": "https://www.wikidata.org/wiki/Q790061"},
         {"@type": "Thing", "name": "Brazilian Modernism", "sameAs": "https://www.wikidata.org/wiki/Q3642037"},
@@ -187,7 +187,7 @@
       "crm:P108i_was_produced_by": {"@id": "#production-abaporu-2010"},
       "crm:P67_refers_to": {"@id": "#abaporu1928"},
       "amo:mobilizesConcept": [
-        {"@id": "#cultural-self-phagy"},
+        {"@id": "#cultural-autophagy"},
         {"@id": "#image-disappropriation"}
       ],
       "amo:hasInterpretiveRegime": [
