@@ -6,9 +6,7 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "schema": "https://schema.org/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "en": "en-US",
-    "pt": "pt-BR"
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@graph": [
     {
@@ -18,16 +16,19 @@
         "skos:Concept"
       ],
       "skos:prefLabel": [
+        { "@language": "pt-br", "@value": "Desapropriação Imagética" },
+        { "@language": "pt-pt", "@value": "Expropriação Imagética" },
         { "@language": "en", "@value": "Image Disappropriation" },
-        { "@language": "pt", "@value": "Desapropriação Imagética" },
-        { "@language": "fr", "@value": "Désappropriation Imagétique" },
-        { "@language": "de", "@value": "Bildliche Disappropriation" },
-        { "@language": "es", "@value": "Desapropiación Imagética" },
-        { "@language": "it", "@value": "Disappropriazione Imagetica" },
+        { "@language": "fr", "@value": "Désappropriation Iconique" },
+        { "@language": "de", "@value": "Bildliche Enteignung" },
+        { "@language": "es", "@value": "Desapropiación Icónica" },
+        { "@language": "it", "@value": "Disappropriazione Iconica" },
         { "@language": "ar", "@value": "نزع الملكية التصويري" },
-        { "@language": "ja", "@value": "形象的非所有" },
-        { "@language": "ru", "@value": "Образная дизаппроприация" },
-        { "@language": "zh", "@value": "图像剥夺" }
+        { "@language": "ja", "@value": "脱アプロプリエーション" },
+        { "@language": "ru", "@value": "Образная дизаппроприация" }
+      ],
+      "skos:altLabel": [
+        { "@language": "ru", "@value": "Образная депроприация" }
       ],
       "skos:definition": [
         {
@@ -38,7 +39,7 @@
       "skos:scopeNote": [
         {
           "@language": "en",
-          "@value": "This concept applies to artistic operations where the relationship with a pre-existing image acts as a motor for new symbolic autonomy, beyond parody or homage [6]."
+          "@value": "This concept applies to artistic operations where the relationship with a pre-existing image acts as a motor for new symbolic autonomy, beyond parody or homage."
         }
       ],
       "skos:note": [
@@ -47,7 +48,7 @@
           "@value": "HISTORIOGRAPHY: Distinguished from artistic appropriation (Duchamp, Levine, Prince) which operates through irony or institutional commentary. In disappropriation, the source work is not quoted but displaced, allowing the new work to establish its own symbolic field. Related to but distinct from concepts of reinterpretation, citation, and intertextuality."
         }
       ],
-      "skos:inScheme": { "@id": "am:epistemologia-da-imagem" },
+      "skos:inScheme": { "@id": "am:scheme/epistemologia-da-imagem" },
       "schema:author": { "@id": "am:person/alexandre-mury" },
       "schema:citation": [
         { "@id": "https://doi.org/10.5281/zenodo.17548245" },
