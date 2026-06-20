@@ -1,7 +1,7 @@
 {
   "@context": {
-    "am": "https://alexandremury.art",
-    "amo": "https://alexandremury.artontology/",
+    "am": "https://www.alexandremury.art/id/",
+    "amo": "https://alexandremury.art",
     "crm": "http://cidoc-crm.org",
     "skos": "http://w3.org",
     "schema": "https://schema.org",
@@ -32,20 +32,28 @@
       ],
       "skos:definition": [
         {
+          "@language": "pt",
+          "@value": "A desapropriação imagética nomeia a operação pela qual uma imagem é deslocada de seu contexto simbólico de origem sem intenção de reproduzi-lo, citá-lo ironicamente ou negar sua validade histórica. A imagem desprende-se de sua matriz e conquista autonomia simbólica própria."
+        },
+        {
           "@language": "en",
           "@value": "Image disappropriation names the operation by which an image is displaced from its symbolic origin without the intention to reproduce it, quote it ironically, or negate its historical significance. Rather, disappropriation establishes autonomous signification through displacement, creating new meanings that exist independently of the source image."
         }
       ],
       "skos:scopeNote": [
         {
-          "@language": "en",
-          "@value": "This concept applies to artistic operations where the relationship with a pre-existing image acts as a motor for new symbolic autonomy, beyond parody or homage."
+          "@language": "pt",
+          "@value": "O conceito aplica-se a qualquer operação artística em que a relação com uma imagem preexistente seja o motor de uma autonomia simbólica nova, e em que o resultado não possa ser descrito adequadamente como reprodução, paródia, homenagem ou crítica direta."
         }
       ],
       "skos:note": [
         {
-          "@language": "en",
-          "@value": "HISTORIOGRAPHY: Distinguished from artistic appropriation (Duchamp, Levine, Prince) which operates through irony or institutional commentary. In disappropriation, the source work is not quoted but displaced, allowing the new work to establish its own symbolic field. Related to but distinct from concepts of reinterpretation, citation, and intertextuality."
+          "@language": "pt",
+          "@value": "DISTINÇÃO COM RESSIGNIFICAÇÃO: A ressignificação altera o que a imagem significa no campo semântico; a desapropriação altera de onde a imagem pode significar, rompendo o vínculo estrutural de subordinação com o arquivo ou matriz de origem."
+        },
+        {
+          "@language": "pt",
+          "@value": "GENEALOGIA: Deriva dialeticamente da disappropriazione de Giorgio Agamben (Creazione e anarchia, 2017; Disappropriata materia / Res amissa, 1991). Na AMO, o termo é deslocado da subjetividade da criação para a ontologia e autonomia do objeto-imagem."
         }
       ],
       "skos:inScheme": { "@id": "am:scheme/epistemologia-da-imagem" },
@@ -61,7 +69,11 @@
       "skos:related": [
         { "@id": "am:concept/critical-fiction" },
         { "@id": "am:concept/theoretical-disappropriation" },
-        { "@id": "am:relation/visual-intertextuality" }
+        { "@id": "am:relation/visual-intertextuality" },
+        { "@id": "am:concept/ressignificacao" }
+      ],
+      "skos:relatedMatch": [
+        { "@id": "am:concept/external/agamben-disappropriation" }
       ],
       "amo:hasInterpretiveRegime": [
         { "@id": "am:relation/reinterpretation" },
