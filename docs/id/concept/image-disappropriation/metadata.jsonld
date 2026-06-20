@@ -12,7 +12,7 @@
   },
   "@graph": [
     {
-      "@id": "am:concept/image-disappropriation",
+      "@id": "am:concept/desapropriacao-imagetica",
       "@type": [
         "crm:E28_Conceptual_Object",
         "skos:Concept"
