@@ -62,7 +62,7 @@
       "skos:definition": "Conceptual and methodological tools developed through Alexandre Mury's research into contemporary image theory, practice, and ontology.",
       "skos:member": [
         "https://www.alexandremury.art/id/concept/image-disappropriation",
-        "https://www.alexandremury.art/id/concept/cultural-self-phagy",
+        "https://www.alexandremury.art/id/concept/cultural-autophagy",
         "https://www.alexandremury.art/id/concept/self-implicative-method",
         "https://www.alexandremury.art/id/concept/hybrid-dramaturgies",
         "https://www.alexandremury.art/id/concept/critical-fiction",
@@ -98,11 +98,11 @@
     },
     {
       "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
-      "@id": "https://www.alexandremury.art/id/concept/cultural-self-phagy",
-      "skos:prefLabel": "Cultural Self-Phagy",
+      "@id": "https://www.alexandremury.art/id/concept/cultural-autophagy",
+      "skos:prefLabel": "Cultural Autophagy",
       "amo:originalLabel": "Autofagia Cultural",
       "skos:inScheme": "https://www.alexandremury.art/id/ontology/AMO/epistemology-of-the-image",
-      "amo:uriSlug": "cultural-self-phagy",
+      "amo:uriSlug": "cultural-autophagy",
       "amo:originLanguage": "pt",
       "amo:coinageAuthor": "https://www.alexandremury.art/id/person/alexandre-mury",
       "amo:coinageDate": "2024",
