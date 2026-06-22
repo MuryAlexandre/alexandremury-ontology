@@ -2,7 +2,7 @@
   "@context": {
     "@vocab": "https://schema.org/",
     "crm": "http://www.cidoc-crm.org/cidoc-crm/",
-    "amo": "https://www.alexandremury.art/id/ontology/"
+    "amo": "https://id.alexandremury.art/ontology/"
   },
   "@graph": [
     {
@@ -59,7 +59,7 @@
     {
       "@type": "ImageObject",
       "@id": "#imagem-principal",
-      "url": "https://www.alexandremury.art/obras-de-arte/abaporu",
+      "url": "https://id.alexandremury.art/artworks/abaporu-2010/",
       "contentUrl": "https://lh3.googleusercontent.com/sitesv/AA5AbUAMaFsU5e079qOHW2op259SRvk8X7OavA0B8HwOI1xJcHX3sQAW_kKxngAIF8bMtU2fb9PvUYstClTJrQ9LO9E4BRqrh5a3idyXSIwb9Ow1-jyq-F-azG4qvV-KWxOJKE[...]",
       "caption": "Fotografia performática intitulada Abaporu (2010), de Alexandre Mury. Autorretrato performático em paisagem aberta.",
       "description": "Abaporu (2010), autorretrato performático de Alexandre Mury",
@@ -164,8 +164,8 @@
         "Image Disappropriation"
       ],
       "about": [
-        {"@id": "#cultural-autophagy"},
-        {"@id": "#image-disappropriation"},
+        {"@id": "https://id.alexandremury.art/concept/cultural-autophagy/"},
+        {"@id": "https://id.alexandremury.art/concept/image-disappropriation/"},
         {"@type": "Thing", "name": "Anthropophagy", "sameAs": "https://www.wikidata.org/wiki/Q790061"},
         {"@type": "Thing", "name": "Brazilian Modernism", "sameAs": "https://www.wikidata.org/wiki/Q3642037"},
         {"@type": "Thing", "name": "Self-representation", "sameAs": "https://www.wikidata.org/wiki/Q21070568"},
@@ -182,13 +182,13 @@
         "Q136803576",
         "MAM-Rio:30054",
         "BN:000679706",
-        "https://www.alexandremury.art/id/artwork/abaporu-2010"
+        "https://id.alexandremury.art/artworks/abaporu-2010/"
       ],
       "crm:P108i_was_produced_by": {"@id": "#production-abaporu-2010"},
       "crm:P67_refers_to": {"@id": "#abaporu1928"},
       "amo:mobilizesConcept": [
-        {"@id": "#cultural-autophagy"},
-        {"@id": "#image-disappropriation"}
+        {"@id": "https://id.alexandremury.art/concept/cultural-autophagy/"},
+        {"@id": "https://id.alexandremury.art/concept/image-disappropriation/"}
       ],
       "amo:hasInterpretiveRegime": [
         {"name": "Reinterpretation"},
