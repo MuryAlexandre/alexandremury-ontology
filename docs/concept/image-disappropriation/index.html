@@ -2,77 +2,327 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AMO | image-disappropriation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.M.O. — Concept Record: Image Disappropriation</title>
     <style>
-        body { 
-            font-family: 'Courier New', Courier, monospace; 
-            line-height: 1.2; 
-            max-width: 800px; 
-            margin: 40px; 
-            color: #000; 
-            white-space: pre-wrap;
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #000;
+            background: #fff;
         }
-        a { color: #000; text-decoration: none; }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .uri {
+            word-break: break-all;
+        }
+        .back {
+            margin-top: 40px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 30px 0;
+        }
+        h1, h2, h3 {
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 1.6em;
+            margin-bottom: 4px;
+        }
+        h2 {
+            font-size: 1.2em;
+            margin-top: 28px;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: -4px;
+            margin-bottom: 20px;
+        }
+        .label-grid {
+            display: grid;
+            grid-template-columns: 80px 1fr auto;
+            gap: 2px 20px;
+            margin: 6px 0;
+        }
+        .label-grid .code {
+            font-weight: bold;
+        }
+        .label-grid .note {
+            color: #666;
+            font-style: italic;
+        }
+        ul {
+            padding-left: 24px;
+            margin: 6px 0 12px 0;
+        }
+        ul li {
+            margin-bottom: 2px;
+        }
+        .relations-grid {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 2px 20px;
+            margin: 6px 0;
+        }
+        .relations-grid .rel {
+            font-weight: bold;
+        }
+        .authority-grid {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 2px 20px;
+            margin: 6px 0;
+        }
+        @media (max-width: 600px) {
+            .label-grid {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            .relations-grid {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            .authority-grid {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            body {
+                margin: 20px 12px;
+                padding: 0;
+            }
+        }
+        .section-number {
+            display: inline-block;
+            min-width: 24px;
+            font-weight: bold;
+        }
+        .inline-code {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f5f5f5;
+            padding: 1px 6px;
+        }
     </style>
     <link rel="alternate" type="application/ld+json" href="metadata.jsonld" />
 </head>
 <body>
-ALEXANDRE MURY ONTOLOGY (A.M.O.) 
-CONCEPTUAL OBJECT / image-epistemology 
-ID: https://id.alexandremury.art/concept/image-disappropriation/
-PREFIX: am:image-disappropriation
-AUTHOR: MURY, Alexandre 
-LABELS: 
-EN: Image Disappropriation
-PT: Desapropriação Imagética
-FR: Désappropriation Imagétique
-DE: Bildliche Disappropriation
-ES: Desapropiación Imagética
-IT: Disappropriazione Imagetica
-AR: نزع الملكية التصويري
-JA: 形象的非所有
-RU: Образная дизаппроприация
-ZH: 图像剥夺
 
-SOURCE:
-<a href="https://doi.org/10.5281/zenodo.17548245">https://doi.org/10.5281/zenodo.17548245</a>
-<a href="https://doi.org/10.5281/zenodo.17458777">https://doi.org/10.5281/zenodo.17458777</a>
-<a href="https://doi.org/10.5281/zenodo.17637511">https://doi.org/10.5281/zenodo.17637511</a>
+<h1>A.M.O. — CONCEPT RECORD</h1>
+<p class="subtitle">Image Disappropriation</p>
 
---------------------------------------------------------------------------------
+<p><strong>ID</strong><br>
+<span class="uri">https://id.alexandremury.art/concept/image-disappropriation/</span></p>
 
-DEFINITION: Image disappropriation names the operation by which an image is displaced from its symbolic origin without the intention to reproduce it, quote it ironically, or negate its historical validity. The result is not parody, homage, pastiche, nor negation: it is instituted difference. The image detaches from its matrix to acquire its own symbolic autonomy. The prefix "dis-" does not indicate destruction, but detachment; not negation, but liberation from a bond that, if maintained, would prevent the image from thinking for itself.
+<p><strong>PREFIX</strong><br>
+am:image-disappropriation</p>
 
-HISTORIOGRAPHY: This operation is distinct from artistic appropriation in the historiographical sense—which, since Duchamp (1917), Levine (1981), and Prince, operates through irony, institutional commentary, or postmodern cynicism. In appropriation, the source work is the argument; in disappropriation, it is the point of ignition. The genealogy remains visible but does not govern the destiny of the resulting image. Reference to the origin functions as a motor, not as a foundation.
+<p><strong>AUTHOR</strong><br>
+Mury, Alexandre</p>
 
-THEORY: The concept dialogues with the Agambenian notion of profanation—the gesture that returns to common use what was separated as sacred—without coinciding with it. While profanation points toward use, disappropriation points toward autonomous discourse: the image does not return to common use but instantiates a new symbolic economy, where the achieved autonomy is itself the result. Similarly, the political field opened by Rancière—the distribution of the sensible—can be read as a horizon of the disappropriating gesture: by displacing the image from its devotional or canonical regime to an aesthetic and reflexive one, disappropriation intervenes in the distribution of what can be seen and thought.
+<hr>
 
-OPERATIONAL PLAN: Image disappropriation requires no specific medium: it manifests in photography, performance, sculpture, video, or text. It is defined by the structure of the gesture—separation followed by autonomy—not by the medium in which it occurs.
+<h2><span class="section-number">01</span> Labels</h2>
 
-SCOPE NOTE: The concept applies to any artistic operation in which the relationship with a pre-existing image acts as a motor for a new symbolic autonomy, and where the result cannot be adequately described as reproduction, parody, homage, or direct criticism. It does not apply to decorative references, purely illustrative citations, or works whose meaning depends entirely on the recognition of the origin.
+<div class="label-grid">
+    <span class="code">PT-BR</span>
+    <span>Desapropriação Imagética</span>
+    <span class="note">origin language</span>
 
-RELATIONS:
-skos:narrower -> Autofagia Cultural
-amo:hasInterpretiveRegime -> Re-reading, Re-enactment, Self-Representation
-skos:related -> Critical Fiction, Theoretical Disappropriation, Intertextuality
+    <span class="code">PT-PT</span>
+    <span>Expropriação Imagética</span>
+    <span></span>
 
---------------------------------------------------------------------------------
+    <span class="code">EN</span>
+    <span>Image Disappropriation</span>
+    <span></span>
 
-WIKIDATA: <a href="https://www.wikidata.org/wiki/Q136744908">https://www.wikidata.org/wiki/Q136744908</a>
-SERIALIZED: <a href="metadata.jsonld">metadata.jsonld</a>
-LICENSE: CC0 Public Domain
+    <span class="code">FR</span>
+    <span>Désappropriation Iconique</span>
+    <span></span>
 
-CITATION:
-MURY, A. (2025). Theory as Poor Image: Hito Steyerl's Text in Algorithmic Circulation. <a href="https://doi.org/10.5281/zenodo.17458777">https://doi.org/10.5281/zenodo.17458777</a>
-Mury, A. (2025). From Blasphemy to Canonization: Hybrid Dramaturgies and the Self-Implicative Method. <a href="https://doi.org/10.5281/zenodo.17548245">https://doi.org/10.5281/zenodo.17548245</a>
-MURY, A. (2025). Theoretical Disappropriation: Critical Fiction and the Hermeneutic Metanoia of the Image. <a href="https://doi.org/10.5281/zenodo.17637511">https://doi.org/10.5281/zenodo.17637511</a>
+    <span class="code">DE</span>
+    <span>Bildliche Enteignung</span>
+    <span></span>
 
-AUTHORITY FILES:
-FBN: 000679706 (<a href="https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706">https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706</a>)
-ORCID: 0009-0008-9355-4876 (<a href="https://orcid.org/0009-0008-9355-4876">https://orcid.org/0009-0008-9355-4876</a>)
-ISNI: 0000 0001 2984 3253 (<a href="https://isni.org/isni/0000000129843253">https://isni.org/isni/0000000129843253</a>)
-VIAF: 15161329794452131121 (<a href="https://viaf.org/viaf/15161329794452131121/">https://viaf.org/viaf/15161329794452131121/</a>)
-Lattes: 7735731830748241 (<a href="http://lattes.cnpq.br/7735731830748241">http://lattes.cnpq.br/7735731830748241</a>)
-Itaú Cultural: 42031 (<a href="https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury">https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury</a>)
+    <span class="code">ES</span>
+    <span>Desapropiación Icónica</span>
+    <span></span>
+
+    <span class="code">IT</span>
+    <span>Disappropriazione Iconica</span>
+    <span></span>
+</div>
+
+<hr>
+
+<h2><span class="section-number">02</span> Source — own publications</h2>
+
+<ul>
+    <li><a href="https://doi.org/10.5281/zenodo.17458777">doi.org/10.5281/zenodo.17458777</a></li>
+    <li><a href="https://doi.org/10.5281/zenodo.17548245">doi.org/10.5281/zenodo.17548245</a></li>
+    <li><a href="https://doi.org/10.5281/zenodo.17637511">doi.org/10.5281/zenodo.17637511</a></li>
+</ul>
+
+<hr>
+
+<h2><span class="section-number">03</span> Definition</h2>
+
+<p>Image disappropriation names the operation by which an image is displaced from its symbolic context of origin without the intention to reproduce it, ironically quote it, or negate its historical validity. The result is neither parody, homage, pastiche, nor negation: it is instituted difference. The image detaches from its matrix to acquire its own symbolic autonomy.</p>
+
+<p>The prefix "dis-" does not indicate destruction, but detachment; not negation, but liberation from a bond that, if maintained, would prevent the image from thinking for itself.</p>
+
+<hr>
+
+<h2><span class="section-number">04</span> Historiography</h2>
+
+<p>This operation is distinct from artistic appropriation in the historiographical sense — which, since Duchamp (1917), Levine (1981), and Prince, operates through irony, institutional commentary, or postmodern cynicism. In appropriation, the source work is the argument; in disappropriation, it is the point of ignition.</p>
+
+<p>The genealogy remains visible but does not govern the destiny of the resulting image. Reference to the origin functions as a motor, not as a foundation.</p>
+
+<hr>
+
+<h2><span class="section-number">05</span> Genealogy</h2>
+
+<p>The concept derives dialectically from the <em>disappropriazione</em> formulated by Giorgio Agamben — chiefly in the dictum "style is disappropriating appropriation (a sublime negligence, a forgetting oneself in the proper), manner an appropriating disappropriation (a presenting oneself or remembering oneself in the improper)" (<em>Creation and Anarchy: The Work of Art and the Religion of Capitalism</em>, trans. Adam Kotsko, Stanford University Press, 2019, ch. "The Inappropriable"; orig. <em>Creazione e anarchia</em>, Vicenza: Neri Pozza, 2017) — and, in a distinct, more elegiac register, in "Disappropriata materia," Agamben's preface to Giorgio Caproni's <em>Res amissa</em> (Milano: Garzanti, 1991).</p>
+
+<p>In Agamben, the term names a tension within the subjectivity of creation: the relation between the maker and their own expressive idiom. In the A.M.O., the conceptual shift is toward the ontology of the image: disappropriation here is not an ethical-aesthetic movement of the author, but an operation upon the image-object itself, directed at its autonomy from the archive that contains it.</p>
+
+<p>For this reason, the Italian translation of the term is deliberately fixed as <strong>Disappropriazione Iconica</strong> — not for lack of an Italian adjective equivalent to "imagetic," but to mark, within Agamben's own language, that the A.M.O.'s operation bears on the image, not on the subject who produces it.</p>
+
+<p><em>Extended treatment — including the Goethe/Lewy illustration and the interpretive extension explicitly marked as Mury's reading, not Agamben's claim — is registered in:</em> <strong>AMO Vocabulário Controlado: Definições Descritivas, Part III, External Reference E1, "Disappropriazione (Agamben)."</strong></p>
+
+<hr>
+
+<h2><span class="section-number">06</span> Theory</h2>
+
+<p>The concept also dialogues with the Agambenian notion of <em>profanation</em> — the gesture that returns to common use what had been separated as sacred — without coinciding with it. While profanation points toward <em>use</em>, disappropriation points toward <em>autonomous discourse</em>: the image does not return to common use but instantiates a new symbolic economy, in which the autonomy achieved is itself the result.</p>
+
+<p>Likewise, the political field opened by Rancière — the <em>distribution of the sensible</em> — may be read as a horizon of the disappropriating gesture: by displacing the image from its devotional or canonical regime into an aesthetic and reflexive one, disappropriation intervenes in the distribution of what can be seen and thought.</p>
+
+<hr>
+
+<h2><span class="section-number">07</span> Operational plan</h2>
+
+<p>Image disappropriation requires no specific medium: it manifests in photography, performance, sculpture, video, or text. It is defined by the structure of the gesture — separation followed by autonomy — not by the medium in which it occurs.</p>
+
+<hr>
+
+<h2><span class="section-number">08</span> Scope note</h2>
+
+<p>The concept applies to any artistic operation in which the relationship with a pre-existing image acts as a motor for a new symbolic autonomy, and where the result cannot be adequately described as reproduction, parody, homage, or direct criticism. It does not apply to decorative references, purely illustrative citations, or works whose meaning depends entirely on the recognition of the origin.</p>
+
+<hr>
+
+<h2><span class="section-number">09</span> Distinguished from — resignification</h2>
+
+<p>The difference between image disappropriation and resignification is ontological, not semantic. Resignification operates in the field of meaning: it substitutes one semantic content for another while the image's formal structure remains a relatively stable support. Disappropriation operates in the field of the structural relation between image and matrix: it breaks the bond of subordination linking the image to its archive, authorship, or context of origin.</p>
+
+<p>In short: resignification alters <em>what</em> the image means; disappropriation alters <em>from where</em> the image can mean. The two operations are not mutually exclusive, but they name distinct processes. Resignification is not a formalized A.M.O. concept; it is referenced here strictly as a boundary term.</p>
+
+<hr>
+
+<h2><span class="section-number">10</span> Relations</h2>
+
+<div class="relations-grid">
+    <span class="rel">skos:narrower →</span>
+    <span>Autofagia Cultural</span>
+
+    <span class="rel">amo:hasInterpretiveRegime →</span>
+    <span>Releitura, Reencenação, Autorrepresentação</span>
+
+    <span class="rel">skos:related →</span>
+    <span>Ficção Crítica, Desapropriação Teórica, Intertextualidade</span>
+
+    <span class="rel">skos:related →</span>
+    <span>Ressignificação <em>(boundary term, not formalized in the A.M.O.)</em></span>
+
+    <span class="rel">skos:relatedMatch →</span>
+    <span>Disappropriazione (Agamben) — <em>external node; full identity and bibliographic chain in AMO Vocabulário Controlado, Part III, E1</em></span>
+</div>
+
+<hr>
+
+<h2><span class="section-number">11</span> Conceptual sources</h2>
+
+<p><em>(am:hasConceptualSource)</em></p>
+
+<p><em>Distinct from Relations: this field does not map concept to concept, but registers the broader theoretical filiation — texts that inform the concept without each receiving, at this stage, a dedicated external node like that of Agamben/disappropriazione. Source (above) lists Mury's own publications; Conceptual Sources lists third-party works.</em></p>
+
+<ul>
+    <li>AGAMBEN, G. (2017). <em>Creazione e anarchia: l'opera nell'età della religione capitalista.</em> Vicenza: Neri Pozza. [= <em>Creation and Anarchy</em>, trans. A. Kotsko, Stanford University Press, 2019]</li>
+    <li>AGAMBEN, G. (2005). <em>Profanazioni.</em> Roma: Nottetempo.</li>
+    <li>RANCIÈRE, J. (2000). <em>Le partage du sensible: esthétique et politique.</em> Paris: La Fabrique.</li>
+    <li>DIDI-HUBERMAN, G. (2008). <em>La ressemblance par contact: archéologie, anachronisme et modernité de l'empreinte.</em> Paris: Minuit.</li>
+</ul>
+
+<hr>
+
+<p><strong>WIKIDATA</strong><br>
+<a href="https://www.wikidata.org/wiki/Q136744908">wikidata.org/wiki/Q136744908</a></p>
+
+<p><strong>SERIALIZED</strong><br>
+<a href="metadata.jsonld">metadata.jsonld</a></p>
+
+<p><strong>LICENSE</strong><br>
+CC0 Public Domain</p>
+
+<hr>
+
+<h2>Citation — self-citation, own corpus</h2>
+
+<ul>
+    <li>MURY, A. (2025). <em>Theory as Poor Image: Hito Steyerl's Text in Algorithmic Circulation.</em> <a href="https://doi.org/10.5281/zenodo.17458777">doi.org/10.5281/zenodo.17458777</a></li>
+    <li>MURY, A. (2025). <em>From Blasphemy to Canonization: Hybrid Dramaturgies and the Self-Implicative Method.</em> <a href="https://doi.org/10.5281/zenodo.17548245">doi.org/10.5281/zenodo.17548245</a></li>
+    <li>MURY, A. (2025). <em>Theoretical Disappropriation: Critical Fiction and the Hermeneutic Metanoia of the Image.</em> <a href="https://doi.org/10.5281/zenodo.17637511">doi.org/10.5281/zenodo.17637511</a></li>
+</ul>
+
+<hr>
+
+<h2>Authority files</h2>
+
+<div class="authority-grid">
+    <span><strong>FBN</strong></span>
+    <span><a href="https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706">000679706</a></span>
+
+    <span><strong>ORCID</strong></span>
+    <span><a href="https://orcid.org/0009-0008-9355-4876">0009-0008-9355-4876</a></span>
+
+    <span><strong>ISNI</strong></span>
+    <span><a href="https://isni.org/isni/0000000129843253">0000 0001 2984 3253</a></span>
+
+    <span><strong>VIAF</strong></span>
+    <span><a href="https://viaf.org/viaf/15161329794452131121/">15161329794452131121</a></span>
+
+    <span><strong>Lattes</strong></span>
+    <span><a href="http://lattes.cnpq.br/7735731830748241">7735731830748241</a></span>
+
+    <span><strong>Itaú Cultural</strong></span>
+    <span><a href="https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury">42031</a></span>
+</div>
+
+<hr>
+
+<div class="back">
+    <a href="https://id.alexandremury.art/">← Back to AMO Home</a><br>
+    <a href="https://id.alexandremury.art/concept/">← All Concepts</a>
+</div>
+
+<p style="font-size: 0.8em; color: #666; margin-top: 30px;">
+    © Alexandre Mury &middot; CC0 Public Domain
+</p>
+
 </body>
 </html>
