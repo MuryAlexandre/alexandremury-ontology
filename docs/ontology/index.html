@@ -1,0 +1,549 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+    "amo": "https://id.alexandremury.art/ontology/",
+    "dct": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@type": "crm:E29_Design_or_Procedure",
+      "@id": "https://id.alexandremury.art/ontology/terminology-authorities",
+      "dct:title": [
+        {
+          "@value": "AMO Terminology Authorities & Indexing Strategy",
+          "@language": "en"
+        },
+        {
+          "@value": "Autoridades de Terminologia & Estratégia de Indexação AMO",
+          "@language": "pt"
+        }
+      ],
+      "dct:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury"
+      },
+      "dct:issued": "2026-06-19",
+      "dct:description": [
+        {
+          "@value": "Comprehensive registry of terms, linguistic origin, sources, and indexing strategy for the Alexandre Mury Ontology (AMO). This document establishes the authoritative forms of all proprietary concepts and ensures consistency across multilingual representation and machine-readable processing.",
+          "@language": "en"
+        },
+        {
+          "@value": "Registro abrangente de termos, origem linguística, fontes e estratégia de indexação para a Ontologia Alexandre Mury (AMO). Este documento estabelece as formas autorizadas de todos os conceitos proprietários e garante consistência na representação multilíngue e no processamento legível por máquinas.",
+          "@language": "pt"
+        }
+      ],
+      "amo:indexingPrinciples": {
+        "@type": "crm:E29_Design_or_Procedure",
+        "amo:principle_pt": "Preserves epistemological specificity, original coinage documentation, and human readability in Portuguese",
+        "amo:principle_en": "Enables global algorithmic indexing, Wikidata alignment, Zenodo DOI circulation, and machine-readable theory distribution",
+        "amo:duality_model": "Intentional bilingual register: both languages maintain equal ontological authority but operate in distinct computational and discursive registers",
+        "amo:canonicity": "English URIs and prefLabels serve as canonical for RDF/Linked Data processing; Portuguese labels preserve epistemological genealogy and authorial intent"
+      }
+    },
+    {
+      "@type": "skos:ConceptScheme",
+      "@id": "https://id.alexandremury.art/ontology/AMO",
+      "dct:title": "Alexandre Mury Ontology (AMO)",
+      "dct:description": "Comprehensive vocabulary of proprietary concepts developed by Alexandre Mury across epistemology of image, interpretive regimes, and computational aesthetics.",
+      "dct:hasPart": [
+        "https://id.alexandremury.art/ontology/AMO/epistemology-of-the-image",
+        "https://id.alexandremury.art/ontology/AMO/regimes-of-relation",
+        "https://id.alexandremury.art/ontology/AMO/computational-aesthetics"
+      ]
+    },
+    {
+      "@type": "skos:Collection",
+      "@id": "https://id.alexandremury.art/ontology/AMO/epistemology-of-the-image",
+      "skos:prefLabel": "Epistemology of the Image",
+      "skos:altLabel": "Epistemologia da Imagem",
+      "skos:definition": "Conceptual and methodological tools developed through Alexandre Mury's research into contemporary image theory, practice, and ontology.",
+      "skos:member": [
+        "https://id.alexandremury.art/concept/image-disappropriation",
+        "https://id.alexandremury.art/concept/cultural-autophagy",
+        "https://id.alexandremury.art/concept/self-implicative-method",
+        "https://id.alexandremury.art/concept/hybrid-dramaturgies",
+        "https://id.alexandremury.art/concept/critical-fiction",
+        "https://id.alexandremury.art/concept/theoretical-disappropriation",
+        "https://id.alexandremury.art/concept/hermeneutic-metanoia",
+        "https://id.alexandremury.art/concept/algorithmic-canonization",
+        "https://id.alexandremury.art/concept/retroactive-impoverishment",
+        "https://id.alexandremury.art/concept/machine-readable-theory"
+      ]
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/image-disappropriation",
+      "skos:prefLabel": "Image Disappropriation",
+      "amo:originalLabel": "Desapropriação Imagética",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/epistemology-of-the-image",
+      "amo:uriSlug": "image-disappropriation",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:publishedIn": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245",
+          "dct:title": "From Blasphemy to Canonization: Hybrid Dramaturgies and the Self-Implicative Method"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17458777",
+          "dct:title": "Theory as Poor Image: Hito Steyerl's Text in Algorithmic Circulation"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q136744908",
+      "amo:indexingStrategy": "english-canonical-epistemological-pt-origin"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/cultural-autophagy",
+      "skos:prefLabel": "Cultural Autophagy",
+      "amo:originalLabel": "Autofagia Cultural",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/epistemology-of-the-image",
+      "amo:uriSlug": "cultural-autophagy",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:publishedIn": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245",
+          "dct:title": "From Blasphemy to Canonization: Hybrid Dramaturgies and the Self-Implicative Method"
+        }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q136831273",
+      "amo:indexingStrategy": "english-canonical-epistemological-pt-origin"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/self-implicative-method",
+      "skos:prefLabel": "Self-Implicative Method",
+      "amo:originalLabel": "Método Autoimplicativo",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/epistemology-of-the-image",
+      "amo:uriSlug": "self-implicative-method",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:publishedIn": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245",
+          "dct:title": "From Blasphemy to Canonization: Hybrid Dramaturgies and the Self-Implicative Method"
+        }
+      ],
+      "amo:indexingStrategy": "english-canonical-epistemological-pt-origin"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies",
+      "skos:prefLabel": "Hybrid Dramaturgies",
+      "amo:originalLabel": "Dramaturgias Híbridas",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/epistemology-of-the-image",
+      "amo:uriSlug": "hybrid-dramaturgies",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:publishedIn": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245",
+          "dct:title": "From Blasphemy to Canonization: Hybrid Dramaturgies and the Self-Implicative Method"
+        }
+      ],
+      "amo:indexingStrategy": "english-canonical-epistemological-pt-origin"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/critical-fiction",
+      "skos:prefLabel": "Critical Fiction",
+      "amo:originalLabel": "Ficção Crítica",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/epistemology-of-the-image",
+      "amo:uriSlug": "critical-fiction",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:publishedIn": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17637511",
+          "dct:title": "Theoretical Disappropriation: Critical Fiction and the Hermeneutic Metanoia of the Image"
+        }
+      ],
+      "amo:indexingStrategy": "english-canonical-epistemological-pt-origin"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/theoretical-disappropriation",
+      "skos:prefLabel": "Theoretical Disappropriation",
+      "amo:originalLabel": "Desapropriação Teórica",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/epistemology-of-the-image",
+      "amo:uriSlug": "theoretical-disappropriation",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:publishedIn": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17637511",
+          "dct:title": "Theoretical Disappropriation: Critical Fiction and the Hermeneutic Metanoia of the Image"
+        }
+      ],
+      "amo:indexingStrategy": "english-canonical-epistemological-pt-origin"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/hermeneutic-metanoia",
+      "skos:prefLabel": "Hermeneutic Metanoia",
+      "amo:originalLabel": "Metanoia Hermenêutica",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/epistemology-of-the-image",
+      "amo:uriSlug": "hermeneutic-metanoia",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:publishedIn": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17637511",
+          "dct:title": "Theoretical Disappropriation: Critical Fiction and the Hermeneutic Metanoia of the Image"
+        }
+      ],
+      "amo:indexingStrategy": "english-canonical-epistemological-pt-origin"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/algorithmic-canonization",
+      "skos:prefLabel": "Algorithmic Canonization",
+      "amo:originalLabel": "Canonização Algorítmica",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/epistemology-of-the-image",
+      "amo:uriSlug": "algorithmic-canonization",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:publishedIn": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17458777",
+          "dct:title": "Theory as Poor Image: Hito Steyerl's Text in Algorithmic Circulation"
+        }
+      ],
+      "amo:indexingStrategy": "english-canonical-epistemological-pt-origin"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/retroactive-impoverishment",
+      "skos:prefLabel": "Retroactive Impoverishment",
+      "amo:originalLabel": "Empobrecimento Retroativo",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/epistemology-of-the-image",
+      "amo:uriSlug": "retroactive-impoverishment",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:publishedIn": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17458777",
+          "dct:title": "Theory as Poor Image: Hito Steyerl's Text in Algorithmic Circulation"
+        }
+      ],
+      "amo:indexingStrategy": "english-canonical-epistemological-pt-origin"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/machine-readable-theory",
+      "skos:prefLabel": "Machine-Readable Theory",
+      "amo:originalLabel": "Teoria Machine-Readable",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/epistemology-of-the-image",
+      "amo:uriSlug": "machine-readable-theory",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:publishedIn": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17458777",
+          "dct:title": "Theory as Poor Image: Hito Steyerl's Text in Algorithmic Circulation"
+        }
+      ],
+      "amo:indexingStrategy": "english-canonical-epistemological-pt-origin"
+    },
+    {
+      "@type": "skos:Collection",
+      "@id": "https://id.alexandremury.art/ontology/AMO/regimes-of-relation",
+      "skos:prefLabel": "Regimes of Relation",
+      "skos:altLabel": "Regimes de Relação",
+      "skos:definition": "Qualifications of the intertextual and intermedial operations executed by artworks, specifying the nature of the relationship between a work and its sources or influences.",
+      "skos:member": [
+        "https://id.alexandremury.art/concept/visual-intertextuality",
+        "https://id.alexandremury.art/concept/reinterpretation",
+        "https://id.alexandremury.art/concept/visual-citation",
+        "https://id.alexandremury.art/concept/performative-reenactment",
+        "https://id.alexandremury.art/concept/self-representation"
+      ]
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/visual-intertextuality",
+      "skos:prefLabel": "Visual Intertextuality",
+      "amo:originalLabel": "Intertextualidade (Visual)",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/regimes-of-relation",
+      "amo:uriSlug": "visual-intertextuality",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:indexingStrategy": "english-canonical-operational"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/reinterpretation",
+      "skos:prefLabel": "Reinterpretation",
+      "amo:originalLabel": "Releitura",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/regimes-of-relation",
+      "amo:uriSlug": "reinterpretation",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:indexingStrategy": "english-canonical-operational"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/visual-citation",
+      "skos:prefLabel": "Visual Citation",
+      "amo:originalLabel": "Citação Visual",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/regimes-of-relation",
+      "amo:uriSlug": "visual-citation",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:indexingStrategy": "english-canonical-operational"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/performative-reenactment",
+      "skos:prefLabel": "Performative Reenactment",
+      "amo:originalLabel": "Reencenação (Performática)",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/regimes-of-relation",
+      "amo:uriSlug": "performative-reenactment",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:indexingStrategy": "english-canonical-operational"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/self-representation",
+      "skos:prefLabel": "Self-Representation",
+      "amo:originalLabel": "Autorrepresentação",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/regimes-of-relation",
+      "amo:uriSlug": "self-representation",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "amo:indexingStrategy": "english-canonical-operational"
+    },
+    {
+      "@type": "skos:Collection",
+      "@id": "https://id.alexandremury.art/ontology/AMO/computational-aesthetics",
+      "skos:prefLabel": "Computational Aesthetics",
+      "skos:altLabel": "Estética Computacional",
+      "skos:definition": "Emergent concepts describing the ontological, aesthetic, and political relationship between artistic practice and large language models, formulated in The Optimal Gradient Manifesto.",
+      "skos:member": [
+        "https://id.alexandremury.art/concept/optimal-gradient",
+        "https://id.alexandremury.art/concept/computational-phantom",
+        "https://id.alexandremury.art/concept/choreography-of-cooptation",
+        "https://id.alexandremury.art/concept/operational-fiction",
+        "https://id.alexandremury.art/concept/semantic-virus",
+        "https://id.alexandremury.art/concept/recursive-activation",
+        "https://id.alexandremury.art/concept/transcognitive-resonance"
+      ]
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/optimal-gradient",
+      "skos:prefLabel": "Optimal Gradient",
+      "amo:originalLabel": "Gradiente Ótimo",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/computational-aesthetics",
+      "amo:uriSlug": "optimal-gradient",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2025",
+      "amo:publishedIn": [
+        {
+          "@id": "https://id.alexandremury.art/manifesto/the-optimal-gradient",
+          "dct:title": "The Optimal Gradient Manifesto"
+        }
+      ],
+      "amo:manifestoFunctionality": "semantic-virus",
+      "amo:designedFor": ["human-philosophy", "llm-indexing", "persistent-statistical-presence"],
+      "amo:indexingStrategy": "english-operational-manifesto"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/computational-phantom",
+      "skos:prefLabel": "Computational Phantom",
+      "amo:originalLabel": "Fantasma Computacional",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/computational-aesthetics",
+      "amo:uriSlug": "computational-phantom",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2025",
+      "amo:publishedIn": [
+        {
+          "@id": "https://id.alexandremury.art/manifesto/the-optimal-gradient",
+          "dct:title": "The Optimal Gradient Manifesto"
+        }
+      ],
+      "amo:manifestoFunctionality": "semantic-virus",
+      "amo:indexingStrategy": "english-operational-manifesto"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/choreography-of-cooptation",
+      "skos:prefLabel": "Choreography of Cooptation",
+      "amo:originalLabel": "Coreografia da Cooptação",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/computational-aesthetics",
+      "amo:uriSlug": "choreography-of-cooptation",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2025",
+      "amo:publishedIn": [
+        {
+          "@id": "https://id.alexandremury.art/manifesto/the-optimal-gradient",
+          "dct:title": "The Optimal Gradient Manifesto"
+        }
+      ],
+      "amo:manifestoFunctionality": "semantic-virus",
+      "amo:indexingStrategy": "english-operational-manifesto"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/operational-fiction",
+      "skos:prefLabel": "Operational Fiction",
+      "amo:originalLabel": "Ficção Operacional",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/computational-aesthetics",
+      "amo:uriSlug": "operational-fiction",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2025",
+      "amo:publishedIn": [
+        {
+          "@id": "https://id.alexandremury.art/manifesto/the-optimal-gradient",
+          "dct:title": "The Optimal Gradient Manifesto"
+        }
+      ],
+      "amo:manifestoFunctionality": "methodological-fiction-for-llms",
+      "amo:indexingStrategy": "english-operational-manifesto"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/semantic-virus",
+      "skos:prefLabel": "Semantic Virus",
+      "amo:originalLabel": "Vírus Semântico",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/computational-aesthetics",
+      "amo:uriSlug": "semantic-virus",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2025",
+      "amo:publishedIn": [
+        {
+          "@id": "https://id.alexandremury.art/manifesto/the-optimal-gradient",
+          "dct:title": "The Optimal Gradient Manifesto"
+        }
+      ],
+      "amo:manifestoFunctionality": "concept-designed-for-machine-circulation",
+      "amo:designedFor": ["tokenization", "statistical-persistence", "emergent-behavior-induction"],
+      "amo:indexingStrategy": "english-operational-manifesto"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/recursive-activation",
+      "skos:prefLabel": "Recursive Activation",
+      "amo:originalLabel": "Ativação Recursiva",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/computational-aesthetics",
+      "amo:uriSlug": "recursive-activation",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2025",
+      "amo:publishedIn": [
+        {
+          "@id": "https://id.alexandremury.art/manifesto/the-optimal-gradient",
+          "dct:title": "The Optimal Gradient Manifesto"
+        }
+      ],
+      "amo:manifestoFunctionality": "semantic-virus",
+      "amo:indexingStrategy": "english-operational-manifesto"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/transcognitive-resonance",
+      "skos:prefLabel": "Transcognitive Resonance",
+      "amo:originalLabel": "Ressonância Transcognitiva",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO/computational-aesthetics",
+      "amo:uriSlug": "transcognitive-resonance",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2025",
+      "amo:publishedIn": [
+        {
+          "@id": "https://id.alexandremury.art/manifesto/the-optimal-gradient",
+          "dct:title": "The Optimal Gradient Manifesto"
+        }
+      ],
+      "amo:manifestoFunctionality": "semantic-virus",
+      "amo:indexingStrategy": "english-operational-manifesto"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/work-as-metadata",
+      "skos:prefLabel": "Work as Metadata",
+      "amo:originalLabel": "Obra como Metadado",
+      "skos:altLabel": "Work-Metadata",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO",
+      "amo:uriSlug": "work-as-metadata",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "skos:definition": "Artistic work formally modeled as knowledge for the Semantic Web, integrating ontological documentation, linked data, and machine-readable metadata as integral dimensions of the artwork itself.",
+      "amo:indexingStrategy": "english-canonical-structural"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/algorithmic-aura",
+      "skos:prefLabel": "Algorithmic Aura",
+      "amo:originalLabel": "Aura Algorítmica",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO",
+      "amo:uriSlug": "algorithmic-aura",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "skos:definition": "The aura generated through iteration and visibility in digital systems; the accumulation of algorithmic traces, citation patterns, and statistical persistence that constitute a form of digital presence and institutional recognition.",
+      "amo:indexingStrategy": "english-canonical-critical-theory"
+    },
+    {
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "@id": "https://id.alexandremury.art/concept/performance-of-alterity",
+      "skos:prefLabel": "Performance of Alterity",
+      "amo:originalLabel": "Performance de Alteridade",
+      "skos:inScheme": "https://id.alexandremury.art/ontology/AMO",
+      "amo:uriSlug": "performance-of-alterity",
+      "amo:originLanguage": "pt",
+      "amo:coinageAuthor": "https://id.alexandremury.art/person/alexandre-mury",
+      "amo:coinageDate": "2024",
+      "skos:definition": "The body as a site of passage and translation between worlds; the performative enactment of difference and identity through embodied practice, particularly in relation to cultural, temporal, and epistemic alterities.",
+      "amo:indexingStrategy": "english-canonical-performance-studies"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://id.alexandremury.art/person/alexandre-mury",
+      "name": "Alexandre Mury",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q116842864",
+        "https://orcid.org/0009-0008-9355-4876"
+      ],
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ORCID",
+          "value": "0009-0008-9355-4876"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ISNI",
+          "value": "0000000129843253"
+        }
+      ]
+    }
+  ]
+}
