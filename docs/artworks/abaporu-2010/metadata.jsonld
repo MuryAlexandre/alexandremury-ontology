@@ -145,7 +145,7 @@
       "creator": {"@id": "#alexandre-mury"},
       "artform": ["Photography", "Performance Art", "Post-Conceptual Art"],
       "artMedium": "Chromogenic Print (C-print)",
-      "genre": ["Contemporary Art", "Performance Photography", "Conceptual Photography"],
+      "genre": ["Contemporary Art", "Performance Photography", "Staged Photography", "Self-Portrait" ],
       "description": "Photographic and performative reinterpretation of Abaporu (1928), by Tarsila do Amaral. Through self-representation, contemporary photography and post-conceptual strategies, the work operates as a critical reflection on the circulation of images, the updating of visual repertoires, and the mechanisms of cultural appropriation and intertextual dialogue.",
       "keywords": [
         "Abaporu",
@@ -154,6 +154,7 @@
         "Contemporary Art",
         "Photography",
         "Performance Art",
+        "Staged Photography",
         "Post-Conceptual Art",
         "Anthropophagy",
         "Brazilian Modernism",
