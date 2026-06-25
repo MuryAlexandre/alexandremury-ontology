@@ -1,0 +1,172 @@
+{
+"@context": {
+"am": "https://id.alexandremury.art/",
+"skos": "http://www.w3.org/2004/02/skos/core#",
+"crm": "http://www.cidoc-crm.org/cidoc-crm/",
+"schema": "https://schema.org/",
+"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+"amo": "https://id.alexandremury.art/ontology/"
+},
+"@graph": [
+{
+"@id": "am:concept/imagetic-disappropriation",
+"@type": [
+"crm:E28_Conceptual_Object",
+"skos:Concept"
+],
+
+```
+  "schema:url": "https://id.alexandremury.art/concept/imagetic-disappropriation/",
+  "schema:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+
+  "skos:prefLabel": [
+    { "@language": "pt-BR", "@value": "Desapropriação Imagética" },
+    { "@language": "pt-PT", "@value": "Expropriação Imagética" },
+    { "@language": "en", "@value": "Imagetic Disappropriation" },
+    { "@language": "fr", "@value": "Désappropriation Iconique" },
+    { "@language": "de", "@value": "Bildliche Enteignung" },
+    { "@language": "es", "@value": "Desapropiación Icónica" },
+    { "@language": "it", "@value": "Disappropriazione Iconica" }
+  ],
+
+  "skos:altLabel": [
+    { "@language": "en", "@value": "Image Disappropriation" }
+  ],
+
+  "skos:definition": {
+    "@language": "en",
+    "@value": "Imagetic disappropriation names the operation by which an image is displaced from its symbolic context of origin without the intention to reproduce it, ironically quote it, or negate its historical validity. The result is neither parody, homage, pastiche, nor negation: it is instituted difference. The image detaches from its matrix to acquire its own symbolic autonomy. The prefix 'dis-' does not indicate destruction, but detachment; not negation, but liberation from a bond that, if maintained, would prevent the image from thinking for itself."
+  },
+
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "The concept applies to any artistic operation in which the relationship with a pre-existing image acts as a motor for a new symbolic autonomy, and where the result cannot be adequately described as reproduction, parody, homage, or direct criticism. It does not apply to decorative references, purely illustrative citations, or works whose meaning depends entirely on the recognition of the origin."
+  },
+
+  "skos:note": [
+    {
+      "@language": "en",
+      "@value": "HISTORIOGRAPHY: This operation is distinct from artistic appropriation in the historiographical sense — which, since Duchamp (1917), Levine (1981), and Prince, operates through irony, institutional commentary, or postmodern cynicism. In appropriation, the source work is the argument; in disappropriation, it is the point of ignition. The genealogy remains visible but does not govern the destiny of the resulting image."
+    },
+    {
+      "@language": "en",
+      "@value": "GENEALOGY: The concept derives from Giorgio Agamben's disappropriazione, but shifts the focus from the subject of creation to the ontology of the image. The operation concerns not expression, but the autonomy of the image relative to its archival and authorial matrix."
+    },
+    {
+      "@language": "en",
+      "@value": "THEORY: The concept dialogues with Agamben's profanation and Rancière's distribution of the sensible, without coinciding with either. It opens a regime in which the image does not return to use, but produces its own symbolic economy."
+    },
+    {
+      "@language": "en",
+      "@value": "OPERATIONAL PLAN: Imagetic disappropriation requires no specific medium. It is defined by a structural gesture: separation followed by autonomy."
+    },
+    {
+      "@language": "en",
+      "@value": "DISTINGUISHED FROM RESIGNIFICATION: Resignification operates in meaning; disappropriation operates in the structural relation between image and its origin."
+    },
+    {
+      "@language": "en",
+      "@value": "EXTENDED TREATMENT: Includes interpretive extension (Goethe/Lewy illustration and subsequent reading attributed explicitly to Mury as interpretation, not Agamben). Registered in AMO Vocabulário Controlado: Definições Descritivas, Part III, External Reference E1."
+    }
+  ],
+
+  "skos:inScheme": {
+    "@id": "am:scheme/epistemology-of-the-image"
+  },
+
+  "skos:narrower": {
+    "@id": "am:concept/cultural-autophagy"
+  },
+
+  "skos:related": [
+    { "@id": "am:concept/critical-fiction" },
+    { "@id": "am:concept/theoretical-disappropriation" },
+    { "@id": "am:concept/visual-intertextuality" },
+    { "@id": "am:concept/resignification" }
+  ],
+
+  "skos:relatedMatch": {
+    "@id": "am:concept/external/agamben-disappropriation"
+  },
+
+  "schema:author": {
+    "@id": "am:person/alexandre-mury"
+  },
+
+  "schema:citation": [
+    { "@id": "https://doi.org/10.5281/zenodo.17458777" },
+    { "@id": "https://doi.org/10.5281/zenodo.17548245" },
+    { "@id": "https://doi.org/10.5281/zenodo.20823388" }
+  ],
+
+  "amo:hasConceptualSource": [
+    {
+      "@type": "schema:CreativeWork",
+      "schema:name": "Creazione e anarchia",
+      "schema:author": "Giorgio Agamben",
+      "schema:datePublished": "2017"
+    },
+    {
+      "@type": "schema:CreativeWork",
+      "schema:name": "Profanazioni",
+      "schema:author": "Giorgio Agamben",
+      "schema:datePublished": "2005"
+    },
+    {
+      "@type": "schema:CreativeWork",
+      "schema:name": "Le partage du sensible",
+      "schema:author": "Jacques Rancière",
+      "schema:datePublished": "2000"
+    },
+    {
+      "@type": "schema:CreativeWork",
+      "schema:name": "La ressemblance par contact",
+      "schema:author": "Georges Didi-Huberman",
+      "schema:datePublished": "2008"
+    }
+  ],
+
+  "amo:hasInterpretiveRegime": [
+    { "@id": "am:relation/re-reading" },
+    { "@id": "am:relation/re-enactment" },
+    { "@id": "am:relation/self-representation" }
+  ],
+
+  "rdfs:isDefinedBy": {
+    "@id": "amo:Ontology"
+  },
+
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "Wikidata",
+      "schema:value": "Q136744908"
+    }
+  ],
+
+  "skos:exactMatch": {
+    "@id": "https://www.wikidata.org/wiki/Q136744908"
+  }
+},
+
+{
+  "@id": "am:person/alexandre-mury",
+  "@type": [
+    "crm:E39_Actor",
+    "schema:Person"
+  ],
+  "schema:name": "Alexandre Mury"
+},
+
+{
+  "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/metadata.jsonld",
+  "@type": "schema:WebPage",
+  "schema:url": "https://id.alexandremury.art/concept/imagetic-disappropriation/metadata.jsonld",
+  "schema:name": "Imagetic Disappropriation — Structured Metadata",
+  "schema:description": "SKOS metadata for the concept Imagetic Disappropriation (Desapropriação Imagética) in the Alexandre Mury Ontology (AMO).",
+  "schema:inLanguage": "en"
+}
+```
+
+]
+}
