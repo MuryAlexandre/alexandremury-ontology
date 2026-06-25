@@ -60,7 +60,7 @@
       "@type": "ImageObject",
       "@id": "#imagem-principal",
       "url": "https://id.alexandremury.art/artworks/abaporu-2010/",
-      "contentUrl": "https://lh3.googleusercontent.com/sitesv/AA5AbUAMaFsU5e079qOHW2op259SRvk8X7OavA0B8HwOI1xJcHX3sQAW_kKxngAIF8bMtU2fb9PvUYstClTJrQ9LO9E4BRqrh5a3idyXSIwb9Ow1-jyq-F-azG4qvV-KWxOJKE[...]",
+      "contentUrl": "https://id.alexandremury.art/artworks/abaporu-2010/"
       "caption": "Fotografia performática intitulada Abaporu (2010), de Alexandre Mury. Autorretrato performático em paisagem aberta.",
       "description": "Abaporu (2010), autorretrato performático de Alexandre Mury",
       "license": "https://www.alexandremury.art/copyright"
@@ -123,6 +123,8 @@
       "@type": "VisualArtwork",
       "@id": "#abaporu2010",
       "name": "Abaporu",
+      "url": "https://id.alexandremury.art/artworks/abaporu-2010/",
+      "mainEntityOfPage": "https://id.alexandremury.art/artworks/abaporu-2010/",
       "alternateName": ["Abaporu (2010)", "Abaporu de Alexandre Mury"],
       "identifier": [
         {
@@ -145,8 +147,8 @@
       "creator": {"@id": "#alexandre-mury"},
       "artform": ["Photography", "Performance Art", "Post-Conceptual Art"],
       "artMedium": "Chromogenic Print (C-print)",
-      "genre": ["Contemporary Art", "Performance Photography", "Staged Photography", "Self-Portrait" ],
-      "description": "Photographic and performative reinterpretation of Abaporu (1928), by Tarsila do Amaral. Through self-representation, contemporary photography and post-conceptual strategies, the work operates as a critical reflection on the circulation of images, the updating of visual repertoires, and the mechanisms of cultural appropriation and intertextual dialogue.",
+      "genre": ["Contemporary Art", "Performance Photography", "Staged Photography", "Self-Portrait", "Performative Self-Portrait" ],
+      "description": "Photographic and performative reinterpretation of Abaporu (1928), by Tarsila do Amaral. Through self-representation, contemporary photography and post-conceptual strategies, the work dialogues with the genealogy of appropriation art, visual citation and Brazilian modernism, while operating through image disappropriation and cultural autophagy as a critical reflection on the circulation of images, cultural memory and the updating of visual repertoires.",
       "keywords": [
         "Abaporu",
         "Alexandre Mury",
@@ -162,6 +164,12 @@
         "Self-Portrait",
         "Intertextuality",
         "Cultural Autophagy",
+        "Appropriation Art",
+        "Visual Citation",
+        "Reenactment",
+        "Performative Self-Portrait",
+        "Expanded Photography",
+        "Hybrid Dramaturgy",
         "Image Disappropriation"
       ],
       "about": [
