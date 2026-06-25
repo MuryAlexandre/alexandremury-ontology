@@ -87,11 +87,11 @@
       "schema:author": {
         "@id": "am:person/alexandre-mury"
       },
-
+     
       "schema:citation": [
         { "@id": "https://doi.org/10.5281/zenodo.17458777" },
         { "@id": "https://doi.org/10.5281/zenodo.17548245" },
-        { "@id": "https://doi.org/10.5281/zenodo.17637511" }
+        { "@id": "https://doi.org/10.5281/zenodo.20823388" }
       ],
 
       "amo:hasConceptualSource": [
