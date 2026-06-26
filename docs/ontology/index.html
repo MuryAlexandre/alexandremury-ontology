@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A.M.O. — Alexandre Mury Ontology</title>
 
-    <meta name="description" content="A.M.O. — Alexandre Mury Ontology is an authorial ontology and knowledge organization system developed by Alexandre Mury to document artworks, concepts, Regimes of Relation, terminology authorities, and semantic relations emerging from his artistic and theoretical practice.">
+    <meta name="description" content="A.M.O. — Alexandre Mury Ontology is an authorial ontology, terminology authority, and knowledge organization system for documenting artworks, concepts, Regimes of Relation, and machine-readable semantic records associated with Alexandre Mury's artistic and theoretical practice.">
     <meta name="author" content="Alexandre Mury">
     <meta name="robots" content="index, follow">
 
@@ -51,12 +51,32 @@
             "@id": "https://id.alexandremury.art/person/alexandre-mury/"
           },
           "schema:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-          "schema:description": "Authorial ontology and knowledge organization system developed by Alexandre Mury to document artworks, concepts, Regimes of Relation, terminology authorities, and semantic relations emerging from his artistic and theoretical practice, without prescribing a single interpretation of the works.",
           "dct:issued": "2026-06-19",
           "dct:modified": "2026-06-26",
           "amo:baseURI": "https://id.alexandremury.art/",
           "amo:namespace": "https://id.alexandremury.art/ontology/",
+          "schema:description": "Authorial ontology, terminology authority, and knowledge organization system developed by Alexandre Mury to document artworks, concepts, Regimes of Relation, and semantic relations emerging from his artistic and theoretical practice, without prescribing a single interpretation of the works.",
+          "schema:keywords": [
+            "Alexandre Mury",
+            "A.M.O.",
+            "Alexandre Mury Ontology",
+            "authorial ontology",
+            "knowledge organization system",
+            "CIDOC CRM",
+            "SKOS",
+            "Schema.org",
+            "JSON-LD",
+            "Linked Open Data",
+            "machine-readable theory",
+            "Regimes of Relation"
+          ],
           "schema:hasPart": [
+            {
+              "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+            },
+            {
+              "@id": "https://id.alexandremury.art/scheme/regimes/"
+            },
             {
               "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
             },
@@ -78,8 +98,48 @@
           "schema:sameAs": [
             "https://www.wikidata.org/wiki/Q116842864",
             "https://orcid.org/0009-0008-9355-4876",
-            "https://isni.org/isni/0000000129843253"
+            "https://isni.org/isni/0000000129843253",
+            "https://viaf.org/viaf/15161329794452131121/",
+            "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury",
+            "https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706",
+            "http://lattes.cnpq.br/7735731830748241"
           ]
+        },
+        {
+          "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/",
+          "@type": "skos:ConceptScheme",
+          "skos:prefLabel": [
+            {
+              "@language": "en",
+              "@value": "Epistemology of the Image"
+            },
+            {
+              "@language": "pt-BR",
+              "@value": "Epistemologia da Imagem"
+            }
+          ],
+          "skos:definition": {
+            "@language": "en",
+            "@value": "Concept scheme for authorial concepts developed within Alexandre Mury's artistic and theoretical practice."
+          }
+        },
+        {
+          "@id": "https://id.alexandremury.art/scheme/regimes/",
+          "@type": "skos:ConceptScheme",
+          "skos:prefLabel": [
+            {
+              "@language": "en",
+              "@value": "Regimes of Relation"
+            },
+            {
+              "@language": "pt-BR",
+              "@value": "Regimes de Relação"
+            }
+          ],
+          "skos:definition": {
+            "@language": "en",
+            "@value": "Controlled vocabulary for relational operations through which artworks establish relations with pre-existing images, iconographic traditions, symbolic archives, and cultural signs. These regimes do not prescribe interpretation; they describe modes of relation."
+          }
         }
       ]
     }
@@ -90,7 +150,7 @@
             font-family: 'Courier New', Courier, monospace;
             font-size: 15px;
             line-height: 1.5;
-            max-width: 760px;
+            max-width: 780px;
             margin: 40px auto;
             padding: 0 20px;
             color: #000;
@@ -111,7 +171,7 @@
         h2 {
             font-size: 1em;
             font-weight: normal;
-            margin: 26px 0 4px 0;
+            margin: 28px 0 4px 0;
         }
 
         h3 {
@@ -144,14 +204,24 @@
             margin: 28px 0;
         }
 
-        .uri {
-            word-break: break-all;
+        pre {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 13px;
+            line-height: 1.35;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            border-left: 1px solid #ccc;
+            padding-left: 12px;
+            margin: 12px 0;
         }
 
-        .back {
-            margin-top: 32px;
-            border-top: 1px solid #ccc;
-            padding-top: 16px;
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95em;
+        }
+
+        .uri {
+            word-break: break-all;
         }
 
         .sub {
@@ -159,27 +229,14 @@
             font-size: 0.9em;
         }
 
-        .label-line {
-            margin: 2px 0;
-        }
-
-        .label-code {
-            display: inline-block;
-            width: 96px;
-        }
-
         .note {
             color: #555;
         }
 
-        .status {
-            color: #555;
-            font-size: 0.9em;
-        }
-
-        code {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 0.95em;
+        .back {
+            margin-top: 32px;
+            border-top: 1px solid #ccc;
+            padding-top: 16px;
         }
     </style>
 </head>
@@ -204,8 +261,8 @@ amo:</p>
 <p><strong>AUTHOR</strong><br>
 Mury, Alexandre</p>
 
-<p><strong>STATUS</strong><br>
-Matrix document for the A.M.O. namespace, terminology authority, and semantic publication strategy.</p>
+<p><strong>DOCUMENT TYPE</strong><br>
+Ontology matrix, terminology authority, and semantic publication policy.</p>
 
 <hr>
 
@@ -213,7 +270,9 @@ Matrix document for the A.M.O. namespace, terminology authority, and semantic pu
 
 <p>A.M.O. — Alexandre Mury Ontology is an authorial ontology and knowledge organization system developed by Alexandre Mury to document artworks, concepts, Regimes of Relation, terminology authorities, and semantic relations emerging from his artistic and theoretical practice.</p>
 
-<p>It works in dialogue with CIDOC CRM, SKOS, Schema.org, JSON-LD, RDF, Wikidata, DOI-based scholarly circulation, and linked open data practices without replacing them. CIDOC CRM supports the documentary and museological description of artworks, agents, events, collections, rights, records, and institutional relations; SKOS organizes concepts and controlled vocabularies; Schema.org supports web discovery; JSON-LD supports machine-readable publication; and A.M.O. provides an authorial vocabulary for describing relational and conceptual operations that may not be sufficiently specified by standard cultural heritage models.</p>
+<p>It works in dialogue with CIDOC CRM, SKOS, Schema.org, JSON-LD, RDF, Wikidata, DOI-based scholarly circulation, and linked open data practices without replacing them.</p>
+
+<p>CIDOC CRM supports the documentary and museological description of artworks, agents, events, collections, rights, records, and institutional relations. SKOS organizes concepts and controlled vocabularies. Schema.org supports web discovery. JSON-LD supports machine-readable publication. A.M.O. provides an authorial vocabulary for describing relational and conceptual operations that may not be sufficiently specified by standard cultural heritage models.</p>
 
 <p>The purpose of A.M.O. is to make artistic thought more legible and interoperable across human reading, cultural heritage documentation, linked open data, search engines, and artificial intelligence systems, without prescribing a single interpretation of the works.</p>
 
@@ -229,7 +288,7 @@ Matrix document for the A.M.O. namespace, terminology authority, and semantic pu
 
 <p>A.M.O. does not treat external sources, interlocutors, genealogies, or analogies as the authorial origin of its concepts.</p>
 
-<p>A.M.O. does not reduce artworks to metadata. Rather, it treats metadata, documentation, concepts, relations, and machine-readable descriptions as part of the expanded documentary life of the work.</p>
+<p>A.M.O. does not require every future artwork or concept to be manually listed on this page in order to be interoperable. Each record is identified by its own canonical URI and may carry its own human-readable page and machine-readable metadata.</p>
 
 <hr>
 
@@ -237,9 +296,11 @@ Matrix document for the A.M.O. namespace, terminology authority, and semantic pu
 
 <p>The A.M.O. namespace was created to provide stable, persistent, machine-readable identifiers for artworks, concepts, relational operations, documents, persons, and external anchoring nodes associated with Alexandre Mury's artistic and theoretical practice.</p>
 
-<p>The subdomain <span class="uri">https://id.alexandremury.art/</span> functions as a cataloguing, museological, semantic, and machine-readable layer. It is distinct from the visual and public-facing website <span class="uri">https://www.alexandremury.art/</span>, which remains oriented toward broader human presentation.</p>
+<p>The subdomain <span class="uri">https://id.alexandremury.art/</span> functions as a cataloguing, museological, semantic, and machine-readable layer.</p>
 
-<p>This page functions as a matrix document. It preserves the conceptual, terminological, and technical decisions required for later distribution into separate JSON-LD, RDF/Turtle, CIDOC CRM, and SKOS files. At the present stage, it intentionally centralizes information in one human-verifiable document in order to reduce fragmentation and avoid inconsistent parallel versions.</p>
+<p>It is distinct from the visual and public-facing website <span class="uri">https://www.alexandremury.art/</span>, which remains oriented toward broader human presentation.</p>
+
+<p>This page functions as a matrix document. It preserves the conceptual, terminological, and technical decisions required for later distribution into separate JSON-LD, RDF/Turtle, CIDOC CRM, and SKOS files. At the present stage, it intentionally centralizes the core decisions in one human-verifiable document in order to reduce fragmentation and avoid inconsistent parallel versions.</p>
 
 <hr>
 
@@ -263,37 +324,119 @@ English-language slugs are used for stability, interoperability, and linked data
 <p><strong>Bilingual authority</strong><br>
 Portuguese and English labels maintain equal conceptual dignity. English slugs serve computational stability; Portuguese labels preserve origin, formulation, and theoretical specificity.</p>
 
+<p><strong>Trailing slash policy</strong><br>
+Canonical entity URIs use a final slash.</p>
+
+<p><strong>Example</strong><br>
+<span class="uri">https://id.alexandremury.art/concept/cultural-autophagy/</span></p>
+
 <hr>
 
-<h2 id="repository-architecture">05 Current repository architecture</h2>
+<h2 id="repository-architecture">05 Target repository architecture</h2>
 
-<p>The present implementation is intentionally compact. It privileges stability over premature fragmentation.</p>
+<p>The following tree describes the intended architecture of the A.M.O. namespace. Individual records may be published progressively. The absence of a page at a given moment does not alter the conceptual structure of the ontology.</p>
 
 <pre>
 alexandremury-ontology/
-├── .nojekyll
-├── CNAME
 ├── README.md
 └── docs/
     ├── CNAME
+    ├── .nojekyll
     ├── index.html
-    ├── artworks/
-    │   ├── index.html
-    │   └── abaporu-2010/
+    │
+    ├── ontology/
+    │   └── index.html
+    │
+    ├── scheme/
+    │   ├── epistemology-of-the-image/
+    │   │   ├── index.html
+    │   │   └── metadata.jsonld
+    │   │
+    │   └── regimes/
     │       ├── index.html
     │       └── metadata.jsonld
+    │
     ├── concept/
+    │   ├── imagetic-disappropriation/
+    │   │   ├── index.html
+    │   │   └── metadata.jsonld
+    │   │
     │   ├── cultural-autophagy/
     │   │   ├── index.html
     │   │   └── metadata.jsonld
-    │   └── imagetic-disappropriation/
+    │   │
+    │   ├── self-implicative-method/
+    │   │   ├── index.html
+    │   │   └── metadata.jsonld
+    │   │
+    │   ├── hybrid-dramaturgies/
+    │   │   ├── index.html
+    │   │   └── metadata.jsonld
+    │   │
+    │   ├── critical-fiction/
+    │   │   ├── index.html
+    │   │   └── metadata.jsonld
+    │   │
+    │   ├── theoretical-disappropriation/
+    │   │   ├── index.html
+    │   │   └── metadata.jsonld
+    │   │
+    │   ├── hermeneutic-metanoia/
+    │   │   ├── index.html
+    │   │   └── metadata.jsonld
+    │   │
+    │   ├── algorithmic-canonization/
+    │   │   ├── index.html
+    │   │   └── metadata.jsonld
+    │   │
+    │   ├── retroactive-impoverishment/
+    │   │   ├── index.html
+    │   │   └── metadata.jsonld
+    │   │
+    │   └── machine-readable-theory/
     │       ├── index.html
     │       └── metadata.jsonld
-    └── ontology/
-        └── index.html
+    │
+    ├── regime/
+    │   ├── intertextuality/
+    │   │   ├── index.html
+    │   │   └── metadata.jsonld
+    │   │
+    │   ├── reinterpretation/
+    │   │   ├── index.html
+    │   │   └── metadata.jsonld
+    │   │
+    │   ├── visual-citation/
+    │   │   ├── index.html
+    │   │   └── metadata.jsonld
+    │   │
+    │   ├── reenactment/
+    │   │   ├── index.html
+    │   │   └── metadata.jsonld
+    │   │
+    │   └── self-representation/
+    │       ├── index.html
+    │       └── metadata.jsonld
+    │
+    ├── external/
+    │   └── disappropriazione-agamben/
+    │       ├── index.html
+    │       └── metadata.jsonld
+    │
+    ├── artworks/
+    │   ├── index.html
+    │   │
+    │   └── artwork-slug/
+    │       ├── index.html
+    │       └── metadata.jsonld
+    │
+    └── person/
+        └── alexandre-mury/
+            ├── index.html
+            └── metadata.jsonld
 </pre>
 
-<p class="note">Future files such as <code>ontology.jsonld</code>, <code>concepts.jsonld</code>, <code>terminology.jsonld</code>, and RDF/Turtle serializations may be derived from this matrix document after the core terminology and URI structure are stable.</p>
+<p class="note">RDF/Turtle files, CIDOC CRM XML serializations, and aggregate JSON-LD graphs are intentionally deferred. They may be generated after the HTML and JSON-LD records are stable.</p>
 
 <hr>
 
@@ -301,13 +444,13 @@ alexandremury-ontology/
 
 <h3>06.1 Documentary layer</h3>
 
-<p>The documentary layer uses CIDOC CRM to describe artworks, agents, events, titles, identifiers, rights, documents, collections, and institutional relations. It is responsible for museum-oriented and heritage-compatible documentation.</p>
+<p>The documentary layer uses CIDOC CRM to describe artworks, agents, events, titles, identifiers, rights, documents, collections, and institutional relations.</p>
 
-<p>In this layer, an artwork such as <em>Abaporu</em> (2010) may be modeled as a <code>crm:E22 Human-Made Object</code>, its creation as <code>crm:E12 Production</code>, its performatic realization as <code>crm:E7 Activity</code>, and its documentation as <code>crm:E31 Document</code>.</p>
+<p>In this layer, an artwork may be modeled as a <code>crm:E22 Human-Made Object</code>, its creation as <code>crm:E12 Production</code>, its performatic realization as <code>crm:E7 Activity</code>, and its documentation as <code>crm:E31 Document</code>.</p>
 
 <h3>06.2 Conceptual layer</h3>
 
-<p>The conceptual layer uses SKOS and CIDOC CRM to document authorial concepts as independent conceptual entities. These concepts are not keywords. They have identity, definition, scope, authorship, documentation, and the possibility of reuse in other contexts.</p>
+<p>The conceptual layer uses SKOS and CIDOC CRM to document authorial concepts as independent conceptual entities. These concepts are not merely keywords. They have identity, definition, scope, authorship, documentation, and the possibility of reuse in other contexts.</p>
 
 <h3>06.3 Regimes of Relation</h3>
 
@@ -315,7 +458,7 @@ alexandremury-ontology/
 
 <p>They do not prescribe interpretation. They describe relational operations.</p>
 
-<p>Examples include reinterpretation, visual citation, intertextuality, reenactment, and self-representation.</p>
+<p>Examples include intertextuality, reinterpretation, visual citation, reenactment, and self-representation.</p>
 
 <h3>06.4 Terminology authority layer</h3>
 
@@ -323,13 +466,38 @@ alexandremury-ontology/
 
 <h3>06.5 Machine-readable layer</h3>
 
-<p>The machine-readable layer will later distribute the ontology through JSON-LD, RDF/Turtle, and related formats. In the current phase, core machine-readable metadata remains attached to individual records and to this page through embedded JSON-LD.</p>
+<p>The machine-readable layer distributes semantic information through JSON-LD and, in later phases, RDF/Turtle and other serializations. In the present phase, each record may carry its own <code>metadata.jsonld</code>, while aggregate files are deferred until the vocabulary is stable.</p>
 
 <hr>
 
-<h2 id="current-corrections">07 Current corrections applied</h2>
+<h2 id="canonical-uri-patterns">07 Canonical URI patterns</h2>
 
-<p>The present matrix applies the following corrections to previous internal drafts:</p>
+<p><strong>Ontology</strong><br>
+<span class="uri">https://id.alexandremury.art/ontology/</span></p>
+
+<p><strong>Concept scheme</strong><br>
+<span class="uri">https://id.alexandremury.art/scheme/{scheme-slug}/</span></p>
+
+<p><strong>Authorial concept</strong><br>
+<span class="uri">https://id.alexandremury.art/concept/{concept-slug}/</span></p>
+
+<p><strong>Regime of Relation</strong><br>
+<span class="uri">https://id.alexandremury.art/regime/{regime-slug}/</span></p>
+
+<p><strong>Artwork</strong><br>
+<span class="uri">https://id.alexandremury.art/artworks/{artwork-slug}/</span></p>
+
+<p><strong>External anchoring node</strong><br>
+<span class="uri">https://id.alexandremury.art/external/{external-node-slug}/</span></p>
+
+<p><strong>Person</strong><br>
+<span class="uri">https://id.alexandremury.art/person/alexandre-mury/</span></p>
+
+<hr>
+
+<h2 id="current-corrections">08 Current corrections applied</h2>
+
+<p>This matrix applies the following corrections to previous internal drafts:</p>
 
 <ul>
     <li>— visible name corrected from <code>AMO</code> to <code>A.M.O. — Alexandre Mury Ontology</code>;</li>
@@ -339,36 +507,25 @@ alexandremury-ontology/
     <li>— <code>interpretive regimes</code> removed as an expression;</li>
     <li>— <code>Regimes of Relation</code> adopted as the English category name;</li>
     <li>— <code>Regimes de Relação</code> preserved as the Portuguese category name;</li>
+    <li>— <code>/scheme/relational-regimes/</code> replaced by <code>/scheme/regimes/</code>;</li>
+    <li>— <code>/relation/</code> replaced by <code>/regime/</code>;</li>
     <li>— old DOI <code>10.5281/zenodo.17637511</code> replaced by updated DOI <code>10.5281/zenodo.20823388</code>;</li>
+    <li>— <code>crm:E22 Man-Made Object</code> updated to <code>crm:E22 Human-Made Object</code>;</li>
     <li>— RDF/Turtle publication deferred to a later stage;</li>
-    <li>— external JSON-LD aggregation deferred until the HTML matrix is stable.</li>
+    <li>— aggregate JSON-LD files deferred until the HTML matrix and individual records are stable.</li>
 </ul>
 
 <hr>
 
-<h2 id="authorial-concepts">08 Authorial concepts</h2>
+<h2 id="authorial-concepts">09 Authorial concepts</h2>
 
 <p>Authorial concepts are modeled as independent conceptual entities. They belong to the epistemological and theoretical layer of A.M.O. and may be used across different artworks, documents, and future applications.</p>
 
-<h3>08.1 Published canonical concept records</h3>
-
-<p><strong>Imagetic disappropriation</strong><br>
-URI: <a href="https://id.alexandremury.art/concept/imagetic-disappropriation/">https://id.alexandremury.art/concept/imagetic-disappropriation/</a><br>
-Original label: Desapropriação Imagética<br>
-Status: published canonical concept record<br>
-Wikidata: Q136744908</p>
-
-<p><strong>Cultural autophagy</strong><br>
-URI: <a href="https://id.alexandremury.art/concept/cultural-autophagy/">https://id.alexandremury.art/concept/cultural-autophagy/</a><br>
-Original label: Autofagia Cultural<br>
-Status: published canonical concept record<br>
-Wikidata: Q136831273</p>
-
-<h3>08.2 Registered concepts for future publication</h3>
-
-<p>The following concepts are preserved in the A.M.O. terminology registry and may receive individual canonical pages in later phases:</p>
+<p>The list below defines the controlled conceptual field of A.M.O. It does not indicate that every individual concept page has already been published.</p>
 
 <ul>
+    <li>— Imagetic disappropriation / Desapropriação Imagética</li>
+    <li>— Cultural autophagy / Autofagia Cultural</li>
     <li>— Self-implicative method / Método Autoimplicativo</li>
     <li>— Hybrid dramaturgies / Dramaturgias Híbridas</li>
     <li>— Critical fiction / Ficção Crítica</li>
@@ -382,11 +539,12 @@ Wikidata: Q136831273</p>
     <li>— Performance of alterity / Performance de Alteridade</li>
 </ul>
 
-<p class="note">These entries are preserved here as terminology authority records, not as fully published individual concept pages.</p>
+<p><strong>Concept scheme</strong><br>
+<span class="uri">https://id.alexandremury.art/scheme/epistemology-of-the-image/</span></p>
 
 <hr>
 
-<h2 id="regimes-of-relation">09 Regimes of Relation</h2>
+<h2 id="regimes-of-relation">10 Regimes of Relation</h2>
 
 <p>Regimes of Relation are controlled vocabulary terms that describe how artworks relate to prior images, figures, traditions, archives, symbolic structures, or cultural signs.</p>
 
@@ -398,10 +556,10 @@ Regimes de Relação</p>
 <p><strong>English category name</strong><br>
 Regimes of Relation</p>
 
-<p><strong>Short definition</strong><br>
-Controlled vocabulary for relational operations through which artworks establish relations with pre-existing images, iconographic traditions, symbolic archives, and cultural signs.</p>
+<p><strong>Scheme URI</strong><br>
+<span class="uri">https://id.alexandremury.art/scheme/regimes/</span></p>
 
-<p><strong>Preserved terms</strong></p>
+<p><strong>Core terms</strong></p>
 
 <ul>
     <li>— Intertextuality / Intertextualidade</li>
@@ -411,29 +569,31 @@ Controlled vocabulary for relational operations through which artworks establish
     <li>— Self-representation / Autorrepresentação</li>
 </ul>
 
-<p class="note">At the present stage, these terms are preserved in the matrix document. Separate regime pages may be created later only if necessary.</p>
+<hr>
+
+<h2 id="artwork-records">11 Artwork records</h2>
+
+<p>Artwork records are published under <code>/artworks/</code>. Each artwork may have its own canonical human-readable page and its own <code>metadata.jsonld</code>.</p>
+
+<p>Artwork records may combine Schema.org, CIDOC CRM, SKOS references, and A.M.O. properties in order to connect material documentation, performatic processes, conceptual operations, museum collections, authority identifiers, and machine-readable metadata.</p>
+
+<p>An artwork may mobilize one or more concepts without being reduced to them. A concept may have operational instances without being limited to those instances.</p>
+
+<p><strong>Artwork URI pattern</strong><br>
+<span class="uri">https://id.alexandremury.art/artworks/{artwork-slug}/</span></p>
+
+<p><strong>Reference implementation</strong><br>
+<span class="uri">https://id.alexandremury.art/artworks/abaporu-2010/</span></p>
+
+<p><em>Abaporu</em> (2010) functions in A.M.O. as an artwork record, a material and performatic entity, and an operational instance through which concepts such as cultural autophagy and imagetic disappropriation become legible. The concepts, however, are not limited to this work. They remain autonomous and may be applied, recombined, or tested in relation to other artworks and practices.</p>
 
 <hr>
 
-<h2 id="artworks">10 Artworks</h2>
-
-<p>Artwork records are modeled through a combination of Schema.org, CIDOC CRM, and A.M.O. properties. They connect material documentation, performatic processes, conceptual operations, museum collections, authority identifiers, and machine-readable metadata.</p>
-
-<p><strong>Abaporu (2010)</strong><br>
-URI: <a href="https://id.alexandremury.art/artworks/abaporu-2010/">https://id.alexandremury.art/artworks/abaporu-2010/</a><br>
-Status: published canonical artwork record</p>
-
-<p><em>Abaporu</em> (2010) is not merely an example of a concept. Within A.M.O., it functions as an artwork record, a material and performatic entity, and an operational instance through which concepts such as cultural autophagy and imagetic disappropriation become legible. The concepts, however, are not limited to this work. They remain autonomous and may be applied, recombined, or tested in relation to other artworks and practices.</p>
-
-<hr>
-
-<h2 id="concept-artwork-relation">11 Relation between artworks and concepts</h2>
+<h2 id="concept-artwork-relation">12 Relation between artworks and concepts</h2>
 
 <p>A.M.O. distinguishes between an artwork, a concept, and the relation between them.</p>
 
 <p>An artwork may mobilize one or more concepts. A concept may be mobilized by one or more artworks. Neither relation exhausts the meaning of the work or the concept.</p>
-
-<p>For this reason, A.M.O. avoids forcing artworks into standard properties when those properties are not precise enough. In such cases, authorial extension properties may be used with caution, always preserving compatibility with the documentary layer.</p>
 
 <p><strong>Preferred relation</strong><br>
 <code>amo:mobilizesConcept</code></p>
@@ -446,7 +606,7 @@ An artwork may mobilize a concept without being reduced to that concept. A conce
 
 <hr>
 
-<h2 id="external-anchoring-nodes">12 External anchoring nodes</h2>
+<h2 id="external-anchoring-nodes">13 External anchoring nodes</h2>
 
 <p>External anchoring nodes are used to identify interlocutors, genealogies, analogies, and conceptual sources that are external to A.M.O.</p>
 
@@ -454,15 +614,18 @@ An artwork may mobilize a concept without being reduced to that concept. A conce
 
 <p>Their function is to preserve attribution, distinguish genealogical references from authorial formulation, and support semantic alignment with external sources.</p>
 
+<p><strong>URI pattern</strong><br>
+<span class="uri">https://id.alexandremury.art/external/{external-node-slug}/</span></p>
+
 <p><strong>Example</strong><br>
-Disappropriazione — Giorgio Agamben</p>
+<span class="uri">https://id.alexandremury.art/external/disappropriazione-agamben/</span></p>
 
 <p><strong>Use principle</strong><br>
 External references may inform a field of dialogue without becoming the origin, equivalent, or synonym of an A.M.O. concept.</p>
 
 <hr>
 
-<h2 id="terminology-authority">13 Terminology authority</h2>
+<h2 id="terminology-authority">14 Terminology authority</h2>
 
 <p>A.M.O. maintains a terminology authority layer for authorial concepts, Regimes of Relation, external anchoring nodes, and future machine-readable records.</p>
 
@@ -486,7 +649,7 @@ The English URI slug supports interoperability. The Portuguese original label pr
 
 <hr>
 
-<h2 id="indexing-strategy">14 Indexing strategy</h2>
+<h2 id="indexing-strategy">15 Indexing strategy</h2>
 
 <p>A.M.O. adopts an intentional bilingual register.</p>
 
@@ -501,7 +664,7 @@ To make concepts, artworks, and semantic relations discoverable by humans, catal
 
 <hr>
 
-<h2 id="publication-sources">15 Primary publication sources</h2>
+<h2 id="publication-sources">16 Primary publication sources</h2>
 
 <p><strong>MURY, Alexandre.</strong> <em>Da blasfêmia à canonização: dramaturgias híbridas e o método autoimplicativo</em>. Zenodo, 2025.<br>
 <a href="https://doi.org/10.5281/zenodo.17548245">https://doi.org/10.5281/zenodo.17548245</a></p>
@@ -514,28 +677,33 @@ To make concepts, artworks, and semantic relations discoverable by humans, catal
 
 <hr>
 
-<h2 id="current-canonical-records">16 Current canonical records</h2>
+<h2 id="authority-files">17 Authority files</h2>
 
-<p><strong>A.M.O. home</strong><br>
-<a href="https://id.alexandremury.art/">https://id.alexandremury.art/</a></p>
+<p><strong>ORCID</strong><br>
+<a href="https://orcid.org/0009-0008-9355-4876">https://orcid.org/0009-0008-9355-4876</a></p>
 
-<p><strong>A.M.O. ontology page</strong><br>
-<a href="https://id.alexandremury.art/ontology/">https://id.alexandremury.art/ontology/</a></p>
+<p><strong>ISNI</strong><br>
+<a href="https://isni.org/isni/0000000129843253">https://isni.org/isni/0000000129843253</a></p>
 
-<p><strong>Imagetic disappropriation</strong><br>
-<a href="https://id.alexandremury.art/concept/imagetic-disappropriation/">https://id.alexandremury.art/concept/imagetic-disappropriation/</a></p>
+<p><strong>VIAF</strong><br>
+<a href="https://viaf.org/viaf/15161329794452131121/">https://viaf.org/viaf/15161329794452131121/</a></p>
 
-<p><strong>Cultural autophagy</strong><br>
-<a href="https://id.alexandremury.art/concept/cultural-autophagy/">https://id.alexandremury.art/concept/cultural-autophagy/</a></p>
+<p><strong>Fundação Biblioteca Nacional</strong><br>
+<a href="https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706">https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706</a></p>
 
-<p><strong>Abaporu (2010)</strong><br>
-<a href="https://id.alexandremury.art/artworks/abaporu-2010/">https://id.alexandremury.art/artworks/abaporu-2010/</a></p>
+<p><strong>Lattes</strong><br>
+<a href="http://lattes.cnpq.br/7735731830748241">http://lattes.cnpq.br/7735731830748241</a></p>
+
+<p><strong>Itaú Cultural</strong><br>
+<a href="https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury">https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury</a></p>
 
 <hr>
 
-<h2 id="future-distribution">17 Future machine-readable distribution</h2>
+<h2 id="machine-readable-distribution">18 Machine-readable distribution policy</h2>
 
-<p>Future machine-readable files may be generated from this matrix document after terminology and URI structure are stable.</p>
+<p>Each canonical record may include a human-readable <code>index.html</code> and a corresponding <code>metadata.jsonld</code>.</p>
+
+<p>Aggregate files are deferred until the individual records and the terminology authority are stable.</p>
 
 <p><strong>Deferred files</strong></p>
 
@@ -545,15 +713,15 @@ To make concepts, artworks, and semantic relations discoverable by humans, catal
     <li>— <code>terminology.jsonld</code></li>
     <li>— <code>concepts.ttl</code></li>
     <li>— artwork-level RDF/Turtle files</li>
-    <li>— CIDOC CRM serializations</li>
+    <li>— CIDOC CRM XML serializations</li>
 </ul>
 
 <p><strong>Reason for deferral</strong><br>
-At this stage, centralizing the information in one matrix HTML document reduces the risk of inconsistencies across multiple files and supports human verification before formal distribution.</p>
+At this stage, centralizing the core decisions in one matrix HTML document reduces the risk of inconsistencies across multiple files and supports human verification before formal distribution.</p>
 
 <hr>
 
-<h2 id="license">18 License</h2>
+<h2 id="license">19 License</h2>
 
 <p>CC0 — Public Domain</p>
 
