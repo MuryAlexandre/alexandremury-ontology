@@ -90,8 +90,7 @@
           "@language": "pt-BR"
         }
       ],
-      "description": "The Self-Implicative Method designates an artistic-epistemological practice through which the artist deliberately intervenes in the documentary, semantic, and computational conditions through which the artwork continues to exist, circulate, be recovered, and produce thought.",
-      "skos:definition": {
+"description": "The Self-Implicative Method designates the artistic-epistemological practice through which the artist critically intervenes in the contemporary regimes of existence of their own work, recognizing that documentation, cataloguing, circulation, ontologies, metadata, and algorithmic systems no longer merely describe the artwork, but actively participate in its historicity, recoverability, and public intelligibility. This critical reinscription does not seek to control meaning; it constitutes a continuation of artistic practice and a form of thought production."      "skos:definition": {
         "@value": "The Self-Implicative Method designates an artistic-epistemological practice situated within the post-conceptual condition, through which the artist deliberately intervenes in the regimes of existence of their own work. It does not seek to control the meaning of the artwork, but to intervene critically in the documentary, semantic, and computational conditions through which it continues to exist, circulate, be recovered, and produce thought.",
         "@language": "en"
       },
