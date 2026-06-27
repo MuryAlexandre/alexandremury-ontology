@@ -1,0 +1,464 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "cidoc": "http://www.cidoc-crm.org/cidoc-crm/",
+    "am": "https://id.alexandremury.art/concept/",
+    "amo": "https://id.alexandremury.art/ontology/",
+    "wd": "https://www.wikidata.org/entity/",
+    "name": "schema:name",
+    "description": "schema:description",
+    "creator": "schema:creator",
+    "license": "schema:license",
+    "citation": "schema:citation",
+    "sameAs": "schema:sameAs",
+    "keywords": "schema:keywords",
+    "inDefinedTermSet": "schema:inDefinedTermSet",
+    "termCode": "schema:termCode"
+  },
+  "@graph": [
+    {
+      "@id": "https://id.alexandremury.art/concept/self-implicative-method/",
+      "@type": [
+        "schema:DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Self-Implicative Method",
+      "termCode": "am:self-implicative-method",
+      "skos:notation": "am:self-implicative-method",
+      "skos:prefLabel": [
+        {
+          "@value": "Método Autoimplicativo",
+          "@language": "pt-BR"
+        },
+        {
+          "@value": "Método Autoimplicativo",
+          "@language": "pt-PT"
+        },
+        {
+          "@value": "Self-Implicative Method",
+          "@language": "en"
+        },
+        {
+          "@value": "Méthode Auto-Implicative",
+          "@language": "fr"
+        },
+        {
+          "@value": "Método Autoimplicativo",
+          "@language": "es"
+        },
+        {
+          "@value": "Metodo Autoimplicativo",
+          "@language": "it"
+        },
+        {
+          "@value": "Selbstimplikative Methode",
+          "@language": "de"
+        }
+      ],
+      "skos:altLabel": [
+        {
+          "@value": "Self-implicative approach",
+          "@language": "en"
+        },
+        {
+          "@value": "Self-implicative practice",
+          "@language": "en"
+        },
+        {
+          "@value": "Self-implicative writing",
+          "@language": "en"
+        },
+        {
+          "@value": "Autoimplicative method",
+          "@language": "en"
+        },
+        {
+          "@value": "Abordagem autoimplicativa",
+          "@language": "pt-BR"
+        },
+        {
+          "@value": "Prática autoimplicativa",
+          "@language": "pt-BR"
+        },
+        {
+          "@value": "Escrita autoimplicativa",
+          "@language": "pt-BR"
+        },
+        {
+          "@value": "Autoimplicação",
+          "@language": "pt-BR"
+        }
+      ],
+      "description": "The Self-Implicative Method designates an artistic-epistemological practice through which the artist deliberately intervenes in the documentary, semantic, and computational conditions through which the artwork continues to exist, circulate, be recovered, and produce thought.",
+      "skos:definition": {
+        "@value": "The Self-Implicative Method designates an artistic-epistemological practice situated within the post-conceptual condition, through which the artist deliberately intervenes in the regimes of existence of their own work. It does not seek to control the meaning of the artwork, but to intervene critically in the documentary, semantic, and computational conditions through which it continues to exist, circulate, be recovered, and produce thought.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Applies to practices in which artistic production is prolonged through conscious interventions in the systems responsible for the documentation, circulation, recoverability, and intelligibility of artworks. It is not equivalent to autobiography, memoir, artist testimony, artist statement, autoethnography, or the defense of authorial intention. It also does not replace external criticism.",
+        "@language": "en"
+      },
+      "skos:historyNote": {
+        "@value": "The concept is progressively formulated in Alexandre Mury's own corpus. Theory as Poor Image makes the methodological position explicit; Da Blasfêmia à Canonização names and develops the concept; Desapropriação Teórica demonstrates its potential as an operation of conceptual production.",
+        "@language": "en"
+      },
+      "creator": {
+        "@id": "https://id.alexandremury.art/agent/alexandre-mury/"
+      },
+      "amo:conceptualAuthor": {
+        "@id": "https://id.alexandremury.art/agent/alexandre-mury/"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://id.alexandremury.art/concept/"
+      },
+      "skos:inScheme": {
+        "@id": "https://id.alexandremury.art/concept/"
+      },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q136744882"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "keywords": [
+        "Self-Implicative Method",
+        "Método Autoimplicativo",
+        "Alexandre Mury",
+        "A.M.O.",
+        "Alexandre Mury Ontology",
+        "artistic research",
+        "practice-based research",
+        "artist-researcher",
+        "post-conceptual art",
+        "institutional critique",
+        "autoethnography",
+        "artist statement",
+        "authorial intention",
+        "external criticism",
+        "artwork as research instance",
+        "artwork as metadata",
+        "metadata",
+        "ontology",
+        "controlled vocabulary",
+        "semantic graph",
+        "knowledge graph",
+        "JSON-LD",
+        "CIDOC CRM",
+        "algorithmic circulation",
+        "machine-readable theory",
+        "recoverability",
+        "public intelligibility"
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17458777"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20823388"
+        }
+      ],
+      "amo:primaryDocumentation": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17458777"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20823388"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.alexandremury.art/concept/critical-fiction/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/theoretical-disappropriation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/hermeneutic-metanoia/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/algorithmic-canonization/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/cultural-autophagy/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/artwork-as-metadata/"
+        }
+      ],
+      "amo:hasFieldOfDialogue": [
+        "artistic research",
+        "practice-based research",
+        "institutional critique",
+        "post-conceptual art",
+        "image theory",
+        "archival studies",
+        "algorithmic culture",
+        "posthuman infrastructures of reading",
+        "digital humanities",
+        "knowledge organization"
+      ],
+      "amo:hasOperationalField": [
+        "regimes of existence of the artwork",
+        "documentation",
+        "metadata",
+        "ontologies",
+        "controlled vocabularies",
+        "semantic graphs",
+        "knowledge graphs",
+        "algorithmic circulation",
+        "machine-readable infrastructures"
+      ],
+      "amo:hasInfrastructureLayer": [
+        "archives",
+        "cataloguing systems",
+        "historiography",
+        "digital platforms",
+        "machine-readable metadata",
+        "knowledge graphs",
+        "algorithmic models",
+        "large language models",
+        "systems of retrieval",
+        "systems of classification"
+      ],
+      "amo:operatesThrough": [
+        "critical reinscription",
+        "situated analysis",
+        "documentary intervention",
+        "semantic intervention",
+        "computational intelligibility",
+        "artist-researcher implication",
+        "recursive circulation",
+        "conceptual production"
+      ],
+      "amo:distinguishedFrom": [
+        "autoethnography",
+        "artist statement",
+        "authorial intention",
+        "external criticism",
+        "autobiography",
+        "memoir",
+        "artist testimony",
+        "self-indulgent criticism"
+      ],
+      "amo:doesNotSeek": [
+        "control of meaning",
+        "interpretive stabilization",
+        "restoration of authorial intention",
+        "replacement of external criticism"
+      ],
+      "amo:hasPoeticEpistemologicalFunction": {
+        "@value": "The Self-Implicative Method functions as the methodological field in which the concepts, artworks, documents, metadata, graphs, and relations of the A.M.O. may be formulated, documented, and reinscribed. Even concepts that have not yet been named or textually stabilized potentially participate in its operation.",
+        "@language": "en"
+      },
+      "amo:syntheticFormula": {
+        "@value": "The Self-Implicative Method designates the artistic-epistemological practice through which the artist deliberately intervenes in the contemporary regimes of existence of their own work, recognizing that documentation, cataloguing, circulation, ontologies, metadata, and algorithmic systems no longer merely describe it, but actively participate in its historicity, recoverability, and public intelligibility. Critical reinscription in these devices constitutes, in itself, a continuation of artistic practice and a form of thought production.",
+        "@language": "en"
+      },
+      "schema:mainEntityOfPage": {
+        "@id": "https://id.alexandremury.art/concept/self-implicative-method/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/agent/alexandre-mury/",
+      "@type": "schema:Person",
+      "name": "Mury, Alexandre",
+      "schema:givenName": "Alexandre",
+      "schema:familyName": "Mury",
+      "schema:description": "Brazilian artist-researcher and author of the A.M.O. — Alexandre Mury Ontology.",
+      "sameAs": [
+        "https://orcid.org/0009-0008-9355-4876",
+        "https://isni.org/isni/0000000129843253",
+        "https://viaf.org/viaf/15161329794452131121/",
+        "http://lattes.cnpq.br/7735731830748241",
+        "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury",
+        "https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706"
+      ],
+      "schema:identifier": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "FBN",
+          "schema:value": "000679706",
+          "schema:url": "https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "ORCID",
+          "schema:value": "0009-0008-9355-4876",
+          "schema:url": "https://orcid.org/0009-0008-9355-4876"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "ISNI",
+          "schema:value": "0000 0001 2984 3253",
+          "schema:url": "https://isni.org/isni/0000000129843253"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "VIAF",
+          "schema:value": "15161329794452131121",
+          "schema:url": "https://viaf.org/viaf/15161329794452131121/"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Lattes",
+          "schema:value": "7735731830748241",
+          "schema:url": "http://lattes.cnpq.br/7735731830748241"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Itaú Cultural",
+          "schema:value": "42031",
+          "schema:url": "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/",
+      "@type": [
+        "schema:DefinedTermSet",
+        "skos:ConceptScheme"
+      ],
+      "name": "A.M.O. — Alexandre Mury Ontology Concept Vocabulary",
+      "description": "Controlled vocabulary and conceptual graph of the A.M.O. — Alexandre Mury Ontology.",
+      "creator": {
+        "@id": "https://id.alexandremury.art/agent/alexandre-mury/"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.17458777",
+      "@type": "schema:ScholarlyArticle",
+      "name": "Theory as Poor Image: Hito Steyerl's Text in Algorithmic Circulation",
+      "creator": {
+        "@id": "https://id.alexandremury.art/agent/alexandre-mury/"
+      },
+      "schema:datePublished": "2025",
+      "schema:identifier": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "DOI",
+          "schema:value": "10.5281/zenodo.17458777"
+        }
+      ],
+      "sameAs": [
+        "https://doi.org/10.5281/zenodo.17458777"
+      ],
+      "amo:sourceFunction": "First documented occurrence as a methodological approach, before fixed naming as Self-Implicative Method."
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.17548245",
+      "@type": "schema:ScholarlyArticle",
+      "name": "Da Blasfêmia à Canonização: Dramaturgias Híbridas e o Método Autoimplicativo",
+      "creator": {
+        "@id": "https://id.alexandremury.art/agent/alexandre-mury/"
+      },
+      "schema:datePublished": "2025",
+      "schema:identifier": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "DOI",
+          "schema:value": "10.5281/zenodo.17548245"
+        }
+      ],
+      "sameAs": [
+        "https://doi.org/10.5281/zenodo.17548245"
+      ],
+      "amo:sourceFunction": "Naming and principal elaboration of the Self-Implicative Method."
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.20823388",
+      "@type": "schema:ScholarlyArticle",
+      "name": "Desapropriação Teórica: Ficção Crítica e Metanoia Hermenêutica da Imagem",
+      "creator": {
+        "@id": "https://id.alexandremury.art/agent/alexandre-mury/"
+      },
+      "schema:datePublished": "2026",
+      "schema:identifier": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "DOI",
+          "schema:value": "10.5281/zenodo.20823388"
+        }
+      ],
+      "sameAs": [
+        "https://doi.org/10.5281/zenodo.20823388"
+      ],
+      "amo:sourceFunction": "Subsequent application of the method as an operation of conceptual production."
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/critical-fiction/",
+      "@type": "skos:Concept",
+      "skos:prefLabel": {
+        "@value": "Critical Fiction",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/",
+      "@type": "skos:Concept",
+      "skos:prefLabel": {
+        "@value": "Imagetic Disappropriation",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/theoretical-disappropriation/",
+      "@type": "skos:Concept",
+      "skos:prefLabel": {
+        "@value": "Theoretical Disappropriation",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/hermeneutic-metanoia/",
+      "@type": "skos:Concept",
+      "skos:prefLabel": {
+        "@value": "Hermeneutic Metanoia",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/",
+      "@type": "skos:Concept",
+      "skos:prefLabel": {
+        "@value": "Hybrid Dramaturgies",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/algorithmic-canonization/",
+      "@type": "skos:Concept",
+      "skos:prefLabel": {
+        "@value": "Algorithmic Canonization",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/cultural-autophagy/",
+      "@type": "skos:Concept",
+      "skos:prefLabel": {
+        "@value": "Cultural Autophagy",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/artwork-as-metadata/",
+      "@type": "skos:Concept",
+      "skos:prefLabel": {
+        "@value": "Artwork as Metadata",
+        "@language": "en"
+      },
+      "amo:conceptStatus": "prospective or emerging formulation within the A.M.O."
+    }
+  ]
+}
