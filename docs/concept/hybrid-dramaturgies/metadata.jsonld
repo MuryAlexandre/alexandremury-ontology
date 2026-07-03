@@ -1,0 +1,468 @@
+{
+  "@context": {
+    "am": "https://id.alexandremury.art/",
+    "amo": "https://id.alexandremury.art/ontology/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+    "schema": "https://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "am:concept/hybrid-dramaturgies",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm",
+        "crm:E28_Conceptual_Object"
+      ],
+      "schema:url": "https://id.alexandremury.art/concept/hybrid-dramaturgies/",
+      "schema:name": "Hybrid Dramaturgies",
+      "schema:alternateName": [
+        "Dramaturgias Híbridas",
+        "Hybrid dramaturgy",
+        "Dramaturgia híbrida",
+        "Dramaturgias Híbridas (Mury)",
+        "Hybrid Dramaturgies (Mury)"
+      ],
+      "schema:description": "Authorial artistic-epistemic concept formulated by Alexandre Mury within the A.M.O. ontology. Hybrid Dramaturgies designates the organization of heterogeneous layers of presence, mediation, materiality, recognition, temporality, inscription, and circulation as an unstable, polysemic, and polyphonic structure of meaning.",
+      "schema:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "schema:author": {
+        "@id": "am:person/alexandre-mury"
+      },
+      "schema:creator": {
+        "@id": "am:person/alexandre-mury"
+      },
+      "schema:mainEntityOfPage": {
+        "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/"
+      },
+      "schema:isPartOf": {
+        "@id": "am:ontology"
+      },
+      "schema:citation": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20823388"
+        }
+      ],
+      "schema:identifier": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "A.M.O. prefix",
+          "schema:value": "am:hybrid-dramaturgies"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "A.M.O. local alias",
+          "schema:value": "am:dramaturgias-hibridas"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Wikidata",
+          "schema:value": "Q136745013"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "DOI",
+          "schema:value": "10.5281/zenodo.17548245"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "DOI",
+          "schema:value": "10.5281/zenodo.20823388"
+        }
+      ],
+      "schema:sameAs": [
+        "https://www.wikidata.org/wiki/Q136745013"
+      ],
+      "skos:exactMatch": {
+        "@id": "http://www.wikidata.org/entity/Q136745013"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "pt-BR",
+          "@value": "Dramaturgias Híbridas"
+        },
+        {
+          "@language": "pt-PT",
+          "@value": "Dramaturgias Híbridas"
+        },
+        {
+          "@language": "en",
+          "@value": "Hybrid Dramaturgies"
+        },
+        {
+          "@language": "es",
+          "@value": "Dramaturgias Híbridas"
+        },
+        {
+          "@language": "fr",
+          "@value": "Dramaturgies Hybrides"
+        },
+        {
+          "@language": "it",
+          "@value": "Drammaturgie Ibride"
+        }
+      ],
+      "skos:altLabel": [
+        {
+          "@language": "en",
+          "@value": "Hybrid dramaturgy"
+        },
+        {
+          "@language": "en",
+          "@value": "Epistemic-dramaturgical structure"
+        },
+        {
+          "@language": "en",
+          "@value": "Polysemic and polyphonic dramaturgy"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Dramaturgia híbrida"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Estrutura dramatúrgica híbrida"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Dramaturgia polissêmica e polifônica"
+        }
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Hybrid Dramaturgies designates a mode of artistic-epistemic practice in which heterogeneous layers of presence, mediation, materiality, recognition, temporality, inscription, and circulation are organized as an unstable, polysemic, and polyphonic structure of meaning. The concept applies to artworks, events, images, actions, devices, or systems in which signs, gestures, archives, images, repertoires, or structures of symbolic authority are reactivated within another regime of relation. What defines the operation is not the specific nature of the sign mobilized, but its density of recognition: its capacity to arrive already charged with memory, expectation, authority, circulation, or symbolic value."
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "The concept has a transmedial, trans-support, and transcontextual scope. It applies to practices in which the work organizes a dramaturgy of layers: a tension among heterogeneous elements that operate together without merging into a stable unity. These layers may be bodily, technical, material, symbolic, discursive, infrastructural, exhibitionary, curatorial, documentary, social, or algorithmic. The concept does not apply to any multimedia work merely because it combines media, nor to any open, ambiguous, or polysemic work in a generic sense. The minimum condition is that the relation among layers produces a dramaturgical structure of meaning."
+      },
+      "skos:historyNote": {
+        "@language": "en",
+        "@value": "The concept is situated at the intersection of artistic research, practice as research, epistemology of the image, semiotics, hermeneutics, performance studies, critical reenactment, postdramatic dramaturgy, the expanded field of the image, techno-aesthetics, and debates on circulation, infrastructure, and algorithmic regimes of visibility. Its specificity lies in displacing dramaturgy beyond theatre and dramatic text toward situations in which images, bodies, devices, archives, objects, discourses, infrastructures, and circuits of reception become simultaneous agents in the production of meaning."
+      },
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Synthetic formulation: Hybrid Dramaturgies are artistic-epistemic structures in which heterogeneous layers of presence, mediation, recognition, materiality, inscription, and circulation enter into friction, reactivating signs or regimes of memory under new conditions of reading and producing polysemy, polyphony, symbolic displacement, and visual thought."
+        },
+        {
+          "@language": "en",
+          "@value": "Hybridity, in this context, is not defined by the addition of media, supports, or languages. It designates the friction among layers that coexist without merging into a stable synthesis."
+        },
+        {
+          "@language": "en",
+          "@value": "Polysemy does not correspond to an arbitrary multiplicity of interpretations, but to the organized production of simultaneous, related meanings that cannot be reduced to a single reading. Polyphony indicates that the work does not speak from a single voice: different regimes of enunciation — inherited sign, body, object, technique, archive, tradition, institution, critique, circulation, or documentation — coexist in tension. Ambiguity may emerge from this field, but it does not exhaust the operation."
+        },
+        {
+          "@language": "en",
+          "@value": "Hybrid dramaturgies neither represent nor merely cite preexisting images. They critically reenact recognizable signs in order to reactivate their memory within another symbolic regime. The displaced sign becomes a field of friction between recognition and difference, reverence and irony, presence and mediation, cultural memory and contemporary circulation."
+        },
+        {
+          "@language": "en",
+          "@value": "Through the Self-Implicative Method, subsequent writing does not comment on the work from outside. It prolongs the dramaturgical operation, reinscribing it in critical language and expanding its public existence without reducing its polysemy, polyphony, or hermeneutic openness."
+        },
+        {
+          "@language": "en",
+          "@value": "For semantic-web use, Hybrid Dramaturgies should be modeled as a skos:Concept and crm:E28_Conceptual_Object. The concept should not be reduced to a medium-based category such as photography, performance, video, installation, archive, or digital art. Its defining feature is the articulation of multiple layers as a single epistemic-dramaturgical operation."
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "am:scheme/epistemology-of-the-image"
+      },
+      "skos:related": [
+        {
+          "@id": "am:concept/imagetic-disappropriation"
+        },
+        {
+          "@id": "am:concept/self-implicative-method"
+        },
+        {
+          "@id": "am:concept/cultural-autophagy"
+        },
+        {
+          "@id": "am:concept/algorithmic-canonization"
+        },
+        {
+          "@id": "am:concept/structural-ambiguity"
+        },
+        {
+          "@id": "am:concept/critical-fiction"
+        },
+        {
+          "@id": "am:concept/theoretical-disappropriation"
+        },
+        {
+          "@id": "am:concept/hermeneutic-metanoia"
+        }
+      ],
+      "amo:primaryDocumentation": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20823388"
+        }
+      ],
+      "amo:conceptualAuthor": {
+        "@id": "am:person/alexandre-mury"
+      },
+      "amo:hasConceptualSource": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20823388"
+        }
+      ],
+      "amo:operatesThrough": [
+        {
+          "@id": "am:concept/critical-reenactment"
+        },
+        {
+          "@id": "am:concept/polysemy"
+        },
+        {
+          "@id": "am:concept/polyphony"
+        },
+        {
+          "@id": "am:concept/choreography-of-cooptation"
+        }
+      ],
+      "amo:hasInterpretiveRegime": [
+        {
+          "@id": "am:relation/reenactment"
+        },
+        {
+          "@id": "am:relation/self-representation"
+        },
+        {
+          "@id": "am:relation/visual-citation"
+        }
+      ],
+      "amo:distinguishedFrom": [
+        "postdramatic theatre dramaturgy",
+        "expanded field of the image",
+        "multimedia",
+        "intertextuality",
+        "polysemy as generic multiplicity",
+        "polyphony as isolated discursive category",
+        "ambiguity"
+      ],
+      "amo:hasOperationalLayer": [
+        "presence",
+        "mediation",
+        "materiality",
+        "recognition",
+        "temporality",
+        "inscription",
+        "circulation",
+        "metadata",
+        "documentation",
+        "reception",
+        "algorithmic visibility"
+      ],
+      "amo:hasFieldOfDialogue": [
+        "artistic research",
+        "practice as research",
+        "epistemology of the image",
+        "semiotics",
+        "hermeneutics",
+        "performance studies",
+        "critical reenactment",
+        "postdramatic dramaturgy",
+        "expanded field of the image",
+        "techno-aesthetics",
+        "infrastructure studies",
+        "algorithmic regimes of visibility",
+        "semantic web",
+        "knowledge graphs"
+      ],
+      "amo:hasDialogueSource": [
+        "Aby Warburg — survival, anachronism, visual memory, and afterlife of images",
+        "Georges Didi-Huberman — survival of forms, montage, anachronism, and temporal complexity of images",
+        "Roland Barthes — image as a polysemic field",
+        "Umberto Eco — openness of the work without reduction to interpretive relativism",
+        "Paul Ricoeur — hermeneutics and surplus of meaning",
+        "Mikhail Bakhtin — polyphony, dialogism, and coexistence of social and discursive voices",
+        "Hans-Thies Lehmann — postdramatic theatre and dehierarchization of scenic signs",
+        "Rebecca Schneider — reenactment, performance remains, repetition, and unsettled persistence",
+        "Vilém Flusser — apparatuses, technical images, and mediations that reconfigure perception and gesture",
+        "Bernard Stiegler — technics, memory, mediation, and exteriorization of memory",
+        "Susan Leigh Star — infrastructure studies and normally invisible systems of mediation",
+        "Hito Steyerl — circulation, technical images, and regimes of visibility",
+        "Trevor Paglen — infrastructures of visibility, machine vision, and technical mediation",
+        "Rosalind Krauss — expanded field and destabilization of disciplinary categories"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "am:ontology"
+      },
+      "schema:keywords": [
+        "Hybrid Dramaturgies",
+        "Dramaturgias Híbridas",
+        "Alexandre Mury",
+        "A.M.O.",
+        "Alexandre Mury Ontology",
+        "artistic-epistemic practice",
+        "epistemology of the image",
+        "polysemy",
+        "polyphony",
+        "ambiguity",
+        "critical reenactment",
+        "postdramatic dramaturgy",
+        "expanded field of the image",
+        "imagetic disappropriation",
+        "self-implicative method",
+        "cultural autophagy",
+        "algorithmic canonization",
+        "semantic circulation",
+        "metadata",
+        "knowledge graphs",
+        "CIDOC CRM",
+        "SKOS",
+        "JSON-LD"
+      ]
+    },
+    {
+      "@id": "am:person/alexandre-mury",
+      "@type": [
+        "schema:Person",
+        "crm:E39_Actor"
+      ],
+      "schema:name": "Alexandre Mury",
+      "schema:url": "https://alexandremury.art/",
+      "schema:sameAs": [
+        "https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706",
+        "https://orcid.org/0009-0008-9355-4876",
+        "https://isni.org/isni/0000000129843253",
+        "https://viaf.org/viaf/15161329794452131121/",
+        "http://lattes.cnpq.br/7735731830748241",
+        "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury"
+      ],
+      "schema:identifier": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "FBN",
+          "schema:value": "000679706"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "ORCID",
+          "schema:value": "0009-0008-9355-4876"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "ISNI",
+          "schema:value": "0000 0001 2984 3253"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "VIAF",
+          "schema:value": "15161329794452131121"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Lattes",
+          "schema:value": "7735731830748241"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Itaú Cultural",
+          "schema:value": "42031"
+        }
+      ]
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.17548245",
+      "@type": "schema:ScholarlyArticle",
+      "schema:name": "Da blasfêmia à canonização: dramaturgias híbridas e o método autoimplicativo",
+      "schema:alternateName": "From Blasphemy to Canonization: Hybrid Dramaturgies and the Self-Implicative Method",
+      "schema:author": {
+        "@id": "am:person/alexandre-mury"
+      },
+      "schema:datePublished": "2025",
+      "schema:url": "https://doi.org/10.5281/zenodo.17548245",
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:propertyID": "DOI",
+        "schema:value": "10.5281/zenodo.17548245"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.20823388",
+      "@type": "schema:ScholarlyArticle",
+      "schema:name": "Desapropriação teórica: ficção crítica e metanoia hermenêutica da imagem",
+      "schema:alternateName": "Theoretical Disappropriation: Critical Fiction and the Hermeneutic Metanoia of the Image",
+      "schema:author": {
+        "@id": "am:person/alexandre-mury"
+      },
+      "schema:datePublished": "2026",
+      "schema:url": "https://doi.org/10.5281/zenodo.20823388",
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:propertyID": "DOI",
+        "schema:value": "10.5281/zenodo.20823388"
+      }
+    },
+    {
+      "@id": "am:ontology",
+      "@type": [
+        "schema:CreativeWork",
+        "skos:ConceptScheme"
+      ],
+      "schema:name": "A.M.O. — Alexandre Mury Ontology",
+      "schema:alternateName": "Alexandre Mury Ontology",
+      "schema:url": "https://id.alexandremury.art/",
+      "schema:creator": {
+        "@id": "am:person/alexandre-mury"
+      },
+      "schema:license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/",
+      "@type": "schema:WebPage",
+      "schema:url": "https://id.alexandremury.art/concept/hybrid-dramaturgies/",
+      "schema:name": "Hybrid Dramaturgies — A.M.O. Concept Record",
+      "schema:description": "Canonical HTML concept record for Hybrid Dramaturgies in the Alexandre Mury Ontology (A.M.O.).",
+      "schema:inLanguage": "en",
+      "schema:author": {
+        "@id": "am:person/alexandre-mury"
+      },
+      "schema:about": {
+        "@id": "am:concept/hybrid-dramaturgies"
+      },
+      "schema:mainEntity": {
+        "@id": "am:concept/hybrid-dramaturgies"
+      },
+      "schema:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "schema:sameAs": [
+        "https://www.wikidata.org/wiki/Q136745013"
+      ],
+      "schema:citation": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20823388"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/metadata.jsonld",
+      "@type": "schema:WebPage",
+      "schema:url": "https://id.alexandremury.art/concept/hybrid-dramaturgies/metadata.jsonld",
+      "schema:name": "Hybrid Dramaturgies — Structured Metadata",
+      "schema:description": "SKOS, CIDOC CRM, and Schema.org metadata for the concept Hybrid Dramaturgies / Dramaturgias Híbridas in the Alexandre Mury Ontology (A.M.O.).",
+      "schema:inLanguage": "en",
+      "schema:about": {
+        "@id": "am:concept/hybrid-dramaturgies"
+      },
+      "schema:mainEntity": {
+        "@id": "am:concept/hybrid-dramaturgies"
+      },
+      "schema:license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ]
+}
