@@ -14,7 +14,8 @@
     "keywords": "schema:keywords",
     "inDefinedTermSet": "schema:inDefinedTermSet",
     "termCode": "schema:termCode",
-    "crm": "http://www.cidoc-crm.org/cidoc-crm/"
+    "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+    "disambiguatingDescription": "schema:disambiguatingDescription"
   },
   "@graph": [
     {
@@ -97,7 +98,7 @@
         "@language": "en"
       },
       "skos:scopeNote": {
-        "@value": "Applies to practices in which artistic production is prolonged through conscious interventions in the systems responsible for the documentation, circulation, recoverability, and intelligibility of artworks. It is not equivalent to autobiography, memoir, artist testimony, artist statement, autoethnography, or the defense of authorial intention. It also does not replace external criticism.",
+        "@value": "Applies to practices in which artistic production is prolonged through conscious interventions in the systems responsible for the documentation, circulation, recoverability, and intelligibility of artworks. The method is portable across artistic practices, but not transferable unchanged to other disciplinary registers: when similar operations are enacted from sociology, psychoanalysis, literary reception theory, or another non-artistic field, they become instances of those fields' own procedures. It is not equivalent to autobiography, memoir, artist testimony, artist statement, autoethnography, institutional analysis, literary self-implication, or the defense of authorial intention. It also does not replace external criticism.",
         "@language": "en"
       },
       "skos:historyNote": {
@@ -147,7 +148,10 @@
         "algorithmic circulation",
         "machine-readable theory",
         "recoverability",
-        "public intelligibility"
+        "public intelligibility",
+        "disambiguation",
+        "disciplinary distinction",
+        "productive artistic procedure"
       ],
       "citation": [
         {
@@ -250,7 +254,12 @@
         "autobiography",
         "memoir",
         "artist testimony",
-        "self-indulgent criticism"
+        "self-indulgent criticism",
+        "institutional analysis",
+        "self-implication in literary reception theory",
+        "reader-response theory",
+        "non-artistic disciplinary uses of implication",
+        "psychoanalytic implication"
       ],
       "amo:doesNotSeek": [
         "control of meaning",
@@ -268,7 +277,30 @@
       },
       "schema:mainEntityOfPage": {
         "@id": "https://id.alexandremury.art/concept/self-implicative-method/"
-      }
+      },
+      "disambiguatingDescription": "The Self-Implicative Method is an artistic-epistemological procedure, not a general synonym for implication, self-implication, autoethnography, institutional analysis, psychoanalysis, or literary reception theory. It is defined by the artistic position from which the operation is enacted and by its intervention in the regimes of existence of the artwork.",
+      "skos:editorialNote": {
+        "@value": "The term should not be merged with adjacent academic uses of implication or self-implication. In René Lourau's L'Analyse institutionnelle (1970), implication belongs to institutional analysis and concerns the position of the researcher or analyst within an institutional field. In Kuiken, Miall, and Sikora's 'Forms of Self-Implication in Literary Reading' (2004), self-implication names a receptive phenomenon in literary reading. By contrast, the Self-Implicative Method names a productive artistic procedure deliberately assumed by the artist as part of the continued production, documentation, reinscription, and semantic existence of the artwork.",
+        "@language": "en"
+      },
+      "amo:disciplinaryScope": [
+        "artistic-epistemological practice",
+        "post-conceptual art",
+        "artist-researcher practice",
+        "semantic and documentary intervention in the regimes of existence of the artwork"
+      ],
+      "amo:portableAcross": [
+        "artistic practices",
+        "artist-researcher practices",
+        "post-conceptual artistic procedures"
+      ],
+      "amo:notPortableAcross": [
+        "sociology",
+        "psychoanalysis",
+        "literary reception theory",
+        "reader-response research",
+        "non-artistic disciplinary registers"
+      ]
     },
     {
       "@id": "https://id.alexandremury.art/person/alexandre-mury/",
