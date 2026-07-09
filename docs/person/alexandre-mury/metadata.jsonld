@@ -93,91 +93,17 @@
         "@id": "https://id.alexandremury.art/ontology/"
       },
       "amo:artistSpecificConcept": [
-        {
-          "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
-        },
-        {
-          "@id": "https://id.alexandremury.art/concept/cultural-autophagy/"
-        },
-        {
-          "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/"
-        },
-        {
-          "@id": "https://id.alexandremury.art/concept/self-implicative-method/"
-        },
-        {
-          "@type": "skos:Concept",
-          "skos:prefLabel": {
-            "@language": "en",
-            "@value": "Historical Friction"
-          }
-        },
-        {
-          "@type": "skos:Concept",
-          "skos:prefLabel": {
-            "@language": "en",
-            "@value": "Iconographic Friction"
-          }
-        },
-        {
-          "@type": "skos:Concept",
-          "skos:prefLabel": {
-            "@language": "en",
-            "@value": "Algorithmic Canonization"
-          }
-        },
-        {
-          "@type": "skos:Concept",
-          "skos:prefLabel": [
-            {
-              "@language": "en",
-              "@value": "The Artwork as Metadata"
-            },
-            {
-              "@language": "pt-BR",
-              "@value": "A Obra como Metadado"
-            }
-          ]
-        },
-        {
-          "@type": "skos:Concept",
-          "skos:prefLabel": [
-            {
-              "@language": "en",
-              "@value": "Theoretical Disappropriation"
-            },
-            {
-              "@language": "pt-BR",
-              "@value": "Desapropriação Teórica"
-            }
-          ]
-        },
-        {
-          "@type": "skos:Concept",
-          "skos:prefLabel": [
-            {
-              "@language": "en",
-              "@value": "Critical Fiction"
-            },
-            {
-              "@language": "pt-BR",
-              "@value": "Ficção Crítica"
-            }
-          ]
-        },
-        {
-          "@type": "skos:Concept",
-          "skos:prefLabel": [
-            {
-              "@language": "en",
-              "@value": "Choreography of Cooptation"
-            },
-            {
-              "@language": "pt-BR",
-              "@value": "Coreografia da Cooptação"
-            }
-          ]
-        }
+        { "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/" },
+        { "@id": "https://id.alexandremury.art/concept/cultural-autophagy/" },
+        { "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/" },
+        { "@id": "https://id.alexandremury.art/concept/self-implicative-method/" },
+        { "@id": "https://id.alexandremury.art/concept/historical-friction/" },
+        { "@id": "https://id.alexandremury.art/concept/iconographic-friction/" },
+        { "@id": "https://id.alexandremury.art/concept/algorithmic-canonization/" },
+        { "@id": "https://id.alexandremury.art/concept/the-artwork-as-metadata/" },
+        { "@id": "https://id.alexandremury.art/concept/theoretical-disappropriation/" },
+        { "@id": "https://id.alexandremury.art/concept/critical-fiction/" },
+        { "@id": "https://id.alexandremury.art/concept/choreography-of-cooptation/" }
       ],
       "amo:fieldOfSemanticInterlocution": [
         "Brazilian contemporary art",
@@ -192,21 +118,11 @@
         "Semantic web / Linked Open Data"
       ],
       "amo:institutionalPresence": [
-        {
-          "@id": "https://id.alexandremury.art/person/alexandre-mury/#mam-rio"
-        },
-        {
-          "@id": "https://id.alexandremury.art/person/alexandre-mury/#mar"
-        },
-        {
-          "@id": "https://id.alexandremury.art/person/alexandre-mury/#mff"
-        },
-        {
-          "@id": "https://id.alexandremury.art/person/alexandre-mury/#joaquim-paiva-collection"
-        },
-        {
-          "@id": "https://id.alexandremury.art/person/alexandre-mury/#gilberto-chateaubriand-collection"
-        }
+        { "@id": "https://id.alexandremury.art/person/alexandre-mury/#mam-rio" },
+        { "@id": "https://id.alexandremury.art/person/alexandre-mury/#mar" },
+        { "@id": "https://id.alexandremury.art/person/alexandre-mury/#mff" },
+        { "@id": "https://id.alexandremury.art/person/alexandre-mury/#joaquim-paiva-collection" },
+        { "@id": "https://id.alexandremury.art/person/alexandre-mury/#gilberto-chateaubriand-collection" }
       ],
       "schema:identifier": [
         {
@@ -313,192 +229,170 @@
         "https://mastodon.social/@alexandremury",
         "https://www.facebook.com/profile.php?id=100041169047727"
       ],
-      "dct:modified": "2026-07-08"
+      "dct:modified": "2026-07-09"
     },
     {
       "@id": "https://id.alexandremury.art/person/alexandre-mury/#webpage",
-      "@type": [
-        "schema:ProfilePage",
-        "schema:WebPage"
-      ],
+      "@type": ["schema:ProfilePage", "schema:WebPage"],
       "schema:name": "Alexandre Mury — Authority Record",
       "schema:url": "https://id.alexandremury.art/person/alexandre-mury/",
       "schema:inLanguage": "en",
       "schema:description": "Canonical authority record for Alexandre Mury, Brazilian multidisciplinary artist and independent researcher whose practice investigates the image as cultural infrastructure, post-conceptual practices, expanded documentation, and semantic systems.",
-      "schema:about": {
-        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
-      },
-      "schema:mainEntity": {
-        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
-      },
-      "schema:author": {
-        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
-      },
-      "schema:isPartOf": {
-        "@id": "https://id.alexandremury.art/"
-      },
+      "schema:about": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" },
+      "schema:mainEntity": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" },
+      "schema:author": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" },
+      "schema:isPartOf": { "@id": "https://id.alexandremury.art/" },
       "schema:encodingFormat": "text/html",
       "schema:license": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "schema:dateModified": "2026-07-08",
-      "dct:modified": "2026-07-08"
+      "schema:dateModified": "2026-07-09",
+      "dct:modified": "2026-07-09"
     },
     {
       "@id": "https://id.alexandremury.art/person/alexandre-mury/metadata.jsonld",
-      "@type": [
-        "schema:DataDownload",
-        "schema:CreativeWork"
-      ],
+      "@type": ["schema:DataDownload", "schema:CreativeWork"],
       "schema:name": "Alexandre Mury — Authority Record Metadata",
       "schema:url": "https://id.alexandremury.art/person/alexandre-mury/metadata.jsonld",
       "schema:encodingFormat": "application/ld+json",
       "schema:inLanguage": "en",
-      "schema:about": {
-        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
-      },
-      "schema:author": {
-        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
-      },
+      "schema:about": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" },
+      "schema:author": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" },
       "schema:license": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "schema:dateModified": "2026-07-08",
-      "dct:modified": "2026-07-08"
+      "schema:dateModified": "2026-07-09",
+      "dct:modified": "2026-07-09"
     },
     {
       "@id": "https://id.alexandremury.art/",
       "@type": "schema:WebSite",
       "schema:name": "A.M.O. — Alexandre Mury Ontology",
       "schema:url": "https://id.alexandremury.art/",
-      "schema:creator": {
-        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
-      },
-      "schema:inLanguage": [
-        "en",
-        "pt-BR"
-      ]
+      "schema:creator": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" },
+      "schema:inLanguage": ["en", "pt-BR"]
     },
     {
       "@id": "https://id.alexandremury.art/ontology/",
-      "@type": [
-        "owl:Ontology",
-        "schema:CreativeWork"
-      ],
+      "@type": ["owl:Ontology", "schema:CreativeWork"],
       "schema:name": "A.M.O. — Alexandre Mury Ontology",
-      "schema:alternateName": [
-        "A.M.O.",
-        "AMO",
-        "Alexandre Mury Ontology",
-        "Ontologia Alexandre Mury"
-      ],
+      "schema:alternateName": ["A.M.O.", "AMO", "Alexandre Mury Ontology", "Ontologia Alexandre Mury"],
       "schema:url": "https://id.alexandremury.art/ontology/",
-      "schema:creator": {
-        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
-      }
+      "schema:creator": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" }
     },
     {
       "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/",
-      "@type": [
-        "skos:Concept",
-        "crm:E28_Conceptual_Object"
-      ],
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
       "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Imagetic Disappropriation"
-        },
-        {
-          "@language": "pt-BR",
-          "@value": "Desapropriação Imagética"
-        }
+        { "@language": "en", "@value": "Imagetic Disappropriation" },
+        { "@language": "pt-BR", "@value": "Desapropriação Imagética" }
       ],
-      "schema:creator": {
-        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
-      }
+      "schema:creator": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" },
+      "sameAs": "https://www.wikidata.org/wiki/Q136744908"
     },
     {
       "@id": "https://id.alexandremury.art/concept/cultural-autophagy/",
-      "@type": [
-        "skos:Concept",
-        "crm:E28_Conceptual_Object"
-      ],
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
       "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Cultural Autophagy"
-        },
-        {
-          "@language": "pt-BR",
-          "@value": "Autofagia Cultural"
-        }
+        { "@language": "en", "@value": "Cultural Autophagy" },
+        { "@language": "pt-BR", "@value": "Autofagia Cultural" }
       ],
-      "schema:creator": {
-        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
-      }
+      "schema:creator": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" }
     },
     {
       "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/",
-      "@type": [
-        "skos:Concept",
-        "crm:E28_Conceptual_Object"
-      ],
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
       "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Hybrid Dramaturgies"
-        },
-        {
-          "@language": "pt-BR",
-          "@value": "Dramaturgias Híbridas"
-        }
+        { "@language": "en", "@value": "Hybrid Dramaturgies" },
+        { "@language": "pt-BR", "@value": "Dramaturgias Híbridas" }
       ],
-      "schema:creator": {
-        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
-      }
+      "schema:creator": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" }
     },
     {
       "@id": "https://id.alexandremury.art/concept/self-implicative-method/",
-      "@type": [
-        "skos:Concept",
-        "crm:E28_Conceptual_Object"
-      ],
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
       "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Self-Implicative Method"
-        },
-        {
-          "@language": "pt-BR",
-          "@value": "Método Autoimplicativo"
-        }
+        { "@language": "en", "@value": "Self-Implicative Method" },
+        { "@language": "pt-BR", "@value": "Método Autoimplicativo" }
       ],
-      "schema:creator": {
-        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
-      }
+      "schema:creator": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/historical-friction/",
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "skos:prefLabel": [
+        { "@language": "en", "@value": "Historical Friction" },
+        { "@language": "pt-BR", "@value": "Fricção Histórica" }
+      ],
+      "schema:creator": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/iconographic-friction/",
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "skos:prefLabel": [
+        { "@language": "en", "@value": "Iconographic Friction" },
+        { "@language": "pt-BR", "@value": "Fricção Iconográfica" }
+      ],
+      "schema:creator": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/algorithmic-canonization/",
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "skos:prefLabel": [
+        { "@language": "en", "@value": "Algorithmic Canonization" },
+        { "@language": "pt-BR", "@value": "Canonização Algorítmica" }
+      ],
+      "schema:creator": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/the-artwork-as-metadata/",
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "skos:prefLabel": [
+        { "@language": "en", "@value": "The Artwork as Metadata" },
+        { "@language": "pt-BR", "@value": "A Obra como Metadado" }
+      ],
+      "schema:creator": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/theoretical-disappropriation/",
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "skos:prefLabel": [
+        { "@language": "en", "@value": "Theoretical Disappropriation" },
+        { "@language": "pt-BR", "@value": "Desapropriação Teórica" }
+      ],
+      "schema:creator": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/critical-fiction/",
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "skos:prefLabel": [
+        { "@language": "en", "@value": "Critical Fiction" },
+        { "@language": "pt-BR", "@value": "Ficção Crítica" }
+      ],
+      "schema:creator": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/choreography-of-cooptation/",
+      "@type": ["skos:Concept", "crm:E28_Conceptual_Object"],
+      "skos:prefLabel": [
+        { "@language": "en", "@value": "Choreography of Cooptation" },
+        { "@language": "pt-BR", "@value": "Coreografia da Cooptação" }
+      ],
+      "schema:creator": { "@id": "https://id.alexandremury.art/person/alexandre-mury/" }
     },
     {
       "@id": "https://id.alexandremury.art/person/alexandre-mury/#mam-rio",
       "@type": "schema:Organization",
       "schema:name": "Museu de Arte Moderna do Rio de Janeiro",
-      "schema:alternateName": [
-        "Rio de Janeiro Museum of Modern Art",
-        "MAM Rio"
-      ]
+      "schema:alternateName": ["Rio de Janeiro Museum of Modern Art", "MAM Rio"]
     },
     {
       "@id": "https://id.alexandremury.art/person/alexandre-mury/#mar",
       "@type": "schema:Organization",
       "schema:name": "Museu de Arte do Rio",
-      "schema:alternateName": [
-        "Rio Art Museum",
-        "MAR"
-      ]
+      "schema:alternateName": ["Rio Art Museum", "MAR"]
     },
     {
       "@id": "https://id.alexandremury.art/person/alexandre-mury/#mff",
       "@type": "schema:Organization",
       "schema:name": "Museu da Fotografia Fortaleza",
-      "schema:alternateName": [
-        "Fortaleza Museum of Photography",
-        "MFF"
-      ]
+      "schema:alternateName": ["Fortaleza Museum of Photography", "MFF"]
     },
     {
       "@id": "https://id.alexandremury.art/person/alexandre-mury/#joaquim-paiva-collection",
