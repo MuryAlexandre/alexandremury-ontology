@@ -1,0 +1,514 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "amo": "https://id.alexandremury.art/ontology/",
+    "dct": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://id.alexandremury.art/person/alexandre-mury/",
+      "@type": [
+        "schema:Person",
+        "foaf:Person",
+        "crm:E21_Person",
+        "crm:E39_Actor"
+      ],
+      "schema:name": "Alexandre Mury",
+      "foaf:name": "Alexandre Mury",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Alexandre Mury"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Alexandre Mury"
+        }
+      ],
+      "schema:birthDate": "1976",
+      "schema:birthPlace": {
+        "@type": "schema:Place",
+        "schema:name": "São Fidélis, Rio de Janeiro, Brazil",
+        "schema:address": {
+          "@type": "schema:PostalAddress",
+          "schema:addressLocality": "São Fidélis",
+          "schema:addressRegion": "Rio de Janeiro",
+          "schema:addressCountry": "BR"
+        }
+      },
+      "schema:nationality": {
+        "@type": "schema:Country",
+        "schema:name": "Brazil"
+      },
+      "schema:jobTitle": [
+        "Multidisciplinary artist",
+        "Independent researcher"
+      ],
+      "schema:hasOccupation": [
+        {
+          "@type": "schema:Occupation",
+          "schema:name": "Multidisciplinary artist"
+        },
+        {
+          "@type": "schema:Occupation",
+          "schema:name": "Independent researcher"
+        }
+      ],
+      "schema:url": "https://id.alexandremury.art/person/alexandre-mury/",
+      "schema:mainEntityOfPage": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/#webpage"
+      },
+      "schema:description": "Alexandre Mury is a Brazilian multidisciplinary artist and independent researcher whose practice investigates the image as cultural infrastructure: a dynamic relational system linking body, memory, archive, document, materiality, circulation, interpretation, and the organization of knowledge.",
+      "schema:disambiguatingDescription": "Brazilian multidisciplinary artist and independent researcher, born in 1976 in São Fidélis, Rio de Janeiro, associated with post-conceptual practices, the expanded field of the image, expanded documentation, semantic systems, and the Alexandre Mury Ontology (A.M.O.).",
+      "schema:knowsAbout": [
+        "Brazilian contemporary art",
+        "Post-conceptual practices",
+        "Expanded field of the image",
+        "Visual culture",
+        "Cultural memory",
+        "Theory of the image",
+        "Expanded documentation",
+        "Expanded archive",
+        "Knowledge organization",
+        "Semantic web",
+        "Linked Open Data",
+        "Imagetic Disappropriation",
+        "Cultural Autophagy",
+        "Hybrid Dramaturgies",
+        "Self-Implicative Method",
+        "Historical Friction",
+        "Iconographic Friction",
+        "Algorithmic Canonization",
+        "The Artwork as Metadata",
+        "Theoretical Disappropriation",
+        "Critical Fiction",
+        "Choreography of Cooptation"
+      ],
+      "amo:developedOntology": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "amo:artistSpecificConcept": [
+        {
+          "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/cultural-autophagy/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/self-implicative-method/"
+        },
+        {
+          "@type": "skos:Concept",
+          "skos:prefLabel": {
+            "@language": "en",
+            "@value": "Historical Friction"
+          }
+        },
+        {
+          "@type": "skos:Concept",
+          "skos:prefLabel": {
+            "@language": "en",
+            "@value": "Iconographic Friction"
+          }
+        },
+        {
+          "@type": "skos:Concept",
+          "skos:prefLabel": {
+            "@language": "en",
+            "@value": "Algorithmic Canonization"
+          }
+        },
+        {
+          "@type": "skos:Concept",
+          "skos:prefLabel": [
+            {
+              "@language": "en",
+              "@value": "The Artwork as Metadata"
+            },
+            {
+              "@language": "pt-BR",
+              "@value": "A Obra como Metadado"
+            }
+          ]
+        },
+        {
+          "@type": "skos:Concept",
+          "skos:prefLabel": [
+            {
+              "@language": "en",
+              "@value": "Theoretical Disappropriation"
+            },
+            {
+              "@language": "pt-BR",
+              "@value": "Desapropriação Teórica"
+            }
+          ]
+        },
+        {
+          "@type": "skos:Concept",
+          "skos:prefLabel": [
+            {
+              "@language": "en",
+              "@value": "Critical Fiction"
+            },
+            {
+              "@language": "pt-BR",
+              "@value": "Ficção Crítica"
+            }
+          ]
+        },
+        {
+          "@type": "skos:Concept",
+          "skos:prefLabel": [
+            {
+              "@language": "en",
+              "@value": "Choreography of Cooptation"
+            },
+            {
+              "@language": "pt-BR",
+              "@value": "Coreografia da Cooptação"
+            }
+          ]
+        }
+      ],
+      "amo:fieldOfSemanticInterlocution": [
+        "Brazilian contemporary art",
+        "Post-conceptual practices",
+        "Expanded field of the image",
+        "Visual culture",
+        "Cultural memory",
+        "Theory of the image",
+        "Expanded documentation",
+        "Expanded archive",
+        "Knowledge organization",
+        "Semantic web / Linked Open Data"
+      ],
+      "amo:institutionalPresence": [
+        {
+          "@id": "https://id.alexandremury.art/person/alexandre-mury/#mam-rio"
+        },
+        {
+          "@id": "https://id.alexandremury.art/person/alexandre-mury/#mar"
+        },
+        {
+          "@id": "https://id.alexandremury.art/person/alexandre-mury/#mff"
+        },
+        {
+          "@id": "https://id.alexandremury.art/person/alexandre-mury/#joaquim-paiva-collection"
+        },
+        {
+          "@id": "https://id.alexandremury.art/person/alexandre-mury/#gilberto-chateaubriand-collection"
+        }
+      ],
+      "schema:identifier": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Wikidata",
+          "schema:value": "Q105532718",
+          "schema:url": "https://www.wikidata.org/wiki/Q105532718"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Biblioteca Nacional / National Library Foundation of Brazil (FBN)",
+          "schema:value": "000679706",
+          "schema:url": "https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "VIAF",
+          "schema:value": "15161329794452131121",
+          "schema:url": "https://viaf.org/viaf/15161329794452131121/"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "ISNI",
+          "schema:value": "0000 0001 2984 3253",
+          "schema:url": "https://isni.org/isni/0000000129843253"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "ORCID",
+          "schema:value": "0009-0008-9355-4876",
+          "schema:url": "https://orcid.org/0009-0008-9355-4876"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Lattes Curriculum / CNPq",
+          "schema:value": "7735731830748241",
+          "schema:url": "http://lattes.cnpq.br/7735731830748241"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Itaú Cultural — Itaú Cultural Encyclopedia",
+          "schema:value": "pessoa42031",
+          "schema:url": "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "IMDb",
+          "schema:value": "nm6960431",
+          "schema:url": "https://www.imdb.com/name/nm6960431/"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "TMDB person ID",
+          "schema:value": "1509156",
+          "schema:url": "https://www.themoviedb.org/person/1509156-alexandre-mury"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "MUBI person numeric ID",
+          "schema:value": "1296620",
+          "schema:url": "https://mubi.com/pt/cast/alexandre-mury-1"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Google Scholar",
+          "schema:value": "GjhXsAwAAAAJ",
+          "schema:url": "https://scholar.google.com/citations?user=GjhXsAwAAAAJ"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Scholia",
+          "schema:value": "Q105532718",
+          "schema:url": "https://scholia.toolforge.org/author/Q105532718"
+        }
+      ],
+      "schema:sameAs": [
+        "https://www.wikidata.org/wiki/Q105532718",
+        "https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706",
+        "https://viaf.org/viaf/15161329794452131121/",
+        "https://isni.org/isni/0000000129843253",
+        "https://orcid.org/0009-0008-9355-4876",
+        "http://lattes.cnpq.br/7735731830748241",
+        "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury",
+        "https://pt.wikipedia.org/wiki/Alexandre_Mury",
+        "https://www.pipaprize.com/pag/alexandre-mury/",
+        "https://artsandculture.google.com/asset/cristo-redentor-alexandre-mury/TAFyxc0oCgNCQw",
+        "https://mapa.cultura.gov.br/agente/313185/#info",
+        "https://mapa.iberculturaviva.org/agente/705784/#info",
+        "https://www.wikiart.org/pt/alexandre-mury",
+        "https://artfacts.net/artist/alexandre-mury-1976-br",
+        "https://www.arteinformado.com/guia/f/alexandre-mury-36280",
+        "https://www.artsy.net/artist/alexandre-mury",
+        "https://www.imdb.com/name/nm6960431/",
+        "https://www.themoviedb.org/person/1509156-alexandre-mury",
+        "https://mubi.com/pt/cast/alexandre-mury-1",
+        "https://scholar.google.com/citations?user=GjhXsAwAAAAJ",
+        "https://independent.academia.edu/AlexandreMury",
+        "https://scholia.toolforge.org/author/Q105532718",
+        "https://substack.com/@alexandremury",
+        "https://github.com/MuryAlexandre",
+        "https://www.instagram.com/alexandremury/",
+        "https://www.youtube.com/user/yrum",
+        "https://bsky.app/profile/muryalexandre.bsky.social",
+        "https://mastodon.social/@alexandremury",
+        "https://www.facebook.com/profile.php?id=100041169047727"
+      ],
+      "dct:modified": "2026-07-08"
+    },
+    {
+      "@id": "https://id.alexandremury.art/person/alexandre-mury/#webpage",
+      "@type": [
+        "schema:ProfilePage",
+        "schema:WebPage"
+      ],
+      "schema:name": "Alexandre Mury — Authority Record",
+      "schema:url": "https://id.alexandremury.art/person/alexandre-mury/",
+      "schema:inLanguage": "en",
+      "schema:description": "Canonical authority record for Alexandre Mury, Brazilian multidisciplinary artist and independent researcher whose practice investigates the image as cultural infrastructure, post-conceptual practices, expanded documentation, and semantic systems.",
+      "schema:about": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:mainEntity": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:author": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:isPartOf": {
+        "@id": "https://id.alexandremury.art/"
+      },
+      "schema:encodingFormat": "text/html",
+      "schema:license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "schema:dateModified": "2026-07-08",
+      "dct:modified": "2026-07-08"
+    },
+    {
+      "@id": "https://id.alexandremury.art/person/alexandre-mury/metadata.jsonld",
+      "@type": [
+        "schema:DataDownload",
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Alexandre Mury — Authority Record Metadata",
+      "schema:url": "https://id.alexandremury.art/person/alexandre-mury/metadata.jsonld",
+      "schema:encodingFormat": "application/ld+json",
+      "schema:inLanguage": "en",
+      "schema:about": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:author": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "schema:dateModified": "2026-07-08",
+      "dct:modified": "2026-07-08"
+    },
+    {
+      "@id": "https://id.alexandremury.art/",
+      "@type": "schema:WebSite",
+      "schema:name": "A.M.O. — Alexandre Mury Ontology",
+      "schema:url": "https://id.alexandremury.art/",
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:inLanguage": [
+        "en",
+        "pt-BR"
+      ]
+    },
+    {
+      "@id": "https://id.alexandremury.art/ontology/",
+      "@type": [
+        "owl:Ontology",
+        "schema:CreativeWork"
+      ],
+      "schema:name": "A.M.O. — Alexandre Mury Ontology",
+      "schema:alternateName": [
+        "A.M.O.",
+        "AMO",
+        "Alexandre Mury Ontology",
+        "Ontologia Alexandre Mury"
+      ],
+      "schema:url": "https://id.alexandremury.art/ontology/",
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/",
+      "@type": [
+        "skos:Concept",
+        "crm:E28_Conceptual_Object"
+      ],
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Imagetic Disappropriation"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Desapropriação Imagética"
+        }
+      ],
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/cultural-autophagy/",
+      "@type": [
+        "skos:Concept",
+        "crm:E28_Conceptual_Object"
+      ],
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Cultural Autophagy"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Autofagia Cultural"
+        }
+      ],
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/",
+      "@type": [
+        "skos:Concept",
+        "crm:E28_Conceptual_Object"
+      ],
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Hybrid Dramaturgies"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Dramaturgias Híbridas"
+        }
+      ],
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/self-implicative-method/",
+      "@type": [
+        "skos:Concept",
+        "crm:E28_Conceptual_Object"
+      ],
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Self-Implicative Method"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Método Autoimplicativo"
+        }
+      ],
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/person/alexandre-mury/#mam-rio",
+      "@type": "schema:Organization",
+      "schema:name": "Museu de Arte Moderna do Rio de Janeiro",
+      "schema:alternateName": [
+        "Rio de Janeiro Museum of Modern Art",
+        "MAM Rio"
+      ]
+    },
+    {
+      "@id": "https://id.alexandremury.art/person/alexandre-mury/#mar",
+      "@type": "schema:Organization",
+      "schema:name": "Museu de Arte do Rio",
+      "schema:alternateName": [
+        "Rio Art Museum",
+        "MAR"
+      ]
+    },
+    {
+      "@id": "https://id.alexandremury.art/person/alexandre-mury/#mff",
+      "@type": "schema:Organization",
+      "schema:name": "Museu da Fotografia Fortaleza",
+      "schema:alternateName": [
+        "Fortaleza Museum of Photography",
+        "MFF"
+      ]
+    },
+    {
+      "@id": "https://id.alexandremury.art/person/alexandre-mury/#joaquim-paiva-collection",
+      "@type": "schema:Collection",
+      "schema:name": "Joaquim Paiva Collection"
+    },
+    {
+      "@id": "https://id.alexandremury.art/person/alexandre-mury/#gilberto-chateaubriand-collection",
+      "@type": "schema:Collection",
+      "schema:name": "Gilberto Chateaubriand Collection"
+    }
+  ]
+}
