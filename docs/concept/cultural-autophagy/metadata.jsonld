@@ -1,53 +1,131 @@
 {
   "@context": {
-    "am": "https://id.alexandremury.art/",
+    "amo": "https://id.alexandremury.art/ontology/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "crm": "http://www.cidoc-crm.org/cidoc-crm/",
     "schema": "https://schema.org/",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "amo": "https://id.alexandremury.art/ontology/"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
-      "@id": "am:concept/cultural-autophagy",
+      "@id": "https://id.alexandremury.art/concept/cultural-autophagy/",
       "@type": [
+        "schema:DefinedTerm",
         "crm:E28_Conceptual_Object",
         "skos:Concept"
       ],
-
       "schema:url": "https://id.alexandremury.art/concept/cultural-autophagy/",
-      "schema:name": "Cultural autophagy",
+      "schema:mainEntityOfPage": {
+        "@id": "https://id.alexandremury.art/concept/cultural-autophagy/",
+        "@type": "schema:WebPage"
+      },
+      "schema:name": "Cultural Autophagy",
+      "schema:alternateName": [
+        "Autofagia Cultural",
+        "Cultural self-digestion",
+        "Symbolic autophagy",
+        "Cultural self-devouring"
+      ],
       "schema:description": "Artistic and epistemological concept describing how a culture turns the anthropophagic gesture inward, critically digesting its own signs of authority.",
-      "schema:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:author": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:copyrightHolder": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:license": "https://www.alexandremury.art/copyright",
+      "schema:identifier": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "A.M.O. canonical URI",
+          "schema:value": "https://id.alexandremury.art/concept/cultural-autophagy/"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "A.M.O. prefix",
+          "schema:value": "am:cultural-autophagy"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "A.M.O. local alias",
+          "schema:value": "am:autofagia-cultural"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Wikidata",
+          "schema:value": "Q136831273",
+          "schema:url": "https://www.wikidata.org/wiki/Q136831273"
+        }
+      ],
+      "schema:sameAs": [
+        "https://www.wikidata.org/wiki/Q136831273"
+      ],
+      "skos:exactMatch": {
+        "@id": "http://www.wikidata.org/entity/Q136831273"
+      },
       "skos:prefLabel": [
-        { "@language": "pt-BR", "@value": "Autofagia cultural" },
-        { "@language": "pt-PT", "@value": "Autofagia cultural" },
-        { "@language": "en", "@value": "Cultural autophagy" },
-        { "@language": "fr", "@value": "Autophagie culturelle" },
-        { "@language": "de", "@value": "Kulturelle Autophagie" },
-        { "@language": "es", "@value": "Autofagia cultural" },
-        { "@language": "it", "@value": "Autofagia culturale" }
+        {
+          "@language": "pt-BR",
+          "@value": "Autofagia cultural"
+        },
+        {
+          "@language": "pt-PT",
+          "@value": "Autofagia cultural"
+        },
+        {
+          "@language": "en",
+          "@value": "Cultural autophagy"
+        },
+        {
+          "@language": "fr",
+          "@value": "Autophagie culturelle"
+        },
+        {
+          "@language": "de",
+          "@value": "Kulturelle Autophagie"
+        },
+        {
+          "@language": "es",
+          "@value": "Autofagia cultural"
+        },
+        {
+          "@language": "it",
+          "@value": "Autofagia culturale"
+        }
       ],
-
       "skos:altLabel": [
-        { "@language": "en", "@value": "cultural self-digestion" },
-        { "@language": "en", "@value": "symbolic autophagy" },
-        { "@language": "en", "@value": "cultural self-devouring" },
-        { "@language": "pt-BR", "@value": "autofagia simbólica" },
-        { "@language": "pt-BR", "@value": "autodevoração cultural" }
+        {
+          "@language": "en",
+          "@value": "cultural self-digestion"
+        },
+        {
+          "@language": "en",
+          "@value": "symbolic autophagy"
+        },
+        {
+          "@language": "en",
+          "@value": "cultural self-devouring"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "autofagia simbólica"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "autodevoração cultural"
+        }
       ],
-
       "skos:definition": {
         "@language": "en",
         "@value": "Cultural autophagy is a critical operation through which a culture, tradition, symbolic community, or historical formation takes its own signs of authority as material for transformation. These signs may be images, myths, canons, consecrated landmarks, narratives of origin, recognized styles, institutional archives, repertoires of cultural formation, or patrimonial symbols.\n\nThe concept describes an internal symbolic digestion. What is transformed is not primarily an external alterity, but the very inheritance that organizes collective memory and conditions its modes of recognition. Cultural autophagy occurs when a cultural sign endowed with strong authority is assimilated, displaced, and returned under another symbolic condition.\n\nUnlike modernist Anthropophagy, which formulates the devouring of the Other as a procedure of cultural transformation, cultural autophagy displaces the vector of devouring toward a culture's own symbolic archive. The metabolized object is no longer the exterior as the main source of incorporation, but the symbolic body of the culture itself: its emblems, narratives, images, devices of memory, and regimes of belonging.\n\nCultural autophagy does not designate, in itself, homage, parody, citation, appropriation, resignification, intertextuality, or decorative reinterpretation. These procedures may appear within an autophagic operation, but they do not define it in isolation. The result of cultural autophagy is not the simple repetition of the inherited repertoire, but its transmutation into a new field of thought.\n\nThe concept may be applied to national, regional, communal, institutional, or artistic contexts. Its essential condition is the existence of an internal critical operation in which a subject, artistic practice, or symbolic community transforms inherited cultural signs into matter for investigation, tension, and reinvention."
       },
-
       "skos:scopeNote": {
         "@language": "en",
         "@value": "The concept has an autonomous and trans-support scope. It applies to artistic, cultural, curatorial, performatic, textual, visual, or transmedia practices in which an internal symbolic archive is subjected to critical digestion.\n\nIt may occur in photography, performance, video, sculpture, painting, installation, text, urban intervention, digital archive, curatorial practice, sound work, or other artistic forms.\n\nIt may be applied to national, regional, communal, institutional, or patrimonial contexts, provided that the material mobilized has sufficient symbolic density to operate as recognizable inheritance.\n\nThe application in Abaporu (2010) constitutes a practical instance, not a limiting definition. The concept does not presuppose a specific geographic context, although it emerged in dialogue with Brazilian modernism.\n\nFor cultural autophagy to occur, it is not enough to cite a known symbol. The operation requires: an internal sign endowed with cultural authority; critical assimilation of that sign; displacement of its original function; transmutation into a new form, reading, or field of thought.\n\nThe concept does not apply to merely decorative uses of canonical images, conventional homages, fan art, citations without critical displacement, or re-presentations that only confirm the prestige of the original symbol."
       },
-
       "skos:note": [
         {
           "@language": "en",
@@ -59,7 +137,7 @@
         },
         {
           "@language": "en",
-          "@value": "CONCEPTUAL DISTINCTIONS: Cultural autophagy is distinct from Anthropophagy, appropriation, parody, resignification in a broad sense, intertextuality, homage, and decorative reinterpretation. These procedures may appear within an autophagic operation, but they do not define it in isolation. Cultural autophagy requires that the inherited sign be metabolized as part of the artistic operation, producing a reorganization of its interpretive power."
+          "@value": "CONCEPTUAL DISTINCTIONS: Cultural autophagy is distinct from Anthropophagy, appropriation, parody, resignification in a broad sense, intertextuality, homage, and decorative reinterpretation. These procedures may appear within an autophagic operation, but they do not define it in isolation. Cultural autophagy requires that the inherited sign be metabolized as part of the artistic operation, producing a reorganization of its relational power."
         },
         {
           "@language": "en",
@@ -71,89 +149,118 @@
         },
         {
           "@language": "en",
-          "@value": "OPERATIONAL INSTANCE: In Abaporu (2010), by Alexandre Mury, cultural autophagy manifests itself as a critical and conceptual operation through a performatic event converted into a photographic image. The work departs from Abaporu (1928), by Tarsila do Amaral, but it is not limited to remaking it. What is metabolized is not only a specific painting, but the symbolic complex it activated in Brazilian culture: modernist Anthropophagy, the origin myth of national modern art, the consolidation of the canon, and the transformation of an image into a cultural emblem. Within the A.M.O. system, Abaporu (2010) constitutes an operational instance of cultural autophagy because it concentrates this cycle of assimilation, processing, and return."
+          "@value": "OPERATIONAL INSTANCE: Abaporu (2010), by Alexandre Mury, constitutes an operational instance of cultural autophagy within the A.M.O. system. It does not define or limit the concept. The concept remains autonomous and applicable to other artistic, cultural, curatorial, textual, visual, performatic, archival, digital, institutional, or transmedia practices in which an internal symbolic archive is subjected to critical digestion."
         },
         {
           "@language": "en",
-          "@value": "THEORY: Cultural autophagy integrates the conceptual architecture of the A.M.O. — Alexandre Mury Ontology — as a specific case of imagetic disappropriation. Imagetic disappropriation describes the operation through which an image detaches itself from its original symbolic matrix and acquires critical autonomy. Cultural autophagy names a particular modality of this process: the one in which the disappropriated matrix belongs to the very cultural archive mobilized by the work. Cultural autophagy also relates to theoretical disappropriation, hybrid dramaturgies, and the self-implicative method."
+          "@value": "THEORY: Cultural autophagy integrates the conceptual architecture of the A.M.O. — Alexandre Mury Ontology — as a specific case of imagetic disappropriation. Imagetic disappropriation describes the operation through which an image detaches itself from its original symbolic matrix and acquires critical autonomy. Cultural autophagy names a particular modality of this process: the one in which the disappropriated matrix belongs to the very cultural archive mobilized by the work. Cultural autophagy also relates to theoretical disappropriation, hybrid dramaturgies, critical fiction, hermeneutic metanoia, and the self-implicative method."
         }
       ],
-
       "skos:inScheme": {
-        "@id": "am:scheme/epistemology-of-the-image"
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
       },
-
       "skos:broader": {
-        "@id": "am:concept/imagetic-disappropriation"
+        "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
       },
-
       "skos:related": [
-        { "@id": "am:concept/anthropophagy" },
-        { "@id": "am:concept/indigenous-re-anthropophagy" },
-        { "@id": "am:concept/zombie-anthropophagy" },
-        { "@id": "am:concept/theoretical-disappropriation" },
-        { "@id": "am:concept/critical-fiction" },
-        { "@id": "am:concept/hybrid-dramaturgies" },
-        { "@id": "am:concept/self-implicative-method" },
-        { "@id": "am:concept/hermeneutic-metanoia" }
+        {
+          "@id": "https://id.alexandremury.art/concept/anthropophagy/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/indigenous-re-anthropophagy/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/zombie-anthropophagy/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/theoretical-disappropriation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/critical-fiction/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/self-implicative-method/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/hermeneutic-metanoia/"
+        }
       ],
-
-      "amo:mobilizedIn": {
-        "@id": "am:artworks/abaporu-2010"
+      "skos:example": {
+        "@id": "https://id.alexandremury.art/artworks/abaporu-2010/"
       },
-
       "amo:hasOperationalInstance": {
-        "@id": "am:artworks/abaporu-2010"
+        "@id": "https://id.alexandremury.art/artworks/abaporu-2010/"
       },
-
-      "amo:hasInterpretiveRegime": [
-        { "@id": "am:relation/reenactment" },
-        { "@id": "am:relation/self-representation" },
-        { "@id": "am:relation/internal-critical-digestion" }
+      "amo:hasRelationalRegime": [
+        {
+          "@id": "https://id.alexandremury.art/relation/reenactment/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/relation/self-representation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/relation/internal-critical-digestion/"
+        }
       ],
-
       "amo:distinguishedFrom": [
-        { "@id": "am:concept/anthropophagy" },
-        { "@id": "am:concept/appropriation" },
-        { "@id": "am:concept/parody" },
-        { "@id": "am:concept/homage" },
-        { "@id": "am:concept/decorative-reinterpretation" },
-        { "@id": "am:concept/broad-resignification" },
-        { "@id": "am:concept/intertextuality" }
+        {
+          "@id": "https://id.alexandremury.art/concept/anthropophagy/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/appropriation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/parody/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/homage/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/decorative-reinterpretation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/broad-resignification/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/intertextuality/"
+        }
       ],
-
       "amo:hasEtymologicalAnalogy": {
-        "@id": "am:concept/biological-autophagy"
+        "@id": "https://id.alexandremury.art/concept/biological-autophagy/"
       },
-
       "amo:hasArgumentativeAnalogy": {
-        "@id": "am:concept/rhetorical-autophagy"
+        "@id": "https://id.alexandremury.art/concept/rhetorical-autophagy/"
       },
-
       "amo:hasCriticalDialogue": [
-        { "@id": "am:concept/indigenous-re-anthropophagy" },
-        { "@id": "am:concept/zombie-anthropophagy" }
+        {
+          "@id": "https://id.alexandremury.art/concept/indigenous-re-anthropophagy/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/zombie-anthropophagy/"
+        }
       ],
-
       "amo:hasHistoriographicDialogue": {
-        "@id": "am:concept/recent-brazilian-debate-on-anthropophagy-and-autophagy"
+        "@id": "https://id.alexandremury.art/concept/recent-brazilian-debate-on-anthropophagy-and-autophagy/"
       },
-
-      "schema:author": {
-        "@id": "am:person/alexandre-mury"
-      },
-
       "schema:citation": [
-        { "@id": "https://doi.org/10.5281/zenodo.17548245" },
-        { "@id": "https://doi.org/10.5281/zenodo.20823388" }
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20823388"
+        }
       ],
-
       "amo:hasConceptualSource": [
-        { "@id": "https://doi.org/10.5281/zenodo.17548245" },
-        { "@id": "https://doi.org/10.5281/zenodo.20823388" },
-        { "@id": "am:artworks/abaporu-2010" }
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20823388"
+        }
       ],
-
       "amo:hasDialogueSource": [
         {
           "@type": "schema:CreativeWork",
@@ -225,131 +332,147 @@
           "schema:author": "Jacques Derrida"
         }
       ],
-
       "rdfs:isDefinedBy": {
-        "@id": "amo:Ontology"
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/",
+      "@type": [
+        "schema:DefinedTermSet",
+        "skos:ConceptScheme"
+      ],
+      "schema:name": "Epistemology of the Image",
+      "schema:description": "Concept scheme for theoretical concepts developed within the Alexandre Mury Ontology."
+    },
+    {
+      "@id": "https://id.alexandremury.art/person/alexandre-mury/",
+      "@type": [
+        "schema:Person",
+        "crm:E21_Person"
+      ],
+      "schema:name": "Alexandre Mury",
+      "schema:nationality": {
+        "@type": "schema:Country",
+        "schema:name": "Brazil"
       },
-
+      "schema:jobTitle": "Visual artist and independent researcher",
+      "schema:url": "https://www.alexandremury.art/",
+      "schema:sameAs": [
+        "https://www.wikidata.org/wiki/Q105532718",
+        "https://pt.wikipedia.org/wiki/Alexandre_Mury",
+        "https://orcid.org/0009-0008-9355-4876",
+        "https://isni.org/isni/0000000129843253",
+        "https://viaf.org/viaf/15161329794452131121/",
+        "https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706",
+        "http://lattes.cnpq.br/7735731830748241",
+        "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury",
+        "https://www.premiopipa.com/alexandre-mury/"
+      ],
       "schema:identifier": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "A.M.O. prefix",
-          "schema:value": "am:cultural-autophagy"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "A.M.O. local alias",
-          "schema:value": "am:autofagia-cultural"
-        },
         {
           "@type": "schema:PropertyValue",
           "schema:propertyID": "Wikidata",
-          "schema:value": "Q136831273"
-        }
-      ],
-
-      "skos:exactMatch": {
-        "@id": "http://www.wikidata.org/entity/Q136831273"
-      },
-
-      "schema:sameAs": [
-        "https://www.wikidata.org/wiki/Q136831273"
-      ]
-    },
-
-    {
-      "@id": "am:person/alexandre-mury",
-      "@type": [
-        "crm:E39_Actor",
-        "schema:Person"
-      ],
-      "schema:name": "Alexandre Mury",
-      "schema:sameAs": [
-        "https://orcid.org/0009-0008-9355-4876",
-        "https://viaf.org/viaf/15161329794452131121/",
-        "https://isni.org/isni/0000000129843253",
-        "http://lattes.cnpq.br/7735731830748241",
-        "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury"
-      ],
-      "schema:identifier": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "FBN",
-          "schema:value": "000679706"
+          "schema:value": "Q105532718",
+          "schema:url": "https://www.wikidata.org/wiki/Q105532718"
         },
         {
           "@type": "schema:PropertyValue",
           "schema:propertyID": "ORCID",
-          "schema:value": "0009-0008-9355-4876"
+          "schema:value": "0009-0008-9355-4876",
+          "schema:url": "https://orcid.org/0009-0008-9355-4876"
         },
         {
           "@type": "schema:PropertyValue",
           "schema:propertyID": "ISNI",
-          "schema:value": "0000 0001 2984 3253"
+          "schema:value": "0000000129843253",
+          "schema:url": "https://isni.org/isni/0000000129843253"
         },
         {
           "@type": "schema:PropertyValue",
           "schema:propertyID": "VIAF",
-          "schema:value": "15161329794452131121"
+          "schema:value": "15161329794452131121",
+          "schema:url": "https://viaf.org/viaf/15161329794452131121/"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Fundação Biblioteca Nacional authority ID",
+          "schema:value": "000679706",
+          "schema:url": "https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706"
         },
         {
           "@type": "schema:PropertyValue",
           "schema:propertyID": "Lattes",
-          "schema:value": "7735731830748241"
+          "schema:value": "7735731830748241",
+          "schema:url": "http://lattes.cnpq.br/7735731830748241"
         },
         {
           "@type": "schema:PropertyValue",
           "schema:propertyID": "Itaú Cultural",
-          "schema:value": "42031"
+          "schema:value": "42031",
+          "schema:url": "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury"
         }
       ]
     },
-
     {
-      "@id": "am:artworks/abaporu-2010",
-      "@type": [
-        "crm:E28_Conceptual_Object",
-        "schema:CreativeWork"
-      ],
+      "@id": "https://id.alexandremury.art/artworks/abaporu-2010/",
+      "@type": "schema:CreativeWork",
       "schema:name": "Abaporu (2010)",
       "schema:url": "https://id.alexandremury.art/artworks/abaporu-2010/",
-      "schema:author": {
-        "@id": "am:person/alexandre-mury"
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
       "schema:dateCreated": "2010"
     },
-
     {
       "@id": "https://doi.org/10.5281/zenodo.17548245",
-      "@type": "schema:CreativeWork",
+      "@type": "schema:ScholarlyArticle",
       "schema:name": "Da blasfêmia à canonização: dramaturgias híbridas e o método autoimplicativo",
       "schema:author": {
-        "@id": "am:person/alexandre-mury"
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
       "schema:datePublished": "2025",
-      "schema:url": "https://doi.org/10.5281/zenodo.17548245"
+      "schema:url": "https://doi.org/10.5281/zenodo.17548245",
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:propertyID": "DOI",
+        "schema:value": "10.5281/zenodo.17548245"
+      }
     },
-
     {
       "@id": "https://doi.org/10.5281/zenodo.20823388",
-      "@type": "schema:CreativeWork",
+      "@type": "schema:ScholarlyArticle",
       "schema:name": "Desapropriação teórica: ficção crítica e metanoia hermenêutica da imagem",
       "schema:author": {
-        "@id": "am:person/alexandre-mury"
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
       "schema:datePublished": "2026",
-      "schema:url": "https://doi.org/10.5281/zenodo.20823388"
+      "schema:url": "https://doi.org/10.5281/zenodo.20823388",
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:propertyID": "DOI",
+        "schema:value": "10.5281/zenodo.20823388"
+      }
     },
-
     {
       "@id": "https://id.alexandremury.art/concept/cultural-autophagy/metadata.jsonld",
-      "@type": "schema:WebPage",
+      "@type": [
+        "schema:WebPage",
+        "schema:DigitalDocument"
+      ],
       "schema:url": "https://id.alexandremury.art/concept/cultural-autophagy/metadata.jsonld",
       "schema:name": "Cultural Autophagy — Structured Metadata",
-      "schema:description": "SKOS metadata for the concept Cultural Autophagy (Autofagia cultural) in the Alexandre Mury Ontology (A.M.O.).",
+      "schema:description": "Structured metadata for the concept Cultural Autophagy (Autofagia cultural) in the Alexandre Mury Ontology.",
+      "schema:encodingFormat": "application/ld+json",
       "schema:inLanguage": "en",
       "schema:about": {
-        "@id": "am:concept/cultural-autophagy"
+        "@id": "https://id.alexandremury.art/concept/cultural-autophagy/"
+      },
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
       }
     }
   ]
