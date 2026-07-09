@@ -2,37 +2,54 @@
   "@context": {
     "@vocab": "https://schema.org/",
     "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
     "amo": "https://id.alexandremury.art/ontology/"
   },
   "@graph": [
     {
-      "@type": "Event",
-      "@id": "#production-lisa-2013",
+      "@type": [
+        "Event",
+        "crm:E12_Production"
+      ],
+      "@id": "https://id.alexandremury.art/events/production-lisa-2013/",
       "name": "Production of Lisa (2013)",
-      "agent": {
-        "@id": "#alexandre-mury"
-      },
       "startDate": "2013",
       "location": {
         "@type": "Place",
         "name": "São Fidélis, RJ, Brazil"
       },
+      "participant": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
       "result": {
-        "@id": "#lisa2013"
+        "@id": "https://id.alexandremury.art/artworks/lisa-2013/"
+      },
+      "crm:P14_carried_out_by": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "crm:P108_has_produced": {
+        "@id": "https://id.alexandremury.art/artworks/lisa-2013/"
       }
     },
     {
-      "@type": "Person",
-      "@id": "#alexandre-mury",
+      "@type": [
+        "Person",
+        "crm:E21_Person"
+      ],
+      "@id": "https://id.alexandremury.art/person/alexandre-mury/",
       "name": "Alexandre Mury",
-      "nationality": "Brazil",
-      "jobTitle": "Visual Artist",
+      "nationality": {
+        "@type": "Country",
+        "name": "Brazil"
+      },
+      "jobTitle": "Visual artist and independent researcher",
       "description": "Brazilian contemporary artist working across photography, performance, video art, post-conceptual art, self-representation and interdisciplinary visual practices.",
+      "url": "https://www.alexandremury.art/",
       "sameAs": [
         "https://www.wikidata.org/wiki/Q105532718",
         "https://pt.wikipedia.org/wiki/Alexandre_Mury",
         "https://orcid.org/0009-0008-9355-4876",
-        "https://www.imdb.com/pt/name/nm6960431/",
+        "https://www.imdb.com/name/nm6960431/",
         "https://isni.org/isni/0000000129843253",
         "https://viaf.org/viaf/15161329794452131121/",
         "https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706",
@@ -44,42 +61,50 @@
         {
           "@type": "PropertyValue",
           "propertyID": "Wikidata",
-          "value": "Q105532718"
+          "value": "Q105532718",
+          "url": "https://www.wikidata.org/wiki/Q105532718"
         },
         {
           "@type": "PropertyValue",
           "propertyID": "IMDb name",
-          "value": "nm6960431"
+          "value": "nm6960431",
+          "url": "https://www.imdb.com/name/nm6960431/"
         },
         {
           "@type": "PropertyValue",
           "propertyID": "ORCID",
-          "value": "0009-0008-9355-4876"
+          "value": "0009-0008-9355-4876",
+          "url": "https://orcid.org/0009-0008-9355-4876"
         },
         {
           "@type": "PropertyValue",
           "propertyID": "ISNI",
-          "value": "0000000129843253"
+          "value": "0000000129843253",
+          "url": "https://isni.org/isni/0000000129843253"
         },
         {
           "@type": "PropertyValue",
           "propertyID": "VIAF",
-          "value": "15161329794452131121"
+          "value": "15161329794452131121",
+          "url": "https://viaf.org/viaf/15161329794452131121/"
         },
         {
           "@type": "PropertyValue",
-          "propertyID": "FBN",
-          "value": "000679706"
+          "propertyID": "Fundação Biblioteca Nacional authority ID",
+          "value": "000679706",
+          "url": "https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706"
         },
         {
           "@type": "PropertyValue",
           "propertyID": "Lattes",
-          "value": "7735731830748241"
+          "value": "7735731830748241",
+          "url": "http://lattes.cnpq.br/7735731830748241"
         },
         {
           "@type": "PropertyValue",
           "propertyID": "Itaú Cultural",
-          "value": "42031"
+          "value": "42031",
+          "url": "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury"
         },
         {
           "@type": "PropertyValue",
@@ -89,35 +114,8 @@
       ]
     },
     {
-      "@type": "Person",
-      "@id": "#leonardo-da-vinci",
-      "name": "Leonardo da Vinci",
-      "sameAs": [
-        "https://www.wikidata.org/wiki/Q762",
-        "https://en.wikipedia.org/wiki/Leonardo_da_Vinci"
-      ]
-    },
-    {
-      "@type": "Person",
-      "@id": "#giorgio-vasari",
-      "name": "Giorgio Vasari",
-      "sameAs": [
-        "https://www.wikidata.org/wiki/Q128111",
-        "https://en.wikipedia.org/wiki/Giorgio_Vasari"
-      ]
-    },
-    {
-      "@type": "Person",
-      "@id": "#antonio-vivaldi",
-      "name": "Antonio Vivaldi",
-      "sameAs": [
-        "https://www.wikidata.org/wiki/Q1340",
-        "https://en.wikipedia.org/wiki/Antonio_Vivaldi"
-      ]
-    },
-    {
       "@type": "VisualArtwork",
-      "@id": "#mona-lisa",
+      "@id": "https://id.alexandremury.art/artworks/lisa-2013/#mona-lisa-reference",
       "name": "Mona Lisa",
       "alternateName": [
         "La Gioconda",
@@ -126,103 +124,128 @@
       ],
       "dateCreated": "1503/1519",
       "creator": {
-        "@id": "#leonardo-da-vinci"
+        "@type": "Person",
+        "name": "Leonardo da Vinci"
       },
-      "sameAs": [
-        "https://www.wikidata.org/wiki/Q12418",
-        "https://www.louvre.fr/en/explore/the-palace/mona-lisa"
-      ]
+      "sameAs": "https://www.wikidata.org/wiki/Q12418"
     },
     {
       "@type": "CreativeWork",
-      "@id": "#lives-of-the-artists",
+      "@id": "https://id.alexandremury.art/artworks/lisa-2013/#vasari-text",
       "name": "Lives of the Artists",
       "alternateName": [
         "Le vite de' più eccellenti pittori, scultori e architettori",
+        "Lives of the Most Excellent Painters, Sculptors, and Architects",
         "Vidas dos Artistas"
       ],
       "creator": {
-        "@id": "#giorgio-vasari"
+        "@type": "Person",
+        "name": "Giorgio Vasari"
       },
       "dateCreated": "1550",
       "description": "Art-historical text by Giorgio Vasari. Lisa (2013) uses an excerpt from Vasari's account of Leonardo da Vinci and the Mona Lisa as a historiographic voice within the videoperformance."
     },
     {
       "@type": "MusicComposition",
-      "@id": "#la-stravaganza-rv279",
+      "@id": "https://id.alexandremury.art/artworks/lisa-2013/#vivaldi-rv279",
       "name": "La Stravaganza, Concerto No. 2 RV 279",
+      "alternateName": [
+        "Concerto No. 2 in E minor, Op. 4 No. 2, RV 279"
+      ],
       "composer": {
-        "@id": "#antonio-vivaldi"
+        "@type": "Person",
+        "name": "Antonio Vivaldi"
       },
       "description": "Musical composition by Antonio Vivaldi used as the soundtrack of Lisa (2013)."
     },
     {
       "@type": "VideoObject",
-      "@id": "#lisa-video",
+      "@id": "https://id.alexandremury.art/artworks/lisa-2013/#videoperformance",
       "name": "Lisa (2013) — videoperformance",
       "url": "https://id.alexandremury.art/artworks/lisa-2013/",
-      "contentUrl": "https://archive.org/details/lisa-2013-alexandre-mury",
-      "embedUrl": "https://archive.org/details/lisa-2013-alexandre-mury",
+      "embedUrl": "https://archive.org/embed/lisa-2013-alexandre-mury",
       "duration": "PT4M5S",
       "encodingFormat": "video",
       "description": "Videoperformance and video art work by Alexandre Mury, intentionally conceived in vertical 9:16 format and exhibited on a rotated monitor as a living portrait.",
       "creator": {
-        "@id": "#alexandre-mury"
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
       "director": {
-        "@id": "#alexandre-mury"
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
       "performer": {
-        "@id": "#alexandre-mury"
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
       "musicBy": {
-        "@id": "#antonio-vivaldi"
+        "@id": "https://id.alexandremury.art/artworks/lisa-2013/#vivaldi-rv279"
       },
       "isPartOf": {
-        "@id": "#lisa2013"
+        "@id": "https://id.alexandremury.art/artworks/lisa-2013/"
       },
       "identifier": [
         {
           "@type": "PropertyValue",
           "propertyID": "IMDb title",
-          "value": "tt41447068"
+          "value": "tt41447068",
+          "url": "https://www.imdb.com/title/tt41447068/"
         },
         {
           "@type": "PropertyValue",
           "propertyID": "TMDB movie ID",
-          "value": "1725718"
+          "value": "1725718",
+          "url": "https://www.themoviedb.org/movie/1725718-lisa"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "Internet Archive",
+          "value": "lisa-2013-alexandre-mury",
+          "url": "https://archive.org/details/lisa-2013-alexandre-mury"
         }
       ],
       "sameAs": [
-        "https://www.imdb.com/pt/title/tt41447068/",
+        "https://www.imdb.com/title/tt41447068/",
         "https://www.themoviedb.org/movie/1725718-lisa",
         "https://archive.org/details/lisa-2013-alexandre-mury"
       ]
     },
     {
       "@type": "ImageObject",
-      "@id": "#lisa-still",
+      "@id": "https://id.alexandremury.art/artworks/lisa-2013/#primary-image",
+      "name": "Lisa (2013) — primary image",
       "url": "https://id.alexandremury.art/artworks/lisa-2013/",
-      "contentUrl": "https://id.alexandremury.art/artworks/lisa-2013/",
-      "caption": "Still image from Lisa (2013), a videoperformance and performative self-portrait by Alexandre Mury.",
-      "description": "Still image associated with Lisa (2013), showing the artist in a portrait composition that evokes Leonardo da Vinci's Mona Lisa.",
+      "contentUrl": "https://id.alexandremury.art/artworks/lisa-2013/lisa-2013.jpg",
+      "encodingFormat": "image/jpeg",
+      "caption": "Image associated with Lisa (2013), a videoperformance and performative self-portrait by Alexandre Mury.",
+      "description": "Primary image associated with Lisa (2013), showing the artist in a portrait composition that evokes Leonardo da Vinci's Mona Lisa.",
       "creator": {
-        "@id": "#alexandre-mury"
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
+      "copyrightHolder": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "copyrightNotice": "© Alexandre Mury",
       "license": "https://www.alexandremury.art/copyright",
+      "representativeOfPage": true,
       "isPartOf": {
-        "@id": "#lisa2013"
+        "@id": "https://id.alexandremury.art/artworks/lisa-2013/"
       }
     },
     {
-      "@type": "DefinedTermSet",
-      "@id": "#epistemology-of-the-image",
+      "@type": [
+        "DefinedTermSet",
+        "skos:ConceptScheme"
+      ],
+      "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/",
       "name": "Epistemology of the Image",
       "description": "Theoretical concepts developed by Alexandre Mury in the field of contemporary image, post-conceptual practice and machine-readable art documentation."
     },
     {
-      "@type": "DefinedTerm",
-      "@id": "#hybrid-dramaturgies",
+      "@type": [
+        "DefinedTerm",
+        "crm:E28_Conceptual_Object",
+        "skos:Concept"
+      ],
+      "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/",
       "name": "Hybrid Dramaturgies",
       "alternateName": [
         "Dramaturgias Híbridas"
@@ -230,12 +253,16 @@
       "description": "Conceptual operation in which image, body, text, voice, music, staging, duration and documentation produce meaning through overlapping temporal and symbolic layers.",
       "url": "https://id.alexandremury.art/concept/hybrid-dramaturgies/",
       "inDefinedTermSet": {
-        "@id": "#epistemology-of-the-image"
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
       }
     },
     {
-      "@type": "DefinedTerm",
-      "@id": "#self-implicative-method",
+      "@type": [
+        "DefinedTerm",
+        "crm:E28_Conceptual_Object",
+        "skos:Concept"
+      ],
+      "@id": "https://id.alexandremury.art/concept/self-implicative-method/",
       "name": "Self-Implicative Method",
       "alternateName": [
         "Método Autoimplicativo"
@@ -243,12 +270,16 @@
       "description": "Methodological and artistic operation in which the artist, critic or interpreter becomes implicated in the very image, discourse or system being activated.",
       "url": "https://id.alexandremury.art/concept/self-implicative-method/",
       "inDefinedTermSet": {
-        "@id": "#epistemology-of-the-image"
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
       }
     },
     {
-      "@type": "DefinedTerm",
-      "@id": "#imagetic-disappropriation",
+      "@type": [
+        "DefinedTerm",
+        "crm:E28_Conceptual_Object",
+        "skos:Concept"
+      ],
+      "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/",
       "name": "Imagetic Disappropriation",
       "alternateName": [
         "Desapropriação Imagética",
@@ -258,12 +289,16 @@
       "sameAs": "https://www.wikidata.org/wiki/Q136744908",
       "url": "https://id.alexandremury.art/concept/imagetic-disappropriation/",
       "inDefinedTermSet": {
-        "@id": "#epistemology-of-the-image"
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
       }
     },
     {
-      "@type": "DefinedTerm",
-      "@id": "#cultural-autophagy",
+      "@type": [
+        "DefinedTerm",
+        "crm:E28_Conceptual_Object",
+        "skos:Concept"
+      ],
+      "@id": "https://id.alexandremury.art/concept/cultural-autophagy/",
       "name": "Cultural Autophagy",
       "alternateName": [
         "Autofagia Cultural"
@@ -272,17 +307,16 @@
       "sameAs": "https://www.wikidata.org/wiki/Q136831273",
       "url": "https://id.alexandremury.art/concept/cultural-autophagy/",
       "inDefinedTermSet": {
-        "@id": "#epistemology-of-the-image"
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
       }
     },
     {
       "@type": "ScholarlyArticle",
-      "@id": "#mury-2026-disappropriation",
+      "@id": "https://doi.org/10.5281/zenodo.20823388",
       "name": "Desapropriação Teórica: Ficção Crítica e Metanoia Hermenêutica da Imagem",
       "author": {
-        "@id": "#alexandre-mury"
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
-      "datePublished": "2025/2026",
       "publisher": {
         "@type": "Organization",
         "name": "Zenodo"
@@ -290,7 +324,8 @@
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "DOI",
-        "value": "10.5281/zenodo.20823388"
+        "value": "10.5281/zenodo.20823388",
+        "url": "https://doi.org/10.5281/zenodo.20823388"
       },
       "sameAs": "https://doi.org/10.5281/zenodo.20823388",
       "url": "https://doi.org/10.5281/zenodo.20823388",
@@ -298,7 +333,7 @@
     },
     {
       "@type": "Thesis",
-      "@id": "#midlej-2017-thesis",
+      "@id": "https://ppgav.ufba.br/sites/ppgav.ufba.br/files/dilson_-_tese.pdf",
       "name": "Apropriação de imagens nas artes visuais no Brasil e na Bahia",
       "author": {
         "@type": "Person",
@@ -314,40 +349,46 @@
     },
     {
       "@type": "ExhibitionEvent",
-      "@id": "#friccoes-historicas-caixa",
+      "@id": "https://id.alexandremury.art/events/friccoes-historicas-caixa/",
       "name": "Fricções Históricas",
       "location": {
         "@type": "Place",
         "name": "Caixa Cultural Rio de Janeiro, RJ, Brazil"
       },
       "performer": {
-        "@id": "#alexandre-mury"
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
       "workFeatured": {
-        "@id": "#lisa2013"
+        "@id": "https://id.alexandremury.art/artworks/lisa-2013/"
       }
     },
     {
       "@type": "ExhibitionEvent",
-      "@id": "#friccoes-historicas-sesc-gloria",
+      "@id": "https://id.alexandremury.art/events/friccoes-historicas-sesc-gloria/",
       "name": "Fricções Históricas",
       "location": {
         "@type": "Place",
         "name": "SESC Glória, ES, Brazil"
       },
       "performer": {
-        "@id": "#alexandre-mury"
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
       "workFeatured": {
-        "@id": "#lisa2013"
+        "@id": "https://id.alexandremury.art/artworks/lisa-2013/"
       }
     },
     {
-      "@type": "VisualArtwork",
-      "@id": "#lisa2013",
+      "@type": [
+        "VisualArtwork",
+        "crm:E22_Human-Made_Object"
+      ],
+      "@id": "https://id.alexandremury.art/artworks/lisa-2013/",
       "name": "Lisa",
       "url": "https://id.alexandremury.art/artworks/lisa-2013/",
-      "mainEntityOfPage": "https://id.alexandremury.art/artworks/lisa-2013/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://id.alexandremury.art/artworks/lisa-2013/"
+      },
       "alternateName": [
         "Lisa (2013)",
         "Lisa by Alexandre Mury"
@@ -356,27 +397,25 @@
         {
           "@type": "PropertyValue",
           "propertyID": "Wikidata",
-          "value": "Q136803421"
+          "value": "Q136803421",
+          "url": "https://www.wikidata.org/wiki/Q136803421"
         },
         {
           "@type": "PropertyValue",
           "propertyID": "IMDb title",
-          "value": "tt41447068"
+          "value": "tt41447068",
+          "url": "https://www.imdb.com/title/tt41447068/"
         },
         {
           "@type": "PropertyValue",
           "propertyID": "TMDB movie ID",
-          "value": "1725718"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Biblioteca Nacional",
-          "value": "000679706"
+          "value": "1725718",
+          "url": "https://www.themoviedb.org/movie/1725718-lisa"
         }
       ],
       "dateCreated": "2013",
       "creator": {
-        "@id": "#alexandre-mury"
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
       "artform": [
         "Videoperformance",
@@ -407,7 +446,7 @@
         "Critical Fiction"
       ],
       "duration": "PT4M5S",
-      "description": "Lisa (2013) is a hybrid artwork by Alexandre Mury that unfolds across videoperformance, video art, performative self-portraiture, photography, body art and critical fiction. Conceived through the living archive of Leonardo da Vinci's Mona Lisa / La Gioconda, the work activates the portrait as a field of temporal, corporeal and hermeneutic transformation. Through shaving, depilation, vertical video, art-historical memory, music, voice and self-representation, Lisa operates as a hybrid dramaturgy and as an auto-implicative gesture that interrogates the survival of inherited images, the instability of identity, gender performativity and the corporeal dimension of interpretation.",
+      "description": "Lisa (2013) is a hybrid artwork by Alexandre Mury that unfolds across videoperformance, video art, performative self-portraiture, photography, body art and critical fiction. Conceived through the living archive of Leonardo da Vinci's Mona Lisa / La Gioconda, the work activates the portrait as a field of temporal, corporeal and hermeneutic transformation. Through shaving, depilation, vertical video, art-historical memory, music, voice and self-representation, Lisa operates as a hybrid dramaturgy and as a self-implicative gesture that interrogates the survival of inherited images, the instability of identity, gender performativity and the corporeal dimension of interpretation.",
       "keywords": [
         "Lisa",
         "Alexandre Mury",
@@ -456,13 +495,13 @@
           "@id": "https://id.alexandremury.art/concept/cultural-autophagy/"
         },
         {
-          "@id": "#mona-lisa"
+          "@id": "https://id.alexandremury.art/artworks/lisa-2013/#mona-lisa-reference"
         },
         {
-          "@id": "#lives-of-the-artists"
+          "@id": "https://id.alexandremury.art/artworks/lisa-2013/#vasari-text"
         },
         {
-          "@id": "#la-stravaganza-rv279"
+          "@id": "https://id.alexandremury.art/artworks/lisa-2013/#vivaldi-rv279"
         },
         {
           "@type": "Thing",
@@ -486,56 +525,57 @@
         }
       ],
       "image": {
-        "@id": "#lisa-still"
+        "@id": "https://id.alexandremury.art/artworks/lisa-2013/#primary-image"
       },
       "associatedMedia": [
         {
-          "@id": "#lisa-video"
+          "@id": "https://id.alexandremury.art/artworks/lisa-2013/#videoperformance"
         },
         {
-          "@id": "#lisa-still"
+          "@id": "https://id.alexandremury.art/artworks/lisa-2013/#primary-image"
         }
       ],
       "hasPart": [
         {
-          "@id": "#lisa-video"
+          "@id": "https://id.alexandremury.art/artworks/lisa-2013/#videoperformance"
         },
         {
-          "@id": "#lisa-still"
+          "@id": "https://id.alexandremury.art/artworks/lisa-2013/#primary-image"
         }
       ],
       "copyrightHolder": {
-        "@id": "#alexandre-mury"
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
       "copyrightNotice": "© Alexandre Mury",
+      "copyrightYear": "2013",
       "inspiredBy": {
-        "@id": "#mona-lisa"
+        "@id": "https://id.alexandremury.art/artworks/lisa-2013/#mona-lisa-reference"
       },
       "citation": [
         {
-          "@id": "#mury-2026-disappropriation"
+          "@id": "https://doi.org/10.5281/zenodo.20823388"
         },
         {
-          "@id": "#midlej-2017-thesis"
+          "@id": "https://ppgav.ufba.br/sites/ppgav.ufba.br/files/dilson_-_tese.pdf"
         }
       ],
       "subjectOf": [
         {
-          "@id": "#mury-2026-disappropriation"
+          "@id": "https://doi.org/10.5281/zenodo.20823388"
         },
         {
-          "@id": "#midlej-2017-thesis"
+          "@id": "https://ppgav.ufba.br/sites/ppgav.ufba.br/files/dilson_-_tese.pdf"
         },
         {
-          "@id": "#friccoes-historicas-caixa"
+          "@id": "https://id.alexandremury.art/events/friccoes-historicas-caixa/"
         },
         {
-          "@id": "#friccoes-historicas-sesc-gloria"
+          "@id": "https://id.alexandremury.art/events/friccoes-historicas-sesc-gloria/"
         }
       ],
       "sameAs": [
         "https://www.wikidata.org/wiki/Q136803421",
-        "https://www.imdb.com/pt/title/tt41447068/",
+        "https://www.imdb.com/title/tt41447068/",
         "https://www.themoviedb.org/movie/1725718-lisa",
         "https://archive.org/details/lisa-2013-alexandre-mury"
       ],
@@ -548,21 +588,20 @@
         "Q136803421",
         "IMDb:tt41447068",
         "TMDB:1725718",
-        "BN:000679706",
         "https://id.alexandremury.art/artworks/lisa-2013/"
       ],
       "crm:P108i_was_produced_by": {
-        "@id": "#production-lisa-2013"
+        "@id": "https://id.alexandremury.art/events/production-lisa-2013/"
       },
       "crm:P67_refers_to": [
         {
-          "@id": "#mona-lisa"
+          "@id": "https://id.alexandremury.art/artworks/lisa-2013/#mona-lisa-reference"
         },
         {
-          "@id": "#lives-of-the-artists"
+          "@id": "https://id.alexandremury.art/artworks/lisa-2013/#vasari-text"
         },
         {
-          "@id": "#la-stravaganza-rv279"
+          "@id": "https://id.alexandremury.art/artworks/lisa-2013/#vivaldi-rv279"
         }
       ],
       "amo:mobilizesConcept": [
@@ -579,29 +618,37 @@
           "@id": "https://id.alexandremury.art/concept/cultural-autophagy/"
         }
       ],
-      "amo:hasInterpretiveRegime": [
+      "amo:hasRelationalRegime": [
         {
+          "@type": "DefinedTerm",
           "name": "Hybrid dramaturgy"
         },
         {
+          "@type": "DefinedTerm",
           "name": "Auto-implication"
         },
         {
+          "@type": "DefinedTerm",
           "name": "Critical fiction"
         },
         {
+          "@type": "DefinedTerm",
           "name": "Temporal activation"
         },
         {
+          "@type": "DefinedTerm",
           "name": "Performative self-representation"
         },
         {
+          "@type": "DefinedTerm",
           "name": "Art-historical memory"
         },
         {
+          "@type": "DefinedTerm",
           "name": "Corporeal negotiation"
         },
         {
+          "@type": "DefinedTerm",
           "name": "Gender performativity"
         }
       ]
