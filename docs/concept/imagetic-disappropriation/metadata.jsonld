@@ -1,22 +1,75 @@
 {
   "@context": {
-    "am": "https://id.alexandremury.art/",
+    "amo": "https://id.alexandremury.art/ontology/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "crm": "http://www.cidoc-crm.org/cidoc-crm/",
     "schema": "https://schema.org/",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "amo": "https://id.alexandremury.art/ontology/"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
-      "@id": "am:concept/imagetic-disappropriation",
+      "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/",
       "@type": [
+        "schema:DefinedTerm",
         "crm:E28_Conceptual_Object",
         "skos:Concept"
       ],
       "schema:url": "https://id.alexandremury.art/concept/imagetic-disappropriation/",
-      "schema:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-
+      "schema:mainEntityOfPage": {
+        "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/#webpage",
+        "@type": "schema:WebPage",
+        "schema:url": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
+      },
+      "schema:name": "Imagetic Disappropriation",
+      "schema:alternateName": [
+        "Desapropriação Imagética",
+        "Image Disappropriation",
+        "Disappropriation of the image",
+        "Imagetic disappropriation"
+      ],
+      "schema:description": "Artistic and epistemological concept formulated by Alexandre Mury within the A.M.O. ontology. Imagetic Disappropriation names the operation by which an image is displaced from its symbolic context of origin and acquires autonomous signification without being reducible to reproduction, parody, homage, pastiche, negation, or conventional appropriation.",
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:author": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:copyrightHolder": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:license": "https://www.alexandremury.art/copyright",
+      "schema:isPartOf": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:identifier": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "A.M.O. canonical URI",
+          "schema:value": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "A.M.O. prefix",
+          "schema:value": "am:imagetic-disappropriation"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "A.M.O. local alias",
+          "schema:value": "am:desapropriacao-imagetica"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Wikidata",
+          "schema:value": "Q136744908",
+          "schema:url": "https://www.wikidata.org/wiki/Q136744908"
+        }
+      ],
+      "schema:sameAs": [
+        "https://www.wikidata.org/wiki/Q136744908"
+      ],
+      "skos:exactMatch": {
+        "@id": "http://www.wikidata.org/entity/Q136744908"
+      },
       "skos:prefLabel": [
         {
           "@language": "pt-BR",
@@ -24,7 +77,7 @@
         },
         {
           "@language": "pt-PT",
-          "@value": "Expropriação Imagética"
+          "@value": "Desapropriação Imagética"
         },
         {
           "@language": "en",
@@ -32,97 +85,111 @@
         },
         {
           "@language": "fr",
-          "@value": "Désappropriation Iconique"
+          "@value": "Désappropriation imagétique"
         },
         {
           "@language": "de",
-          "@value": "Bildliche Enteignung"
+          "@value": "Imagetische Disappropriation"
         },
         {
           "@language": "es",
-          "@value": "Desapropiación Icónica"
+          "@value": "Desapropiación imagética"
         },
         {
           "@language": "it",
-          "@value": "Disappropriazione Iconica"
+          "@value": "Disappropriazione imagetica"
         }
       ],
-
       "skos:altLabel": [
         {
           "@language": "en",
           "@value": "Image Disappropriation"
+        },
+        {
+          "@language": "en",
+          "@value": "Disappropriation of the image"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Desapropriação da imagem"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Desvinculação imagética"
         }
       ],
-
       "skos:definition": {
         "@language": "en",
-        "@value": "Imagetic disappropriation names the operation by which an image is displaced from its symbolic context of origin without the intention to reproduce it, ironically quote it, or negate its historical validity. The result is neither parody, homage, pastiche, nor negation: it is instituted difference. The image detaches from its matrix to acquire its own symbolic autonomy. The prefix 'dis-' does not indicate destruction, but detachment; not negation, but liberation from a bond that, if maintained, would prevent the image from thinking for itself."
+        "@value": "Imagetic Disappropriation names the operation by which an image is displaced from its symbolic context of origin without the intention to reproduce it, ironically quote it, or negate its historical validity. The result is neither parody, homage, pastiche, nor negation: it is instituted difference. The image detaches from its matrix to acquire its own symbolic autonomy. The prefix “dis-” does not indicate destruction, but detachment; not negation, but liberation from a bond that, if maintained, would prevent the image from thinking for itself."
       },
-
       "skos:scopeNote": {
         "@language": "en",
-        "@value": "The concept applies to any artistic operation in which the relationship with a pre-existing image acts as a motor for a new symbolic autonomy, and where the result cannot be adequately described as reproduction, parody, homage, or direct criticism. It does not apply to decorative references, purely illustrative citations, or works whose meaning depends entirely on the recognition of the origin."
+        "@value": "The concept applies to artistic operations in which the relationship with a pre-existing image acts as a motor for new symbolic autonomy, and where the result cannot be adequately described as reproduction, parody, homage, pastiche, direct criticism, or conventional appropriation. It does not apply to decorative references, purely illustrative citations, or works whose meaning depends entirely on the recognition of the origin. The concept is transmedial and may operate through photography, performance, video, writing, installation, digital image, archive, metadata, or other forms, provided that the central operation is the displacement of an image from its original symbolic matrix toward a new autonomous field of meaning."
       },
-
+      "skos:historyNote": {
+        "@language": "en",
+        "@value": "The concept emerges in dialogue with Giorgio Agamben's notion of disappropriazione, but shifts the problem from the subject of creation to the ontology of the image. In the A.M.O. register, the operation concerns not expression alone, but the autonomy of the image in relation to its archival, authorial, cultural, and symbolic matrix."
+      },
       "skos:note": [
         {
           "@language": "en",
-          "@value": "HISTORIOGRAPHY: This operation is distinct from artistic appropriation in the historiographical sense — which, since Duchamp (1917), Levine (1981), and Prince, operates through irony, institutional commentary, or postmodern cynicism. In appropriation, the source work is the argument; in disappropriation, it is the point of ignition. The genealogy remains visible but does not govern the destiny of the resulting image."
+          "@value": "SYNTHETIC FORMULATION: Imagetic Disappropriation occurs when an image detaches from its symbolic matrix of origin and begins to operate under a new autonomous condition of meaning."
         },
         {
           "@language": "en",
-          "@value": "GENEALOGY: The concept derives from Giorgio Agamben's disappropriazione, but shifts the focus from the subject of creation to the ontology of the image. The operation concerns not expression, but the autonomy of the image relative to its archival and authorial matrix."
+          "@value": "HISTORIOGRAPHY: This operation is distinct from artistic appropriation in the historiographical sense, which, since Duchamp, Sherrie Levine, Richard Prince, and other appropriation practices, often operates through irony, institutional commentary, critical quotation, or postmodern displacement. In appropriation, the source work often remains the argument. In disappropriation, the source is the point of ignition. The genealogy remains visible, but it does not govern the destiny of the resulting image."
         },
         {
           "@language": "en",
-          "@value": "THEORY: The concept dialogues with Agamben's profanation and Rancière's distribution of the sensible, without coinciding with either. It opens a regime in which the image does not return to use, but produces its own symbolic economy."
+          "@value": "GENEALOGY: The concept derives from a displacement of Giorgio Agamben's disappropriazione. However, Imagetic Disappropriation does not simply reproduce Agamben's philosophical use of the term. It redirects the operation toward the image, asking how an inherited image can separate from its matrix and acquire critical autonomy without becoming mere negation, parody, or homage."
         },
         {
           "@language": "en",
-          "@value": "OPERATIONAL PLAN: Imagetic disappropriation requires no specific medium. It is defined by a structural gesture: separation followed by autonomy."
+          "@value": "THEORY: The concept dialogues with Agamben's profanation and Rancière's distribution of the sensible, without coinciding with either. It opens a field in which the image does not merely return to use, but produces its own symbolic economy."
         },
         {
           "@language": "en",
-          "@value": "DISTINGUISHED FROM RESIGNIFICATION: Resignification operates in meaning; disappropriation operates in the structural relation between image and its origin."
+          "@value": "OPERATIONAL PLAN: Imagetic Disappropriation requires no specific medium. It is defined by a structural gesture: displacement from origin followed by symbolic autonomy."
         },
         {
           "@language": "en",
-          "@value": "EXTENDED TREATMENT: Includes interpretive extension (Goethe/Lewy illustration and subsequent reading attributed explicitly to Mury as interpretation, not Agamben). Registered in AMO Vocabulário Controlado: Definições Descritivas, Part III, External Reference E1."
+          "@value": "DISTINCTION FROM RESIGNIFICATION: Resignification operates primarily in meaning. Imagetic Disappropriation operates in the structural relation between image and origin. A disappropriated image may resignify, but resignification alone does not constitute disappropriation."
+        },
+        {
+          "@language": "en",
+          "@value": "DISTINCTION FROM INTERTEXTUALITY: Intertextuality describes relations among texts, images, signs, or cultural references. Imagetic Disappropriation may include intertextual relations, but its defining operation is stronger: the image separates from its prior symbolic matrix and begins to operate as an autonomous field."
+        },
+        {
+          "@language": "en",
+          "@value": "EXTENDED TREATMENT: The concept includes an interpretive extension involving Goethe, Siegfried Lewy, and subsequent readings attributed explicitly to Alexandre Mury as interpretation, not to Agamben. This extension is registered in the A.M.O. controlled vocabulary as an external reference and should be understood as part of Mury's conceptual elaboration."
         }
       ],
-
       "skos:inScheme": {
-        "@id": "am:scheme/epistemology-of-the-image"
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
       },
-
       "skos:narrower": {
-        "@id": "am:concept/cultural-autophagy"
+        "@id": "https://id.alexandremury.art/concept/cultural-autophagy/"
       },
-
       "skos:related": [
         {
-          "@id": "am:concept/critical-fiction"
+          "@id": "https://id.alexandremury.art/concept/critical-fiction/"
         },
         {
-          "@id": "am:concept/theoretical-disappropriation"
+          "@id": "https://id.alexandremury.art/concept/theoretical-disappropriation/"
         },
         {
-          "@id": "am:concept/visual-intertextuality"
+          "@id": "https://id.alexandremury.art/concept/visual-intertextuality/"
         },
         {
-          "@id": "am:concept/resignification"
+          "@id": "https://id.alexandremury.art/concept/resignification/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/self-implicative-method/"
         }
       ],
-
-      "skos:relatedMatch": {
-        "@id": "am:concept/external/agamben-disappropriation"
-      },
-
-      "schema:author": {
-        "@id": "am:person/alexandre-mury"
-      },
-
       "schema:citation": [
         {
           "@id": "https://doi.org/10.5281/zenodo.17458777"
@@ -134,8 +201,32 @@
           "@id": "https://doi.org/10.5281/zenodo.20823388"
         }
       ],
-
+      "amo:primaryDocumentation": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17458777"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20823388"
+        }
+      ],
+      "amo:conceptualAuthor": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
       "amo:hasConceptualSource": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17458777"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20823388"
+        }
+      ],
+      "amo:hasDialogueSource": [
         {
           "@type": "schema:CreativeWork",
           "schema:name": "Creazione e anarchia",
@@ -161,52 +252,278 @@
           "schema:datePublished": "2008"
         }
       ],
-
-      "amo:hasInterpretiveRegime": [
+      "amo:operatesThrough": [
         {
-          "@id": "am:relation/re-reading"
+          "@id": "https://id.alexandremury.art/relation/displacement-from-origin/"
         },
         {
-          "@id": "am:relation/re-enactment"
+          "@id": "https://id.alexandremury.art/relation/symbolic-detachment/"
         },
         {
-          "@id": "am:relation/self-representation"
+          "@id": "https://id.alexandremury.art/relation/autonomous-signification/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/relation/critical-reactivation/"
         }
       ],
-
+      "amo:hasRelationalRegime": [
+        {
+          "@id": "https://id.alexandremury.art/relation/re-reading/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/relation/reenactment/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/relation/self-representation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/relation/symbolic-autonomy/"
+        }
+      ],
+      "amo:distinguishedFrom": [
+        {
+          "@id": "https://id.alexandremury.art/concept/appropriation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/parody/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/homage/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/pastiche/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/negation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/resignification/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/intertextuality/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/decorative-reference/"
+        }
+      ],
+      "schema:keywords": [
+        "Imagetic Disappropriation",
+        "Desapropriação Imagética",
+        "Image Disappropriation",
+        "Alexandre Mury",
+        "A.M.O.",
+        "Alexandre Mury Ontology",
+        "image autonomy",
+        "symbolic autonomy",
+        "displacement from origin",
+        "appropriation art",
+        "critical reactivation",
+        "visual intertextuality",
+        "resignification",
+        "post-conceptual art",
+        "epistemology of the image",
+        "semantic web",
+        "CIDOC CRM",
+        "SKOS",
+        "JSON-LD"
+      ],
       "rdfs:isDefinedBy": {
-        "@id": "amo:Ontology"
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/",
+      "@type": [
+        "schema:DefinedTermSet",
+        "skos:ConceptScheme"
+      ],
+      "schema:name": "Epistemology of the Image",
+      "schema:description": "Concept scheme for theoretical concepts developed within the Alexandre Mury Ontology."
+    },
+    {
+      "@id": "https://id.alexandremury.art/person/alexandre-mury/",
+      "@type": [
+        "schema:Person",
+        "crm:E21_Person"
+      ],
+      "schema:name": "Alexandre Mury",
+      "schema:nationality": {
+        "@type": "schema:Country",
+        "schema:name": "Brazil"
       },
-
+      "schema:jobTitle": "Visual artist and independent researcher",
+      "schema:url": "https://www.alexandremury.art/",
+      "schema:sameAs": [
+        "https://www.wikidata.org/wiki/Q105532718",
+        "https://pt.wikipedia.org/wiki/Alexandre_Mury",
+        "https://orcid.org/0009-0008-9355-4876",
+        "https://isni.org/isni/0000000129843253",
+        "https://viaf.org/viaf/15161329794452131121/",
+        "https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706",
+        "http://lattes.cnpq.br/7735731830748241",
+        "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury",
+        "https://www.premiopipa.com/alexandre-mury/"
+      ],
       "schema:identifier": [
         {
           "@type": "schema:PropertyValue",
           "schema:propertyID": "Wikidata",
-          "schema:value": "Q136744908"
+          "schema:value": "Q105532718",
+          "schema:url": "https://www.wikidata.org/wiki/Q105532718"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "ORCID",
+          "schema:value": "0009-0008-9355-4876",
+          "schema:url": "https://orcid.org/0009-0008-9355-4876"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "ISNI",
+          "schema:value": "0000000129843253",
+          "schema:url": "https://isni.org/isni/0000000129843253"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "VIAF",
+          "schema:value": "15161329794452131121",
+          "schema:url": "https://viaf.org/viaf/15161329794452131121/"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Fundação Biblioteca Nacional authority ID",
+          "schema:value": "000679706",
+          "schema:url": "https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Lattes",
+          "schema:value": "7735731830748241",
+          "schema:url": "http://lattes.cnpq.br/7735731830748241"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Itaú Cultural",
+          "schema:value": "42031",
+          "schema:url": "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury"
         }
-      ],
-
-      "skos:exactMatch": {
-        "@id": "http://www.wikidata.org/entity/Q136744908"
+      ]
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.17458777",
+      "@type": "schema:ScholarlyArticle",
+      "schema:author": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:url": "https://doi.org/10.5281/zenodo.17458777",
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:propertyID": "DOI",
+        "schema:value": "10.5281/zenodo.17458777"
       }
     },
-
     {
-      "@id": "am:person/alexandre-mury",
-      "@type": [
-        "crm:E39_Actor",
-        "schema:Person"
-      ],
-      "schema:name": "Alexandre Mury"
+      "@id": "https://doi.org/10.5281/zenodo.17548245",
+      "@type": "schema:ScholarlyArticle",
+      "schema:name": "Da blasfêmia à canonização: dramaturgias híbridas e o método autoimplicativo",
+      "schema:alternateName": "From Blasphemy to Canonization: Hybrid Dramaturgies and the Self-Implicative Method",
+      "schema:author": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:datePublished": "2025",
+      "schema:url": "https://doi.org/10.5281/zenodo.17548245",
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:propertyID": "DOI",
+        "schema:value": "10.5281/zenodo.17548245"
+      }
     },
-
+    {
+      "@id": "https://doi.org/10.5281/zenodo.20823388",
+      "@type": "schema:ScholarlyArticle",
+      "schema:name": "Desapropriação Teórica: Ficção Crítica e Metanoia Hermenêutica da Imagem",
+      "schema:alternateName": "Theoretical Disappropriation: Critical Fiction and the Hermeneutic Metanoia of the Image",
+      "schema:author": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:datePublished": "2026",
+      "schema:url": "https://doi.org/10.5281/zenodo.20823388",
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:propertyID": "DOI",
+        "schema:value": "10.5281/zenodo.20823388"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/ontology/",
+      "@type": [
+        "schema:CreativeWork",
+        "skos:ConceptScheme"
+      ],
+      "schema:name": "A.M.O. — Alexandre Mury Ontology",
+      "schema:alternateName": "Alexandre Mury Ontology",
+      "schema:url": "https://id.alexandremury.art/ontology/",
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:license": "https://www.alexandremury.art/copyright"
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/#webpage",
+      "@type": "schema:WebPage",
+      "schema:url": "https://id.alexandremury.art/concept/imagetic-disappropriation/",
+      "schema:name": "Imagetic Disappropriation — A.M.O. Concept Record",
+      "schema:description": "Canonical HTML concept record for Imagetic Disappropriation / Desapropriação Imagética in the Alexandre Mury Ontology.",
+      "schema:inLanguage": "en",
+      "schema:author": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:about": {
+        "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
+      },
+      "schema:mainEntity": {
+        "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
+      },
+      "schema:license": "https://www.alexandremury.art/copyright",
+      "schema:sameAs": [
+        "https://www.wikidata.org/wiki/Q136744908"
+      ],
+      "schema:citation": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17458777"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20823388"
+        }
+      ]
+    },
     {
       "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/metadata.jsonld",
-      "@type": "schema:WebPage",
+      "@type": [
+        "schema:WebPage",
+        "schema:DigitalDocument"
+      ],
       "schema:url": "https://id.alexandremury.art/concept/imagetic-disappropriation/metadata.jsonld",
       "schema:name": "Imagetic Disappropriation — Structured Metadata",
-      "schema:description": "SKOS metadata for the concept Imagetic Disappropriation (Desapropriação Imagética) in the Alexandre Mury Ontology (AMO).",
-      "schema:inLanguage": "en"
+      "schema:description": "SKOS, CIDOC CRM, and Schema.org metadata for the concept Imagetic Disappropriation / Desapropriação Imagética in the Alexandre Mury Ontology.",
+      "schema:encodingFormat": "application/ld+json",
+      "schema:inLanguage": "en",
+      "schema:about": {
+        "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
+      },
+      "schema:mainEntity": {
+        "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
+      },
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:license": "https://www.alexandremury.art/copyright",
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
     }
   ]
 }
