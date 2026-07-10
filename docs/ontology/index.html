@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
 
     <link rel="canonical" href="https://id.alexandremury.art/ontology/">
-    <link rel="alternate" type="application/ld+json" href="metadata.jsonld">
+    <link rel="alternate" type="application/ld+json" href="https://id.alexandremury.art/ontology/metadata.jsonld">
 
     <style>
         body {
@@ -100,6 +100,9 @@
 <p><strong>ID</strong><br>
 <span class="uri">https://id.alexandremury.art/ontology/</span></p>
 
+<p><strong>STRUCTURED METADATA</strong><br>
+<a class="uri" href="https://id.alexandremury.art/ontology/metadata.jsonld">https://id.alexandremury.art/ontology/metadata.jsonld</a></p>
+
 <p><strong>NAMESPACE</strong><br>
 <span class="uri">https://id.alexandremury.art/ontology/</span></p>
 
@@ -139,7 +142,7 @@ Ontology matrix, terminology authority, and semantic publication policy.</p>
 
 <p>A.M.O. does not treat external sources, interlocutors, genealogies, or analogies as the authorial origin of its concepts.</p>
 
-<p>A.M.O. does not require every future artwork, relation, or concept to be manually listed on this page in order to be interoperable. Each record is identified by its own canonical URI and may carry its own human-readable page and machine-readable metadata.</p>
+<p>A.M.O. does not require every future artwork, relation, or concept to be manually listed on this page in order to be interoperable. Each record is identified by its own canonical URI and carries its own human-readable page and machine-readable metadata.</p>
 
 <hr>
 
@@ -151,7 +154,7 @@ Ontology matrix, terminology authority, and semantic publication policy.</p>
 
 <p>It is distinct from the visual and public-facing website <span class="uri">https://www.alexandremury.art/</span>, which remains oriented toward broader human presentation.</p>
 
-<p>This page functions as a matrix document. It preserves the conceptual, terminological, and technical decisions required for later distribution into separate JSON-LD, RDF/Turtle, CIDOC CRM, and SKOS files. At the present stage, it centralizes the core decisions in one human-verifiable document in order to reduce fragmentation and avoid inconsistent parallel versions.</p>
+<p>This page functions as a matrix document. It preserves the conceptual, terminological, and technical decisions that organize A.M.O. across human-readable pages, JSON-LD records, RDF-compatible structures, CIDOC CRM descriptions, SKOS concepts, and Schema.org metadata.</p>
 
 <hr>
 
@@ -185,13 +188,13 @@ Canonical entity URIs use a final slash.</p>
 
 <h2 id="publication-model">05 Publication model</h2>
 
-<p>A.M.O. records are published progressively. The absence of an individual page at a given moment does not alter the conceptual structure of the ontology.</p>
+<p>A.M.O. records are structured as paired canonical records: a human-readable <code>index.html</code> and a corresponding machine-readable <code>metadata.jsonld</code>.</p>
 
-<p>Each canonical record may contain a human-readable <code>index.html</code> and a corresponding <code>metadata.jsonld</code>.</p>
+<p>Each canonical record may describe a concept, artwork, person, scheme, relational term, external anchoring node, document, event, material manifestation, digital object, or semantic relation.</p>
 
-<p>Individual records may describe concepts, artworks, persons, schemes, relational terms, external anchoring nodes, or documents.</p>
+<p>The ontology remains extensible. New records, terms, artworks, relations, schemes, or external anchoring nodes may be added, renamed, reorganized, or withdrawn as the system develops, without altering the general namespace policy or the autonomy of already published records.</p>
 
-<p>Aggregate files such as <code>ontology.jsonld</code>, <code>concepts.jsonld</code>, RDF/Turtle files, and CIDOC CRM serializations are deferred until the individual records and terminology authority are stable.</p>
+<p>Aggregate distributions such as <code>ontology.jsonld</code>, <code>concepts.jsonld</code>, RDF/Turtle files, and CIDOC CRM serializations may be generated from the canonical records when appropriate.</p>
 
 <hr>
 
@@ -223,7 +226,7 @@ Canonical entity URIs use a final slash.</p>
 
 <h3>06.5 Machine-readable layer</h3>
 
-<p>The machine-readable layer distributes semantic information through JSON-LD and, in later phases, RDF/Turtle and other serializations. In the present phase, each record may carry its own <code>metadata.jsonld</code>, while aggregate files are deferred until the vocabulary is stable.</p>
+<p>The machine-readable layer distributes semantic information through JSON-LD and other RDF-compatible structures. Each canonical record carries its own <code>metadata.jsonld</code>, allowing human-readable documentation and machine-readable description to remain synchronized without overloading the visual page.</p>
 
 <hr>
 
@@ -231,6 +234,9 @@ Canonical entity URIs use a final slash.</p>
 
 <p><strong>Ontology</strong><br>
 <span class="uri">https://id.alexandremury.art/ontology/</span></p>
+
+<p><strong>Ontology metadata</strong><br>
+<a class="uri" href="https://id.alexandremury.art/ontology/metadata.jsonld">https://id.alexandremury.art/ontology/metadata.jsonld</a></p>
 
 <p><strong>Concept scheme</strong><br>
 <span class="uri">https://id.alexandremury.art/scheme/{scheme-slug}/</span></p>
@@ -254,7 +260,7 @@ Canonical entity URIs use a final slash.</p>
 
 <h2 id="authorial-terms">08 Authorial terms</h2>
 
-<p>The following terms identify the current authorial terminology field of A.M.O. in Portuguese and English. This list is not exhaustive, closed, or definitive. It records terms currently published, prioritized, or under consolidation within the ontology.</p>
+<p>The following terms identify the current authorial terminology field of A.M.O. in Portuguese and English. This list is not exhaustive, closed, or definitive. It records terms currently integrated into the ontology as authorial conceptual references.</p>
 
 <p>A.M.O. remains extensible. Concepts may be added, deferred, renamed, reorganized, or withdrawn as the ontology develops, without altering the general namespace policy or the autonomy of already published records.</p>
 
@@ -290,7 +296,7 @@ Canonical entity URIs use a final slash.</p>
         <span class="uri">https://id.alexandremury.art/concept/artwork-as-metadata/</span></li>
 </ul>
 
-<p class="note">The term “Epistemology of the Image” functions as both a conceptual field and a concept scheme within A.M.O. “The artwork as metadata” is treated as an authorial term in development within the ontology. Additional terms may be incorporated later when their definitions, scope, and semantic relations become stable enough for publication.</p>
+<p class="note">The term “Epistemology of the Image” functions as both a conceptual field and a concept scheme within A.M.O. Dedicated records for authorial terms are published as part of the A.M.O. namespace. The terminology field remains extensible and may be reorganized as the ontology develops.</p>
 
 <hr>
 
@@ -437,23 +443,14 @@ To make concepts, artworks, and semantic relations discoverable by humans, catal
 
 <h2 id="machine-readable-distribution">16 Machine-readable distribution policy</h2>
 
-<p>Each canonical record may include a human-readable <code>index.html</code> and a corresponding <code>metadata.jsonld</code>.</p>
+<p>Each canonical record includes a human-readable <code>index.html</code> and a corresponding <code>metadata.jsonld</code>.</p>
 
-<p>Aggregate files are deferred until the individual records and the terminology authority are stable.</p>
+<p>The ontology metadata record is published at:<br>
+<a class="uri" href="https://id.alexandremury.art/ontology/metadata.jsonld">https://id.alexandremury.art/ontology/metadata.jsonld</a></p>
 
-<p><strong>Deferred files</strong></p>
+<p>Machine-readable records support discoverability, attribution, semantic disambiguation, interoperability, cataloguing, cultural heritage documentation, and computational reading.</p>
 
-<ul>
-    <li>— <code>ontology.jsonld</code></li>
-    <li>— <code>concepts.jsonld</code></li>
-    <li>— <code>terminology.jsonld</code></li>
-    <li>— <code>concepts.ttl</code></li>
-    <li>— artwork-level RDF/Turtle files</li>
-    <li>— CIDOC CRM XML serializations</li>
-</ul>
-
-<p><strong>Reason for deferral</strong><br>
-At this stage, centralizing the core decisions in one matrix HTML document reduces the risk of inconsistencies across multiple files and supports human verification before formal distribution.</p>
+<p>Aggregate files such as <code>ontology.jsonld</code>, <code>concepts.jsonld</code>, <code>terminology.jsonld</code>, RDF/Turtle files, artwork-level RDF files, and CIDOC CRM serializations may be generated from the canonical records as the ontology expands.</p>
 
 <hr>
 
