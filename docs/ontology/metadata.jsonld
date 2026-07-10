@@ -1,0 +1,734 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+    "amo": "https://id.alexandremury.art/ontology/",
+    "dct": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://id.alexandremury.art/ontology/",
+      "@type": [
+        "owl:Ontology",
+        "schema:CreativeWork",
+        "crm:E29_Design_or_Procedure"
+      ],
+      "schema:name": [
+        {
+          "@language": "en",
+          "@value": "A.M.O. — Alexandre Mury Ontology"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "A.M.O. — Ontologia Alexandre Mury"
+        }
+      ],
+      "schema:alternateName": [
+        "A.M.O.",
+        "AMO",
+        "Alexandre Mury Ontology",
+        "Ontologia Alexandre Mury"
+      ],
+      "schema:url": "https://id.alexandremury.art/ontology/",
+      "schema:mainEntityOfPage": {
+        "@id": "https://id.alexandremury.art/ontology/#webpage"
+      },
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:author": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:copyrightHolder": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:copyrightNotice": "© Alexandre Mury. All rights reserved unless otherwise specified.",
+      "schema:license": "https://www.alexandremury.art/copyright",
+      "schema:isAccessibleForFree": true,
+      "dct:issued": "2026-06-19",
+      "dct:modified": "2026-07-09",
+      "amo:baseURI": "https://id.alexandremury.art/",
+      "amo:namespace": "https://id.alexandremury.art/ontology/",
+      "amo:preferredPrefix": "amo",
+      "schema:description": "A.M.O. — Alexandre Mury Ontology is an authorial ontology, terminology authority, and knowledge organization system developed by Alexandre Mury to document artworks, concepts, relational terms, terminology authorities, and semantic relations emerging from his artistic and theoretical practice. It works in dialogue with CIDOC CRM, SKOS, Schema.org, JSON-LD, RDF, Wikidata, DOI-based scholarly circulation, and linked open data practices without replacing them.",
+      "schema:disambiguatingDescription": "A.M.O. is not a closed theoretical doctrine, a substitute for CIDOC CRM, SKOS, Schema.org, Wikidata, museum records, DOI records, scholarly references, or external criticism. It is an authorial semantic layer designed to make artistic thought, artworks, concepts, and relations more legible and interoperable without prescribing a single interpretation of the works.",
+      "schema:keywords": [
+        "A.M.O.",
+        "Alexandre Mury Ontology",
+        "Ontologia Alexandre Mury",
+        "Alexandre Mury",
+        "authorial ontology",
+        "terminology authority",
+        "knowledge organization system",
+        "epistemology of the image",
+        "artistic research",
+        "post-conceptual art",
+        "semantic documentation",
+        "machine-readable theory",
+        "CIDOC CRM",
+        "SKOS",
+        "Schema.org",
+        "JSON-LD",
+        "RDF",
+        "linked open data",
+        "knowledge graphs",
+        "semantic web",
+        "metadata",
+        "artwork as metadata"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/scheme/regimes/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/cultural-autophagy/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/self-implicative-method/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/critical-fiction/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/theoretical-disappropriation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/hermeneutic-metanoia/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/algorithmic-canonization/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/artwork-as-metadata/"
+        }
+      ],
+      "amo:hasCurrentAuthorialTerm": [
+        {
+          "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/cultural-autophagy/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/self-implicative-method/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/critical-fiction/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/theoretical-disappropriation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/hermeneutic-metanoia/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/algorithmic-canonization/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/artwork-as-metadata/"
+        }
+      ],
+      "amo:termsScopeNote": {
+        "@language": "en",
+        "@value": "The authorial terms listed in this ontology record identify the current terminology field of A.M.O. They are not exhaustive, closed, or definitive. Concepts may be added, deferred, renamed, reorganized, or withdrawn as the ontology develops, without altering the general namespace policy or the autonomy of already published records."
+      },
+      "amo:namespacePolicy": {
+        "@language": "en",
+        "@value": "English-language slugs are used for stability, interoperability, and linked data processing. Portuguese labels preserve the epistemological genealogy, original coinage, and authorial intent of the concepts. Canonical entity URIs use a final slash."
+      },
+      "amo:publicationModel": {
+        "@language": "en",
+        "@value": "A.M.O. records are published progressively. Each canonical record may contain a human-readable index.html and a corresponding metadata.jsonld. Aggregate files such as ontology.jsonld, concepts.jsonld, RDF/Turtle files, and CIDOC CRM serializations are deferred until individual records and the terminology authority are stable."
+      },
+      "amo:doesNotDo": [
+        "does not prescribe a single interpretation of the works",
+        "does not replace CIDOC CRM, SKOS, Schema.org, Wikidata, DOI records, museum records, scholarly references, or external criticism",
+        "does not convert artistic practice into a closed theoretical doctrine",
+        "does not treat external sources, interlocutors, genealogies, or analogies as the authorial origin of its concepts",
+        "does not require every future artwork, relation, or concept to be manually listed on the ontology page in order to be interoperable"
+      ],
+      "amo:preferredArtworkConceptRelation": [
+        "amo:mobilizesConcept",
+        "amo:hasOperationalInstance"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/ontology/#webpage",
+      "@type": "schema:WebPage",
+      "schema:url": "https://id.alexandremury.art/ontology/",
+      "schema:name": "A.M.O. — Alexandre Mury Ontology",
+      "schema:description": "Human-readable ontology matrix, terminology authority, and semantic publication policy for A.M.O. — Alexandre Mury Ontology.",
+      "schema:inLanguage": "en",
+      "schema:author": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:about": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:mainEntity": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:license": "https://www.alexandremury.art/copyright",
+      "schema:isPartOf": {
+        "@id": "https://id.alexandremury.art/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/ontology/metadata.jsonld",
+      "@type": [
+        "schema:DigitalDocument",
+        "schema:WebPage"
+      ],
+      "schema:url": "https://id.alexandremury.art/ontology/metadata.jsonld",
+      "schema:name": "A.M.O. — Alexandre Mury Ontology — Structured Metadata",
+      "schema:description": "JSON-LD structured metadata for A.M.O. — Alexandre Mury Ontology.",
+      "schema:encodingFormat": "application/ld+json",
+      "schema:inLanguage": "en",
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:about": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:mainEntity": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:license": "https://www.alexandremury.art/copyright",
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/",
+      "@type": "schema:WebSite",
+      "schema:name": "A.M.O. — Alexandre Mury Ontology",
+      "schema:url": "https://id.alexandremury.art/",
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/person/alexandre-mury/",
+      "@type": [
+        "schema:Person",
+        "crm:E21_Person"
+      ],
+      "schema:name": "Alexandre Mury",
+      "schema:givenName": "Alexandre",
+      "schema:familyName": "Mury",
+      "schema:nationality": {
+        "@type": "schema:Country",
+        "schema:name": "Brazil"
+      },
+      "schema:jobTitle": "Visual artist and independent researcher",
+      "schema:description": "Brazilian artist and independent researcher working across photography, performance, post-conceptual art, ontology-building, semantic documentation, and epistemology of the image.",
+      "schema:url": "https://www.alexandremury.art/",
+      "schema:sameAs": [
+        "https://www.wikidata.org/wiki/Q105532718",
+        "https://pt.wikipedia.org/wiki/Alexandre_Mury",
+        "https://orcid.org/0009-0008-9355-4876",
+        "https://www.imdb.com/name/nm6960431/",
+        "https://isni.org/isni/0000000129843253",
+        "https://viaf.org/viaf/15161329794452131121/",
+        "https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706",
+        "http://lattes.cnpq.br/7735731830748241",
+        "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury",
+        "https://www.premiopipa.com/alexandre-mury/"
+      ],
+      "schema:identifier": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Wikidata",
+          "schema:value": "Q105532718",
+          "schema:url": "https://www.wikidata.org/wiki/Q105532718"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "ORCID",
+          "schema:value": "0009-0008-9355-4876",
+          "schema:url": "https://orcid.org/0009-0008-9355-4876"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "ISNI",
+          "schema:value": "0000000129843253",
+          "schema:url": "https://isni.org/isni/0000000129843253"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "VIAF",
+          "schema:value": "15161329794452131121",
+          "schema:url": "https://viaf.org/viaf/15161329794452131121/"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Fundação Biblioteca Nacional authority ID",
+          "schema:value": "000679706",
+          "schema:url": "https://acervo.bn.gov.br/Sophia_Web/autoridade/detalhe/679706"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Lattes",
+          "schema:value": "7735731830748241",
+          "schema:url": "http://lattes.cnpq.br/7735731830748241"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "Itaú Cultural",
+          "schema:value": "42031",
+          "schema:url": "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "IMDb",
+          "schema:value": "nm6960431",
+          "schema:url": "https://www.imdb.com/name/nm6960431/"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/",
+      "@type": [
+        "schema:DefinedTermSet",
+        "skos:ConceptScheme"
+      ],
+      "schema:name": "Epistemology of the Image",
+      "schema:alternateName": [
+        "Epistemologia da Imagem"
+      ],
+      "schema:url": "https://id.alexandremury.art/scheme/epistemology-of-the-image/",
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Epistemology of the Image"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Epistemologia da Imagem"
+        }
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Conceptual field and concept scheme for authorial concepts developed within Alexandre Mury's artistic and theoretical practice."
+      },
+      "schema:hasDefinedTerm": [
+        {
+          "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/cultural-autophagy/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/self-implicative-method/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/critical-fiction/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/theoretical-disappropriation/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/hermeneutic-metanoia/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/algorithmic-canonization/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/artwork-as-metadata/"
+        }
+      ],
+      "amo:alsoFunctionsAsAuthorialTerm": true,
+      "amo:termsScopeNote": {
+        "@language": "en",
+        "@value": "This concept scheme identifies the current authorial terminology field of A.M.O. It remains extensible and does not constitute a closed or definitive inventory."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/scheme/regimes/",
+      "@type": [
+        "schema:DefinedTermSet",
+        "skos:ConceptScheme"
+      ],
+      "schema:name": "Relational regimes",
+      "schema:alternateName": [
+        "Modes of relation",
+        "Regimes de Relação"
+      ],
+      "schema:url": "https://id.alexandremury.art/scheme/regimes/",
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Relational regimes"
+        },
+        {
+          "@language": "en",
+          "@value": "Modes of relation"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Regimes de Relação"
+        }
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Controlled vocabulary for relational terms describing how artworks relate to prior images, bodies, figures, traditions, archives, symbolic structures, or cultural signs. These terms do not prescribe interpretation; they describe modes of relation."
+      },
+      "amo:preferredProperty": "amo:hasRelationalRegime",
+      "amo:termURIPattern": "https://id.alexandremury.art/relation/{relation-slug}/",
+      "amo:termsScopeNote": {
+        "@language": "en",
+        "@value": "Relational terms may include reenactment, self-representation, visual citation, internal critical digestion, metadata activation, polysemic articulation, and other modes of relation. The list is intentionally not exhaustive."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/",
+      "@type": [
+        "schema:DefinedTerm",
+        "skos:Concept",
+        "crm:E28_Conceptual_Object"
+      ],
+      "schema:name": "Imagetic Disappropriation",
+      "schema:alternateName": [
+        "Desapropriação imagética"
+      ],
+      "schema:url": "https://id.alexandremury.art/concept/imagetic-disappropriation/",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Imagetic disappropriation"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Desapropriação imagética"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/cultural-autophagy/",
+      "@type": [
+        "schema:DefinedTerm",
+        "skos:Concept",
+        "crm:E28_Conceptual_Object"
+      ],
+      "schema:name": "Cultural Autophagy",
+      "schema:alternateName": [
+        "Autofagia cultural"
+      ],
+      "schema:url": "https://id.alexandremury.art/concept/cultural-autophagy/",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Cultural autophagy"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Autofagia cultural"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/self-implicative-method/",
+      "@type": [
+        "schema:DefinedTerm",
+        "skos:Concept",
+        "crm:E28_Conceptual_Object"
+      ],
+      "schema:name": "Self-Implicative Method",
+      "schema:alternateName": [
+        "Método autoimplicativo"
+      ],
+      "schema:url": "https://id.alexandremury.art/concept/self-implicative-method/",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Self-implicative method"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Método autoimplicativo"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/hybrid-dramaturgies/",
+      "@type": [
+        "schema:DefinedTerm",
+        "skos:Concept",
+        "crm:E28_Conceptual_Object"
+      ],
+      "schema:name": "Hybrid Dramaturgies",
+      "schema:alternateName": [
+        "Dramaturgias híbridas"
+      ],
+      "schema:url": "https://id.alexandremury.art/concept/hybrid-dramaturgies/",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Hybrid dramaturgies"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Dramaturgias híbridas"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/critical-fiction/",
+      "@type": [
+        "schema:DefinedTerm",
+        "skos:Concept",
+        "crm:E28_Conceptual_Object"
+      ],
+      "schema:name": "Critical Fiction",
+      "schema:alternateName": [
+        "Ficção crítica"
+      ],
+      "schema:url": "https://id.alexandremury.art/concept/critical-fiction/",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Critical fiction"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Ficção crítica"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+      },
+      "amo:conceptStatus": "under consolidation",
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/theoretical-disappropriation/",
+      "@type": [
+        "schema:DefinedTerm",
+        "skos:Concept",
+        "crm:E28_Conceptual_Object"
+      ],
+      "schema:name": "Theoretical Disappropriation",
+      "schema:alternateName": [
+        "Desapropriação teórica"
+      ],
+      "schema:url": "https://id.alexandremury.art/concept/theoretical-disappropriation/",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Theoretical disappropriation"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Desapropriação teórica"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+      },
+      "amo:conceptStatus": "under consolidation",
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/hermeneutic-metanoia/",
+      "@type": [
+        "schema:DefinedTerm",
+        "skos:Concept",
+        "crm:E28_Conceptual_Object"
+      ],
+      "schema:name": "Hermeneutic Metanoia",
+      "schema:alternateName": [
+        "Metanoia hermenêutica"
+      ],
+      "schema:url": "https://id.alexandremury.art/concept/hermeneutic-metanoia/",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Hermeneutic metanoia"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Metanoia hermenêutica"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+      },
+      "amo:conceptStatus": "under consolidation",
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/algorithmic-canonization/",
+      "@type": [
+        "schema:DefinedTerm",
+        "skos:Concept",
+        "crm:E28_Conceptual_Object"
+      ],
+      "schema:name": "Algorithmic Canonization",
+      "schema:alternateName": [
+        "Canonização algorítmica"
+      ],
+      "schema:url": "https://id.alexandremury.art/concept/algorithmic-canonization/",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Algorithmic canonization"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Canonização algorítmica"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+      },
+      "amo:conceptStatus": "under consolidation",
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://id.alexandremury.art/concept/artwork-as-metadata/",
+      "@type": [
+        "schema:DefinedTerm",
+        "skos:Concept",
+        "crm:E28_Conceptual_Object"
+      ],
+      "schema:name": "The Artwork as Metadata",
+      "schema:alternateName": [
+        "Artwork as Metadata",
+        "Obra como metadado"
+      ],
+      "schema:url": "https://id.alexandremury.art/concept/artwork-as-metadata/",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "The artwork as metadata"
+        },
+        {
+          "@language": "pt-BR",
+          "@value": "Obra como metadado"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+      },
+      "amo:conceptStatus": "in development",
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.17458777",
+      "@type": "schema:ScholarlyArticle",
+      "schema:name": "Theory as Poor Image: Hito Steyerl's Text in Algorithmic Circulation",
+      "schema:author": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:datePublished": "2025",
+      "schema:url": "https://doi.org/10.5281/zenodo.17458777",
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:propertyID": "DOI",
+        "schema:value": "10.5281/zenodo.17458777"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.17548245",
+      "@type": "schema:ScholarlyArticle",
+      "schema:name": "Da blasfêmia à canonização: dramaturgias híbridas e o método autoimplicativo",
+      "schema:alternateName": "From Blasphemy to Canonization: Hybrid Dramaturgies and the Self-Implicative Method",
+      "schema:author": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:datePublished": "2025",
+      "schema:url": "https://doi.org/10.5281/zenodo.17548245",
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:propertyID": "DOI",
+        "schema:value": "10.5281/zenodo.17548245"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.20823388",
+      "@type": "schema:ScholarlyArticle",
+      "schema:name": "Desapropriação teórica: ficção crítica e metanoia hermenêutica da imagem",
+      "schema:alternateName": "Theoretical Disappropriation: Critical Fiction and the Hermeneutic Metanoia of the Image",
+      "schema:author": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:datePublished": "2026",
+      "schema:url": "https://doi.org/10.5281/zenodo.20823388",
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:propertyID": "DOI",
+        "schema:value": "10.5281/zenodo.20823388"
+      }
+    }
+  ]
+}
