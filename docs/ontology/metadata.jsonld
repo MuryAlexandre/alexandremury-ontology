@@ -313,9 +313,9 @@
         "schema:DefinedTermSet",
         "skos:ConceptScheme"
       ],
-      "schema:name": "Poietic Epistemology of the Image",
+      "schema:name": "Poietic epistemology of the Image",
       "schema:alternateName": [
-        "Epistemologia da Imagem"
+        "Epistemologia poética da Imagem"
       ],
       "schema:url": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/",
       "schema:creator": {
@@ -328,7 +328,7 @@
         },
         {
           "@language": "pt-BR",
-          "@value": "Epistemologia da Imagem"
+          "@value": "Epistemologia poética da Imagem"
         }
       ],
       "skos:definition": {
