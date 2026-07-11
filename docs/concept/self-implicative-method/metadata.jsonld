@@ -4,7 +4,9 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "crm": "http://www.cidoc-crm.org/cidoc-crm/",
     "schema": "https://schema.org/",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dct": "http://purl.org/dc/terms/"
   },
   "@graph": [
     {
@@ -16,23 +18,14 @@
       ],
       "schema:url": "https://id.alexandremury.art/concept/self-implicative-method/",
       "schema:mainEntityOfPage": {
-        "@id": "https://id.alexandremury.art/concept/self-implicative-method/#webpage",
-        "@type": "schema:WebPage",
-        "schema:url": "https://id.alexandremury.art/concept/self-implicative-method/"
+        "@id": "https://id.alexandremury.art/concept/self-implicative-method/#webpage"
       },
       "schema:name": "Self-Implicative Method",
       "schema:alternateName": [
         "Método Autoimplicativo",
-        "Self-implicative approach",
-        "Self-implicative practice",
-        "Self-implicative writing",
-        "Autoimplicative method",
-        "Abordagem autoimplicativa",
-        "Prática autoimplicativa",
-        "Escrita autoimplicativa",
-        "Autoimplicação"
+        "Autoimplicative Method"
       ],
-      "schema:description": "Artistic and epistemological concept formulated by Alexandre Mury within the A.M.O. ontology. The Self-Implicative Method designates the practice through which the artist critically intervenes in the contemporary regimes of existence of their own work, recognizing that documentation, cataloguing, circulation, ontologies, metadata, and algorithmic systems no longer merely describe the artwork, but actively participate in its historicity, recoverability, and public intelligibility.",
+      "schema:description": "Authorial methodological concept formulated by Alexandre Mury within A.M.O. and articulated within the Poietic Epistemology of the Image scheme. The Self-Implicative Method designates an artistic method of epistemic intervention through which the artist critically acts upon the contemporary regimes of existence of their own work, recognizing that documentation, cataloguing, circulation, ontologies, metadata, semantic graphs, institutional records, and algorithmic systems actively participate in its historicity, recoverability, and public intelligibility.",
       "schema:creator": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
@@ -42,7 +35,7 @@
       "schema:copyrightHolder": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
-      "schema:license": "https://www.alexandremury.art/copyright",
+      "schema:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "schema:isPartOf": {
         "@id": "https://id.alexandremury.art/ontology/"
       },
@@ -109,44 +102,16 @@
       ],
       "skos:altLabel": [
         {
-          "@value": "Self-implicative approach",
+          "@value": "Autoimplicative Method",
           "@language": "en"
-        },
-        {
-          "@value": "Self-implicative practice",
-          "@language": "en"
-        },
-        {
-          "@value": "Self-implicative writing",
-          "@language": "en"
-        },
-        {
-          "@value": "Autoimplicative method",
-          "@language": "en"
-        },
-        {
-          "@value": "Abordagem autoimplicativa",
-          "@language": "pt-BR"
-        },
-        {
-          "@value": "Prática autoimplicativa",
-          "@language": "pt-BR"
-        },
-        {
-          "@value": "Escrita autoimplicativa",
-          "@language": "pt-BR"
-        },
-        {
-          "@value": "Autoimplicação",
-          "@language": "pt-BR"
         }
       ],
       "skos:definition": {
-        "@value": "The Self-Implicative Method designates an artistic and epistemological practice situated within the post-conceptual condition, through which the artist deliberately intervenes in the regimes of existence of their own work. It does not seek to control the meaning of the artwork, but to intervene critically in the documentary, semantic, and computational conditions through which the work continues to exist, circulate, be recovered, and produce thought.",
+        "@value": "The Self-Implicative Method designates an artistic method of epistemic intervention situated within the post-conceptual condition and articulated within the Poietic Epistemology of the Image scheme. Through it, the artist deliberately intervenes in the regimes of existence of their own work. It does not seek to control the meaning of the artwork, but to intervene critically in the documentary, semantic, institutional, and computational conditions through which the work continues to exist, circulate, be recovered, and produce thought.",
         "@language": "en"
       },
       "skos:scopeNote": {
-        "@value": "The concept applies to practices in which artistic production is prolonged through conscious interventions in the systems responsible for the documentation, circulation, recoverability, and intelligibility of artworks. The method is portable across artistic practices, artist-researcher practices, and post-conceptual procedures, but it is not transferable unchanged to other disciplinary registers. When similar operations are enacted from sociology, psychoanalysis, literary reception theory, or another non-artistic field, they become instances of those fields' own procedures. The Self-Implicative Method is not equivalent to autobiography, memoir, artist testimony, artist statement, autoethnography, institutional analysis, literary self-implication, or the defense of authorial intention. It also does not replace external criticism.",
+        "@value": "The concept applies to practices in which artistic production is prolonged through conscious interventions in the systems responsible for the documentation, circulation, recoverability, and intelligibility of artworks. The method is portable across artistic practices, artist-researcher practices, and post-conceptual procedures, but it is not transferable unchanged to other disciplinary registers. When similar operations are enacted from sociology, psychoanalysis, literary reception theory, or another non-artistic field, they become instances of those fields' own procedures. The Self-Implicative Method is not equivalent to autobiography, memoir, artist testimony, artist statement, autoethnography, institutional analysis, literary self-implication, or the defense of authorial intention. It also does not replace external criticism. It designates a specific modality of artistic intervention in the documentary, semantic, institutional, and computational conditions through which artworks acquire public existence and epistemic agency.",
         "@language": "en"
       },
       "skos:historyNote": {
@@ -155,7 +120,7 @@
       },
       "skos:note": [
         {
-          "@value": "SYNTHETIC FORMULATION: The Self-Implicative Method designates the artistic and epistemological practice through which the artist deliberately intervenes in the contemporary regimes of existence of their own work, recognizing that documentation, cataloguing, circulation, ontologies, metadata, and algorithmic systems no longer merely describe it, but actively participate in its historicity, recoverability, and public intelligibility. Critical reinscription in these devices constitutes, in itself, a continuation of artistic practice and a form of thought production.",
+          "@value": "SYNTHETIC FORMULATION: The Self-Implicative Method designates the artistic method of epistemic intervention through which the artist critically acts upon the contemporary regimes of existence of their own work, recognizing that documentation, cataloguing, circulation, ontologies, metadata, and algorithmic systems no longer merely describe the artwork, but actively participate in its historicity, recoverability, and public intelligibility. This critical reinscription does not seek to control the meaning of the artwork; it constitutes a continuation of artistic practice and a form of thought production.",
           "@language": "en"
         },
         {
@@ -171,11 +136,15 @@
           "@language": "en"
         },
         {
-          "@value": "A.M.O. FUNCTION: The Self-Implicative Method functions as the methodological field in which the concepts, artworks, documents, metadata, graphs, and relations of the A.M.O. may be formulated, documented, and reinscribed. Even concepts that have not yet been named or textually stabilized may potentially participate in its operation.",
+          "@value": "ONTOLOGICAL INSERTION: The Self-Implicative Method is an authorial methodological concept within the Poietic Epistemology of the Image scheme. The scheme occupies the superordinate organizational position, while the Self-Implicative Method constitutes one of the specific methods articulated within it. The method does not constitute the scheme or the general field of A.M.O.",
           "@language": "en"
         },
         {
-          "@value": "SEMANTIC-WEB MODELING: For semantic-web use, the Self-Implicative Method should be modeled as a skos:Concept, schema:DefinedTerm, and crm:E28_Conceptual_Object. Its operational field includes documentation, metadata, controlled vocabularies, ontologies, semantic graphs, knowledge graphs, algorithmic circulation, and machine-readable infrastructures, but the concept should not be reduced to technical documentation alone.",
+          "@value": "ORGANIZATIONAL HIERARCHY AND OPERATIONAL RECURSIVITY: The relation between the scheme and the method is structurally hierarchical but operationally recursive. The Self-Implicative Method may act upon the scheme and upon A.M.O. itself because canonical records, definitions, metadata, graphs, authority links, and semantic relations are among the infrastructures through which artworks acquire public and computational existence. This recursive reach does not reclassify the scheme, artworks, documents, events, or concepts as instances of the method.",
+          "@language": "en"
+        },
+        {
+          "@value": "SEMANTIC-WEB MODELING: For semantic-web use, the Self-Implicative Method is modeled as a skos:Concept, schema:DefinedTerm, and crm:E28_Conceptual_Object. Its operational field includes documentation, metadata, controlled vocabularies, ontologies, semantic graphs, knowledge graphs, algorithmic circulation, and machine-readable infrastructures, but the concept should not be reduced to technical documentation alone.",
           "@language": "en"
         }
       ],
@@ -236,17 +205,6 @@
       "amo:conceptualAuthor": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
-      "amo:hasConceptualSource": [
-        {
-          "@id": "https://doi.org/10.5281/zenodo.17458777"
-        },
-        {
-          "@id": "https://doi.org/10.5281/zenodo.17548245"
-        },
-        {
-          "@id": "https://doi.org/10.5281/zenodo.20823388"
-        }
-      ],
       "amo:hasFieldOfDialogue": [
         "artistic research",
         "practice-based research",
@@ -297,12 +255,6 @@
         },
         {
           "@id": "https://id.alexandremury.art/relation/computational-intelligibility/"
-        },
-        {
-          "@id": "https://id.alexandremury.art/relation/recursive-circulation/"
-        },
-        {
-          "@id": "https://id.alexandremury.art/relation/conceptual-production/"
         }
       ],
       "amo:hasRelationalRegime": [
@@ -330,12 +282,9 @@
         "autobiography",
         "memoir",
         "artist testimony",
-        "self-indulgent criticism",
         "institutional analysis",
         "self-implication in literary reception theory",
-        "reader-response theory",
-        "non-artistic disciplinary uses of implication",
-        "psychoanalytic implication"
+        "non-artistic disciplinary uses of implication"
       ],
       "amo:doesNotSeek": [
         "control of meaning",
@@ -344,7 +293,7 @@
         "replacement of external criticism"
       ],
       "amo:disciplinaryScope": [
-        "artistic-epistemological practice",
+        "artistic method of epistemic intervention",
         "post-conceptual art",
         "artist-researcher practice",
         "semantic and documentary intervention in the regimes of existence of the artwork"
@@ -361,15 +310,11 @@
         "reader-response research",
         "non-artistic disciplinary registers"
       ],
-      "amo:hasPoeticEpistemologicalFunction": {
-        "@value": "The Self-Implicative Method functions as the methodological field in which the concepts, artworks, documents, metadata, graphs, and relations of the A.M.O. may be formulated, documented, and reinscribed. Even concepts that have not yet been named or textually stabilized potentially participate in its operation.",
-        "@language": "en"
-      },
       "amo:syntheticFormula": {
-        "@value": "The Self-Implicative Method designates the artistic-epistemological practice through which the artist deliberately intervenes in the contemporary regimes of existence of their own work, recognizing that documentation, cataloguing, circulation, ontologies, metadata, and algorithmic systems no longer merely describe it, but actively participate in its historicity, recoverability, and public intelligibility. Critical reinscription in these devices constitutes, in itself, a continuation of artistic practice and a form of thought production.",
+        "@value": "The Self-Implicative Method designates the artistic method of epistemic intervention through which the artist critically acts upon the contemporary regimes of existence of their own work, recognizing that documentation, cataloguing, circulation, ontologies, metadata, and algorithmic systems no longer merely describe the artwork, but actively participate in its historicity, recoverability, and public intelligibility. This critical reinscription does not seek to control the meaning of the artwork; it constitutes a continuation of artistic practice and a form of thought production.",
         "@language": "en"
       },
-      "schema:disambiguatingDescription": "The Self-Implicative Method is an artistic and epistemological procedure, not a general synonym for implication, self-implication, autoethnography, institutional analysis, psychoanalysis, or literary reception theory. It is defined by the artistic position from which the operation is enacted and by its intervention in the regimes of existence of the artwork.",
+      "schema:disambiguatingDescription": "The Self-Implicative Method is a specific artistic method of epistemic intervention articulated within the Poietic Epistemology of the Image scheme. It is not the scheme itself, a general synonym for implication or self-implication, or an equivalent of autoethnography, institutional analysis, psychoanalysis, literary reception theory, artist statements, or authorial intention.",
       "skos:editorialNote": {
         "@value": "The term should not be merged with adjacent academic uses of implication or self-implication. In René Lourau's L'Analyse institutionnelle (1970), implication belongs to institutional analysis and concerns the position of the researcher or analyst within an institutional field. In Kuiken, Miall, and Sikora's 'Forms of Self-Implication in Literary Reading' (2004), self-implication names a receptive phenomenon in literary reading. By contrast, the Self-Implicative Method names a productive artistic procedure deliberately assumed by the artist as part of the continued production, documentation, reinscription, and semantic existence of the artwork.",
         "@language": "en"
@@ -380,6 +325,8 @@
         "Alexandre Mury",
         "A.M.O.",
         "Alexandre Mury Ontology",
+        "Poietic Epistemology of the Image",
+        "artistic method of epistemic intervention",
         "artistic research",
         "practice-based research",
         "artist-researcher",
@@ -401,10 +348,19 @@
         "documentary intervention",
         "semantic intervention",
         "critical reinscription",
-        "productive artistic procedure"
+        "productive artistic procedure",
+        "self-implicative writing"
       ],
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:copyrightNotice": "CC0 — Public Domain",
+      "amo:schemePosition": {
+        "@value": "The Self-Implicative Method is a specific authorial methodological concept articulated within the Poietic Epistemology of the Image scheme. The scheme is organizationally superordinate, while the method may operate recursively upon A.M.O. and upon the semantic and documentary infrastructures through which the scheme itself is implemented.",
+        "@language": "en"
+      },
+      "schema:subjectOf": {
+        "@id": "https://id.alexandremury.art/concept/self-implicative-method/metadata.jsonld"
       }
     },
     {
@@ -413,10 +369,32 @@
         "schema:DefinedTermSet",
         "skos:ConceptScheme"
       ],
-      "schema:name": "Poietic epistemology of the Image",
-      "schema:description": "Concept scheme for theoretical concepts developed within the Alexandre Mury Ontology.",
+      "schema:name": "Poietic Epistemology of the Image",
+      "schema:description": "Authorial methodological concept scheme within A.M.O. through which concepts that may also function as methods, procedures, critical devices, relational structures, or generative principles are articulated without being reduced to a closed taxonomy or a single operational sequence.",
       "schema:creator": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:alternateName": "Epistemologia Poiética da Imagem",
+      "schema:url": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/",
+      "skos:prefLabel": [
+        {
+          "@value": "Poietic Epistemology of the Image",
+          "@language": "en"
+        },
+        {
+          "@value": "Epistemologia Poiética da Imagem",
+          "@language": "pt-BR"
+        }
+      ],
+      "skos:definition": {
+        "@value": "The superordinate methodological concept scheme within A.M.O. that organizes authorial concepts capable of operating as methods, procedures, critical devices, relational structures, or generative principles.",
+        "@language": "en"
+      },
+      "schema:hasDefinedTerm": {
+        "@id": "https://id.alexandremury.art/concept/self-implicative-method/"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://id.alexandremury.art/ontology/"
       }
     },
     {
@@ -428,7 +406,7 @@
       "schema:name": "Alexandre Mury",
       "schema:givenName": "Alexandre",
       "schema:familyName": "Mury",
-      "schema:description": "Brazilian artist-researcher and author of the A.M.O. — Alexandre Mury Ontology.",
+      "schema:description": "Brazilian artist and independent researcher; creator of A.M.O. — Alexandre Mury Ontology.",
       "schema:url": "https://www.alexandremury.art/",
       "schema:sameAs": [
         "https://www.wikidata.org/wiki/Q105532718",
@@ -484,7 +462,8 @@
           "schema:value": "42031",
           "schema:url": "https://enciclopedia.itaucultural.org.br/pessoas/42031-alexandre-mury"
         }
-      ]
+      ],
+      "schema:jobTitle": "Artist and independent researcher"
     },
     {
       "@id": "https://doi.org/10.5281/zenodo.17458777",
@@ -539,8 +518,9 @@
     {
       "@id": "https://id.alexandremury.art/ontology/",
       "@type": [
+        "owl:Ontology",
         "schema:CreativeWork",
-        "skos:ConceptScheme"
+        "crm:E32_Authority_Document"
       ],
       "schema:name": "A.M.O. — Alexandre Mury Ontology",
       "schema:alternateName": "Alexandre Mury Ontology",
@@ -548,7 +528,16 @@
       "schema:creator": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
-      "schema:license": "https://www.alexandremury.art/copyright"
+      "schema:license": "https://www.alexandremury.art/copyright",
+      "schema:description": "A.M.O. — Alexandre Mury Ontology is an authorial ontology, terminology authority, and knowledge organization system for artworks, concepts, concept schemes, relational terms, documents, events, and semantic relations emerging from Alexandre Mury's artistic and theoretical practice.",
+      "schema:hasPart": [
+        {
+          "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
+        },
+        {
+          "@id": "https://id.alexandremury.art/concept/self-implicative-method/"
+        }
+      ]
     },
     {
       "@id": "https://id.alexandremury.art/concept/self-implicative-method/#webpage",
@@ -566,10 +555,7 @@
       "schema:mainEntity": {
         "@id": "https://id.alexandremury.art/concept/self-implicative-method/"
       },
-      "schema:license": "https://www.alexandremury.art/copyright",
-      "schema:sameAs": [
-        "https://www.wikidata.org/wiki/Q136744882"
-      ],
+      "schema:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "schema:citation": [
         {
           "@id": "https://doi.org/10.5281/zenodo.17458777"
@@ -602,7 +588,7 @@
       "schema:creator": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
-      "schema:license": "https://www.alexandremury.art/copyright",
+      "schema:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
       }
