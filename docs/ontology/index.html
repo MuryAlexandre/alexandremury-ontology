@@ -122,11 +122,11 @@ Ontology matrix, terminology authority, and semantic publication policy.</p>
 
 <h2 id="definition">01 Definition</h2>
 
-<p>A.M.O. — Alexandre Mury Ontology is an authorial ontology and knowledge organization system developed by Alexandre Mury to document artworks, concepts, relational terms, terminology authorities, and semantic relations emerging from his artistic and theoretical practice.</p>
+<p>A.M.O. — Alexandre Mury Ontology is an authorial ontology and knowledge organization system developed by Alexandre Mury to document artworks, concepts, concept schemes, relational terms, terminology authorities, and semantic relations emerging from his artistic and theoretical practice.</p>
 
 <p>It works in dialogue with CIDOC CRM, SKOS, Schema.org, JSON-LD, RDF, Wikidata, DOI-based scholarly circulation, and linked open data practices without replacing them.</p>
 
-<p>CIDOC CRM supports documentary and museological description. SKOS organizes concepts and controlled vocabularies. Schema.org supports web discovery. JSON-LD supports machine-readable publication. A.M.O. provides an authorial vocabulary for describing relational, conceptual, documentary, and epistemological operations that may not be sufficiently specified by standard cultural heritage models.</p>
+<p>CIDOC CRM supports documentary and museological description. SKOS organizes concepts and controlled vocabularies. Schema.org supports web discovery. JSON-LD supports machine-readable publication. A.M.O. provides an authorial vocabulary and semantic architecture for describing relational, conceptual, documentary, poietic, methodological, and epistemic operations that may not be sufficiently specified by standard cultural heritage models.</p>
 
 <p>The purpose of A.M.O. is to make artistic thought more legible and interoperable across human reading, cultural heritage documentation, linked open data, search engines, and artificial intelligence systems, without prescribing a single interpretation of the works.</p>
 
@@ -142,13 +142,13 @@ Ontology matrix, terminology authority, and semantic publication policy.</p>
 
 <p>A.M.O. does not treat external sources, interlocutors, genealogies, or analogies as the authorial origin of its concepts.</p>
 
-<p>A.M.O. does not require every future artwork, relation, or concept to be manually listed on this page in order to be interoperable. Each record is identified by its own canonical URI and carries its own human-readable page and machine-readable metadata.</p>
+<p>A.M.O. does not require every future artwork, relation, concept, or concept scheme to be manually listed on this page in order to be interoperable. Each record is identified by its own canonical URI and carries its own human-readable page and machine-readable metadata.</p>
 
 <hr>
 
 <h2 id="purpose">03 Purpose</h2>
 
-<p>The A.M.O. namespace was created to provide stable, persistent, machine-readable identifiers for artworks, concepts, relational operations, documents, persons, and external anchoring nodes associated with Alexandre Mury's artistic and theoretical practice.</p>
+<p>The A.M.O. namespace was created to provide stable, persistent, machine-readable identifiers for artworks, concepts, concept schemes, relational operations, events, documents, persons, and external anchoring nodes associated with Alexandre Mury's artistic and theoretical practice.</p>
 
 <p>The subdomain <span class="uri">https://id.alexandremury.art/</span> functions as a cataloguing, museological, semantic, and machine-readable layer.</p>
 
@@ -173,7 +173,7 @@ amo:</p>
 <span class="uri">https://id.alexandremury.art/</span></p>
 
 <p><strong>URI principle</strong><br>
-English-language slugs are used for stability, interoperability, and linked data processing. Portuguese labels preserve the epistemological genealogy, original coinage, and authorial intent of the concepts.</p>
+English-language slugs are used for stability, interoperability, and linked data processing. Portuguese labels preserve conceptual genealogy, original coinage, linguistic specificity, and authorial intent.</p>
 
 <p><strong>Bilingual authority</strong><br>
 Portuguese and English labels maintain equal conceptual dignity. English slugs serve computational stability; Portuguese labels preserve origin, formulation, and theoretical specificity.</p>
@@ -214,17 +214,25 @@ Canonical entity URIs use a final slash.</p>
 
 <p>These concepts are not merely keywords. They have identity, definition, scope, authorship, documentation, and the possibility of reuse in other contexts.</p>
 
-<h3>06.3 Relational terms</h3>
+<h3>06.3 Methodological concept-scheme layer</h3>
+
+<p>The methodological concept-scheme layer uses <code>skos:ConceptScheme</code> and <code>schema:DefinedTermSet</code> to organize authorial concepts that may also function as methods, procedures, critical devices, relational structures, or generative principles.</p>
+
+<p>Its principal current scheme is <a href="https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/">Poietic Epistemology of the Image</a>. The scheme occupies a superordinate organizational position within A.M.O. without converting the concepts associated with it into a closed taxonomy, a linear sequence, or mutually interchangeable expressions of a single method.</p>
+
+<p>Conceptual status and methodological function are not mutually exclusive within A.M.O. A concept may formulate a distinction while simultaneously operating as a procedure through which artistic, documentary, semantic, institutional, or computational action becomes possible.</p>
+
+<h3>06.4 Relational terms</h3>
 
 <p>Relational terms qualify modes of relation between artworks, images, bodies, figures, iconographic traditions, symbolic archives, and pre-existing cultural signs.</p>
 
 <p>They do not prescribe interpretation. They describe modes of relation.</p>
 
-<h3>06.4 Terminology authority layer</h3>
+<h3>06.5 Terminology authority layer</h3>
 
 <p>The terminology authority layer registers authorized forms, original labels, language of origin, canonical slugs, authorial coinage, publication sources, Wikidata alignment, DOI circulation, and indexing strategy.</p>
 
-<h3>06.5 Machine-readable layer</h3>
+<h3>06.6 Machine-readable layer</h3>
 
 <p>The machine-readable layer distributes semantic information through JSON-LD and other RDF-compatible structures. Each canonical record carries its own <code>metadata.jsonld</code>, allowing human-readable documentation and machine-readable description to remain synchronized without overloading the visual page.</p>
 
@@ -258,9 +266,24 @@ Canonical entity URIs use a final slash.</p>
 
 <hr>
 
-<h2 id="authorial-terms">08 Authorial terms</h2>
+<h2 id="methodological-scheme-and-authorial-terms">08 Methodological scheme and authorial terms</h2>
 
-<p>The following terms identify the current authorial terminology field of A.M.O. in Portuguese and English. This list is not exhaustive, closed, or definitive. It records terms currently integrated into the ontology as authorial conceptual references.</p>
+<p>A.M.O. distinguishes between a concept scheme and the individual concepts associated with it. The scheme provides an organizational and generative structure; the concepts retain their own definitions, scopes, provenance, and operational autonomy.</p>
+
+<h3 id="poietic-epistemology-scheme">08.1 Methodological concept scheme</h3>
+
+<p><strong>Epistemologia Poiética da Imagem / Poietic Epistemology of the Image</strong><br>
+<a class="uri" href="https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/">https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/</a></p>
+
+<p>Within A.M.O., Poietic Epistemology of the Image functions as the superordinate methodological concept scheme through which authorial concepts that may also operate as methods, procedures, critical devices, relational structures, or generative principles are articulated.</p>
+
+<p>The scheme is not identical to A.M.O. as a whole, nor does it designate the general academic field of epistemology of the image. A.M.O. constitutes the broader artistic, conceptual, documentary, semantic, and computational system. Poietic Epistemology of the Image organizes a methodological layer within that system.</p>
+
+<p>The scheme does not reduce its associated concepts to a fixed hierarchy or a single operational sequence. Its organizational hierarchy is generative rather than doctrinal: it makes relations explicit while preserving conceptual differences, multiple paths of activation, and the possibility of revision.</p>
+
+<h3 id="authorial-concepts">08.2 Authorial concepts</h3>
+
+<p>The following terms identify the current authorial conceptual terminology of A.M.O. in Portuguese and English. This list is not exhaustive, closed, or definitive. It records concepts currently integrated into the ontology as authorial conceptual references.</p>
 
 <p>A.M.O. remains extensible. Concepts may be added, deferred, renamed, reorganized, or withdrawn as the ontology develops, without altering the general namespace policy or the autonomy of already published records.</p>
 
@@ -283,9 +306,6 @@ Canonical entity URIs use a final slash.</p>
     <li>— Desapropriação teórica / Theoretical disappropriation<br>
         <span class="uri">https://id.alexandremury.art/concept/theoretical-disappropriation/</span></li>
 
-    <li>— Epistemologia poética da Imagem / Poietic epistemology of the image<br>
-        <span class="uri">https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/</span></li>
-
     <li>— Metanoia hermenêutica / Hermeneutic metanoia<br>
         <span class="uri">https://id.alexandremury.art/concept/hermeneutic-metanoia/</span></li>
 
@@ -296,7 +316,7 @@ Canonical entity URIs use a final slash.</p>
         <span class="uri">https://id.alexandremury.art/concept/artwork-as-metadata/</span></li>
 </ul>
 
-<p class="note">The term “Poietic Epistemology of the Image” functions as both a conceptual field and a concept scheme within A.M.O. Dedicated records for authorial terms are published as part of the A.M.O. namespace. The terminology field remains extensible and may be reorganized as the ontology develops.</p>
+<p class="note">Association with Poietic Epistemology of the Image does not imply that these concepts are synonymous, equally formalized, or reducible to a single method. Some may function primarily as methods, others as conceptual diagnoses, relational structures, critical devices, or infrastructural propositions. Several may occupy more than one of these functions according to the situation in which they are activated.</p>
 
 <hr>
 
@@ -363,7 +383,7 @@ External references may inform a field of dialogue without becoming the origin, 
 
 <h2 id="terminology-authority">12 Terminology authority</h2>
 
-<p>A.M.O. maintains a terminology authority layer for authorial concepts, relational terms, external anchoring nodes, and machine-readable records.</p>
+<p>A.M.O. maintains a terminology authority layer for concept schemes, authorial concepts, relational terms, external anchoring nodes, and machine-readable records.</p>
 
 <p>This layer preserves:</p>
 
@@ -396,7 +416,7 @@ The English URI slug supports interoperability. The Portuguese original label pr
 <p>The two registers do not compete. They operate in different computational and discursive environments while referring to the same conceptual entities.</p>
 
 <p><strong>Indexing goal</strong><br>
-To make concepts, artworks, and semantic relations discoverable by humans, cataloguing systems, knowledge graphs, search engines, and artificial intelligence systems without sacrificing conceptual specificity.</p>
+To make concept schemes, concepts, artworks, and semantic relations discoverable by humans, cataloguing systems, knowledge graphs, search engines, and artificial intelligence systems without sacrificing conceptual specificity.</p>
 
 <hr>
 
