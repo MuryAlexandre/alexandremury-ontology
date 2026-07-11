@@ -432,12 +432,12 @@
       ]
     },
     {
-      "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/",
+      "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/",
       "@type": [
         "DefinedTermSet",
         "skos:ConceptScheme"
       ],
-      "name": "Epistemology of the Image",
+      "name": "Poietic Epistemology of the Image",
       "description": "Concept scheme for theoretical concepts developed within the Alexandre Mury Ontology."
     },
     {
@@ -455,7 +455,7 @@
       "url": "https://id.alexandremury.art/concept/cultural-autophagy/",
       "sameAs": "https://www.wikidata.org/wiki/Q136831273",
       "inDefinedTermSet": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
@@ -474,7 +474,7 @@
       "url": "https://id.alexandremury.art/concept/imagetic-disappropriation/",
       "sameAs": "https://www.wikidata.org/wiki/Q136744908",
       "inDefinedTermSet": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
