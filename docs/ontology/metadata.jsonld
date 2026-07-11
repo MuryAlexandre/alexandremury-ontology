@@ -6,7 +6,8 @@
     "amo": "https://id.alexandremury.art/ontology/",
     "dct": "http://purl.org/dc/terms/",
     "owl": "http://www.w3.org/2002/07/owl#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@graph": [
     {
@@ -14,7 +15,7 @@
       "@type": [
         "owl:Ontology",
         "schema:CreativeWork",
-        "crm:E29_Design_or_Procedure"
+        "crm:E32_Authority_Document"
       ],
       "schema:name": [
         {
@@ -48,12 +49,18 @@
       "schema:copyrightNotice": "© Alexandre Mury. All rights reserved unless otherwise specified.",
       "schema:license": "https://www.alexandremury.art/copyright",
       "schema:isAccessibleForFree": true,
-      "dct:issued": "2026-06-19",
-      "dct:modified": "2026-07-09",
+      "dct:issued": {
+        "@value": "2026-06-19",
+        "@type": "xsd:date"
+      },
+      "dct:modified": {
+        "@value": "2026-07-11",
+        "@type": "xsd:date"
+      },
       "amo:baseURI": "https://id.alexandremury.art/",
       "amo:namespace": "https://id.alexandremury.art/ontology/",
-      "amo:preferredPrefix": "amo",
-      "schema:description": "A.M.O. — Alexandre Mury Ontology is an authorial ontology, terminology authority, and knowledge organization system developed by Alexandre Mury to document artworks, concepts, relational terms, terminology authorities, and semantic relations emerging from his artistic and theoretical practice. It works in dialogue with CIDOC CRM, SKOS, Schema.org, JSON-LD, RDF, Wikidata, DOI-based scholarly circulation, and linked open data practices without replacing them.",
+      "amo:preferredPrefix": "amo:",
+      "schema:description": "A.M.O. — Alexandre Mury Ontology is an authorial ontology, terminology authority, and knowledge organization system developed by Alexandre Mury to document artworks, concepts, concept schemes, relational terms, terminology authorities, and semantic relations emerging from his artistic and theoretical practice. It works in dialogue with CIDOC CRM, SKOS, Schema.org, JSON-LD, RDF, Wikidata, DOI-based scholarly circulation, and linked open data practices without replacing them.",
       "schema:disambiguatingDescription": "A.M.O. is not a closed theoretical doctrine, a substitute for CIDOC CRM, SKOS, Schema.org, Wikidata, museum records, DOI records, scholarly references, or external criticism. It is an authorial semantic layer designed to make artistic thought, artworks, concepts, and relations more legible and interoperable without prescribing a single interpretation of the works.",
       "schema:keywords": [
         "A.M.O.",
@@ -134,9 +141,6 @@
           "@id": "https://id.alexandremury.art/concept/theoretical-disappropriation/"
         },
         {
-          "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
-        },
-        {
           "@id": "https://id.alexandremury.art/concept/hermeneutic-metanoia/"
         },
         {
@@ -148,30 +152,45 @@
       ],
       "amo:termsScopeNote": {
         "@language": "en",
-        "@value": "The authorial terms listed in this ontology record identify the current terminology field of A.M.O. They are not exhaustive, closed, or definitive. Concepts may be added, deferred, renamed, reorganized, or withdrawn as the ontology develops, without altering the general namespace policy or the autonomy of already published records."
+        "@value": "The authorial concepts listed in this ontology record identify the current conceptual terminology of A.M.O. They are recorded separately from concept schemes and are not exhaustive, closed, or definitive. Concepts may be added, deferred, renamed, reorganized, or withdrawn as the ontology develops, without altering the general namespace policy or the autonomy of already published records."
       },
       "amo:namespacePolicy": {
         "@language": "en",
-        "@value": "English-language slugs are used for stability, interoperability, and linked data processing. Portuguese labels preserve the epistemological genealogy, original coinage, and authorial intent of the concepts. Canonical entity URIs use a final slash."
+        "@value": "English-language slugs are used for stability, interoperability, and linked data processing. Portuguese labels preserve conceptual genealogy, original coinage, linguistic specificity, and authorial intent. Canonical entity URIs use a final slash."
       },
       "amo:publicationModel": {
         "@language": "en",
-        "@value": "A.M.O. records are published progressively. Each canonical record may contain a human-readable index.html and a corresponding metadata.jsonld. Aggregate files such as ontology.jsonld, concepts.jsonld, RDF/Turtle files, and CIDOC CRM serializations are deferred until individual records and the terminology authority are stable."
+        "@value": "A.M.O. records are structured as paired canonical records: a human-readable index.html and a corresponding machine-readable metadata.jsonld. Aggregate distributions such as ontology.jsonld, concepts.jsonld, RDF/Turtle files, and CIDOC CRM serializations may be generated from the canonical records when appropriate."
       },
       "amo:doesNotDo": [
         "does not prescribe a single interpretation of the works",
         "does not replace CIDOC CRM, SKOS, Schema.org, Wikidata, DOI records, museum records, scholarly references, or external criticism",
         "does not convert artistic practice into a closed theoretical doctrine",
         "does not treat external sources, interlocutors, genealogies, or analogies as the authorial origin of its concepts",
-        "does not require every future artwork, relation, or concept to be manually listed on the ontology page in order to be interoperable"
+        "does not require every future artwork, relation, concept, or concept scheme to be manually listed on the ontology page in order to be interoperable"
       ],
       "amo:preferredArtworkConceptRelation": [
-        "amo:mobilizesConcept",
-        "amo:hasOperationalInstance"
+        {
+          "@id": "https://id.alexandremury.art/ontology/mobilizesConcept"
+        },
+        {
+          "@id": "https://id.alexandremury.art/ontology/hasOperationalInstance"
+        }
       ],
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
-      }
+      },
+      "dct:source": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17458777"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.17548245"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20823388"
+        }
+      ]
     },
     {
       "@id": "https://id.alexandremury.art/ontology/#webpage",
@@ -192,7 +211,8 @@
       "schema:license": "https://www.alexandremury.art/copyright",
       "schema:isPartOf": {
         "@id": "https://id.alexandremury.art/"
-      }
+      },
+      "schema:dateModified": "2026-07-11"
     },
     {
       "@id": "https://id.alexandremury.art/ontology/metadata.jsonld",
@@ -217,7 +237,8 @@
       "schema:license": "https://www.alexandremury.art/copyright",
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
-      }
+      },
+      "schema:dateModified": "2026-07-11"
     },
     {
       "@id": "https://id.alexandremury.art/",
@@ -241,8 +262,8 @@
         "@type": "schema:Country",
         "schema:name": "Brazil"
       },
-      "schema:jobTitle": "Visual artist and independent researcher",
-      "schema:description": "Brazilian artist and independent researcher working across photography, performance, post-conceptual art, ontology-building, semantic documentation, and poietic epistemology of the image.",
+      "schema:jobTitle": "Artist and independent researcher",
+      "schema:description": "Brazilian artist and independent researcher working across photography, performance, post-conceptual art, ontology development, semantic documentation, and the Poietic Epistemology of the Image.",
       "schema:url": "https://www.alexandremury.art/",
       "schema:sameAs": [
         "https://www.wikidata.org/wiki/Q105532718",
@@ -313,9 +334,9 @@
         "schema:DefinedTermSet",
         "skos:ConceptScheme"
       ],
-      "schema:name": "Poietic epistemology of the Image",
+      "schema:name": "Poietic Epistemology of the Image",
       "schema:alternateName": [
-        "Epistemologia poética da Imagem"
+        "Epistemologia Poiética da Imagem"
       ],
       "schema:url": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/",
       "schema:creator": {
@@ -328,12 +349,12 @@
         },
         {
           "@language": "pt-BR",
-          "@value": "Epistemologia poética da Imagem"
+          "@value": "Epistemologia Poiética da Imagem"
         }
       ],
       "skos:definition": {
         "@language": "en",
-        "@value": "Conceptual field and concept scheme for authorial concepts developed within Alexandre Mury's artistic and theoretical practice."
+        "@value": "Authorial methodological concept scheme within A.M.O. that organizes concepts, methods, and practices through which artistic images are researched, conceived, produced, materially embodied, activated, documented, circulated, and reactivated as operations of knowledge."
       },
       "schema:hasDefinedTerm": [
         {
@@ -364,14 +385,14 @@
           "@id": "https://id.alexandremury.art/concept/artwork-as-metadata/"
         }
       ],
-      "amo:alsoFunctionsAsAuthorialTerm": true,
       "amo:termsScopeNote": {
         "@language": "en",
-        "@value": "This concept scheme identifies the current authorial terminology field of A.M.O. It remains extensible and does not constitute a closed or definitive inventory."
+        "@value": "The scheme occupies a superordinate organizational position within A.M.O. without converting its associated concepts into a closed taxonomy, a linear sequence, or interchangeable expressions of a single method. It remains extensible and preserves the definition, scope, provenance, and operational autonomy of each concept."
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
-      }
+      },
+      "schema:description": "The superordinate methodological concept scheme within A.M.O. through which authorial concepts that may also operate as methods, procedures, critical devices, relational structures, or generative principles are articulated."
     },
     {
       "@id": "https://id.alexandremury.art/scheme/regimes/",
@@ -394,10 +415,6 @@
           "@value": "Relational regimes"
         },
         {
-          "@language": "en",
-          "@value": "Modes of relation"
-        },
-        {
           "@language": "pt-BR",
           "@value": "Regimes de Relação"
         }
@@ -406,7 +423,9 @@
         "@language": "en",
         "@value": "Controlled vocabulary for relational terms describing how artworks relate to prior images, bodies, figures, traditions, archives, symbolic structures, or cultural signs. These terms do not prescribe interpretation; they describe modes of relation."
       },
-      "amo:preferredProperty": "amo:hasRelationalRegime",
+      "amo:preferredProperty": {
+        "@id": "https://id.alexandremury.art/ontology/hasRelationalRegime"
+      },
       "amo:termURIPattern": "https://id.alexandremury.art/relation/{relation-slug}/",
       "amo:termsScopeNote": {
         "@language": "en",
@@ -414,6 +433,10 @@
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Modes of relation"
       }
     },
     {
@@ -443,6 +466,12 @@
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
@@ -472,6 +501,12 @@
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
@@ -501,6 +536,12 @@
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
@@ -530,6 +571,12 @@
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
@@ -559,6 +606,12 @@
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
@@ -588,6 +641,12 @@
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
@@ -617,6 +676,12 @@
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
@@ -646,6 +711,12 @@
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
@@ -676,6 +747,12 @@
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
+      },
+      "schema:creator": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
