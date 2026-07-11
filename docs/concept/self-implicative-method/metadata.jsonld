@@ -180,10 +180,10 @@
         }
       ],
       "skos:inScheme": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       },
       "schema:inDefinedTermSet": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       },
       "skos:related": [
         {
@@ -408,12 +408,12 @@
       }
     },
     {
-      "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/",
+      "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/",
       "@type": [
         "schema:DefinedTermSet",
         "skos:ConceptScheme"
       ],
-      "schema:name": "Epistemology of the Image",
+      "schema:name": "Poietic epistemology of the Image",
       "schema:description": "Concept scheme for theoretical concepts developed within the Alexandre Mury Ontology.",
       "schema:creator": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
