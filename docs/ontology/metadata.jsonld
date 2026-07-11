@@ -63,7 +63,7 @@
         "authorial ontology",
         "terminology authority",
         "knowledge organization system",
-        "epistemology of the image",
+        "poietic epistemology of the image",
         "artistic research",
         "post-conceptual art",
         "semantic documentation",
@@ -81,7 +81,7 @@
       ],
       "schema:hasPart": [
         {
-          "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+          "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
         },
         {
           "@id": "https://id.alexandremury.art/scheme/regimes/"
@@ -134,7 +134,7 @@
           "@id": "https://id.alexandremury.art/concept/theoretical-disappropriation/"
         },
         {
-          "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+          "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
         },
         {
           "@id": "https://id.alexandremury.art/concept/hermeneutic-metanoia/"
@@ -242,7 +242,7 @@
         "schema:name": "Brazil"
       },
       "schema:jobTitle": "Visual artist and independent researcher",
-      "schema:description": "Brazilian artist and independent researcher working across photography, performance, post-conceptual art, ontology-building, semantic documentation, and epistemology of the image.",
+      "schema:description": "Brazilian artist and independent researcher working across photography, performance, post-conceptual art, ontology-building, semantic documentation, and poietic epistemology of the image.",
       "schema:url": "https://www.alexandremury.art/",
       "schema:sameAs": [
         "https://www.wikidata.org/wiki/Q105532718",
@@ -308,23 +308,23 @@
       ]
     },
     {
-      "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/",
+      "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/",
       "@type": [
         "schema:DefinedTermSet",
         "skos:ConceptScheme"
       ],
-      "schema:name": "Epistemology of the Image",
+      "schema:name": "Poietic Epistemology of the Image",
       "schema:alternateName": [
         "Epistemologia da Imagem"
       ],
-      "schema:url": "https://id.alexandremury.art/scheme/epistemology-of-the-image/",
+      "schema:url": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/",
       "schema:creator": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Epistemology of the Image"
+          "@value": "Poietic Epistemology of the Image"
         },
         {
           "@language": "pt-BR",
@@ -439,7 +439,7 @@
         }
       ],
       "skos:inScheme": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
@@ -468,7 +468,7 @@
         }
       ],
       "skos:inScheme": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
@@ -497,7 +497,7 @@
         }
       ],
       "skos:inScheme": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
@@ -526,7 +526,7 @@
         }
       ],
       "skos:inScheme": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
@@ -555,7 +555,7 @@
         }
       ],
       "skos:inScheme": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
@@ -584,7 +584,7 @@
         }
       ],
       "skos:inScheme": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
@@ -613,7 +613,7 @@
         }
       ],
       "skos:inScheme": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
@@ -642,7 +642,7 @@
         }
       ],
       "skos:inScheme": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
@@ -672,7 +672,7 @@
         }
       ],
       "skos:inScheme": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       },
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
