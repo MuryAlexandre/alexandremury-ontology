@@ -36,7 +36,8 @@
       "schema:copyrightHolder": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
-      "schema:license": "https://www.alexandremury.art/copyright",
+      "schema:copyrightNotice": "© Alexandre Mury.",
+      "schema:usageInfo": "https://www.alexandremury.art/copyright",
       "schema:identifier": [
         {
           "@type": "schema:PropertyValue",
@@ -471,6 +472,11 @@
       "schema:creator": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
+      "schema:copyrightHolder": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:copyrightNotice": "© Alexandre Mury.",
+      "schema:usageInfo": "https://www.alexandremury.art/copyright",
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
       }
