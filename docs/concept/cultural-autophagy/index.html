@@ -1,3 +1,680 @@
+
+hoje 2:42
+hoje 11:01
+hoje 12:53
+
+Texto colado(45).txt
+Documento
+
+Texto colado (2)(1).txt
+Documento
+Eu fiz manualmente a edição da correção das publicações html com realação ao que consta nos documentos sobre direitos. Vc me orientou a um padrão me deu um trecho para eu inserir tanto no html quanto no jsonld. Eu não sei se fiz certo. Não tem jeito. Vou ter que te pedir para vc conferir do codigo inteiro de cada conceito, nas duas versões. html e  jsonld. 
+
+Pensou por 36s
+Você fez a inserção do novo bloco, mas esta versão ainda não está pronta para publicação. O JSON-LD é sintaticamente válido; o HTML abre normalmente, porém há contradições de direitos e alguns problemas estruturais anteriores que a revisão integral revelou.
+
+1. Direitos no HTML: há uma contradição grave
+A seção 16 ainda diz:
+
+<h2>16 License</h2>
+
+<p>CC0 — Public Domain</p>
+Mais abaixo, o bloco novo declara:
+
+<p>This permission does not constitute a CC0 dedication, a Creative Commons license...</p>
+As duas afirmações se anulam. Um leitor humano ou uma máquina pode considerar o conteúdo ambíguo; mecanismos automáticos podem capturar justamente a declaração curta “CC0 — Public Domain”.
+
+Portanto, não basta acrescentar o novo bloco. A antiga seção 16 precisa ser substituída por ele.
+
+A organização correta seria:
+
+<h2>16 Rights and permitted use</h2>
+
+<p>© Alexandre Mury. All rights reserved unless otherwise specified.</p>
+
+<p>This canonical record, its conceptual definitions, terminology, HTML structure, and structured metadata may be cited, indexed, referenced, and processed for scholarly, cataloguing, museological, bibliographic, documentary, semantic-web, linked-data, and cultural heritage purposes, provided that authorship, context, and the canonical URI are preserved.</p>
+
+<p>This permission does not constitute a CC0 dedication, a Creative Commons license, an unrestricted authorization for reproduction, or a transfer of copyright.</p>
+
+<p><strong>Rights and use policy</strong><br>
+<a href="https://www.alexandremury.art/copyright">https://www.alexandremury.art/copyright</a></p>
+Depois, as seções seguintes continuam como 17 e 18.
+
+O bloco não deveria ficar depois dos links “Back to A.M.O. Home” e “All Concepts”. Esses links funcionam como fechamento da página. O conteúdo de direitos deve aparecer antes desse bloco final de navegação. 
+
+
+2. Existe uma tag </p> excedente
+No final do HTML aparece:
+
+<p><strong>Rights and use policy</strong><br>
+<a href="https://www.alexandremury.art/copyright">https://www.alexandremury.art/copyright</a></p>
+</p>
+O segundo </p> está sozinho e deve ser apagado.
+
+Isso não costuma impedir o navegador de mostrar a página, porque ele tenta corrigir o HTML automaticamente, mas é um erro objetivo de marcação.
+
+3. O JSON-LD está formalmente válido
+Eu fiz a leitura integral com um analisador JSON. Não há:
+
+vírgula esquecida;
+
+chave sem fechamento;
+
+colchete sem fechamento;
+
+aspas quebradas;
+
+estrutura JSON inválida.
+
+Ele possui sete nós dentro de @graph. Portanto, o arquivo pode ser interpretado como JSON. 
+
+
+Mas JSON válido não significa JSON-LD conceitualmente perfeito. Existem pontos importantes abaixo.
+
+4. O novo regime de direitos aparece apenas parcialmente no JSON-LD
+No nó principal do conceito constam:
+
+"schema:copyrightHolder": {
+  "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+},
+"schema:license": "https://www.alexandremury.art/copyright",
+Isso elimina a antiga declaração CC0, o que é correto.
+
+Porém há uma imprecisão:
+
+"schema:license": "https://www.alexandremury.art/copyright"
+schema:license informa que o endereço aponta para uma licença. Sua página, entretanto, é uma política de direitos e uso, e você quer deixar claro que não está concedendo uma licença aberta.
+
+A modelagem mais precisa seria:
+
+"schema:copyrightHolder": {
+  "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+},
+"schema:copyrightNotice": "© Alexandre Mury. All rights reserved unless otherwise specified.",
+"schema:usageInfo": "https://www.alexandremury.art/copyright",
+Nesse modelo:
+
+copyrightHolder identifica o titular;
+
+copyrightNotice registra o aviso;
+
+usageInfo aponta para as condições de uso;
+
+não se caracteriza a página como uma licença aberta.
+
+Eu recomendo retirar schema:license neste caso, porque a própria política diz que a permissão não constitui licença Creative Commons nem autorização irrestrita.
+
+5. O documento metadata.jsonld também precisa receber os direitos
+No último nó, que descreve o próprio arquivo JSON-LD, há:
+
+{
+  "@id": ".../metadata.jsonld",
+  "@type": [
+    "schema:WebPage",
+    "schema:DigitalDocument"
+  ],
+  ...
+}
+Mas não há nele:
+
+schema:copyrightHolder
+schema:copyrightNotice
+schema:usageInfo
+Isso importa porque o texto do HTML diz que as permissões abrangem também os structured metadata. Portanto, o próprio documento serializado deveria carregar essa informação.
+
+O final desse nó pode ficar assim:
+
+"schema:creator": {
+  "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+},
+"schema:copyrightHolder": {
+  "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+},
+"schema:copyrightNotice": "© Alexandre Mury. All rights reserved unless otherwise specified.",
+"schema:usageInfo": "https://www.alexandremury.art/copyright",
+"rdfs:isDefinedBy": {
+  "@id": "https://id.alexandremury.art/ontology/"
+}
+Com isso, os direitos ficam associados tanto ao conceito quanto ao documento digital que o representa.
+
+6. mainEntityOfPage está fundindo conceito e página web
+Hoje consta:
+
+"@id": "https://id.alexandremury.art/concept/cultural-autophagy/",
+"@type": [
+  "schema:DefinedTerm",
+  "crm:E28_Conceptual_Object",
+  "skos:Concept"
+],
+...
+"schema:mainEntityOfPage": {
+  "@id": "https://id.alexandremury.art/concept/cultural-autophagy/",
+  "@type": "schema:WebPage"
+},
+O conceito e a página receberam exatamente o mesmo @id.
+
+Em JSON-LD, duas descrições com o mesmo @id são fundidas. Assim, esse recurso passa a ser simultaneamente:
+
+conceito;
+
+termo definido;
+
+objeto conceitual;
+
+página web.
+
+Isso compromete a distinção entre a entidade conceitual e sua representação documental.
+
+Há duas estratégias possíveis. Para não alterar unilateralmente a arquitetura que você já adotou, apenas registro o problema agora. A solução mais clara seria criar um identificador separado para a página, por exemplo:
+
+"schema:mainEntityOfPage": {
+  "@id": "https://id.alexandremury.art/concept/cultural-autophagy/#webpage"
+}
+e depois criar um nó próprio:
+
+{
+  "@id": "https://id.alexandremury.art/concept/cultural-autophagy/#webpage",
+  "@type": "schema:WebPage",
+  "schema:url": "https://id.alexandremury.art/concept/cultural-autophagy/",
+  "schema:mainEntity": {
+    "@id": "https://id.alexandremury.art/concept/cultural-autophagy/"
+  }
+}
+Isso preserva a URI canônica do conceito e separa a página que o documenta.
+
+Esse problema não foi causado pela edição recente dos direitos; ele já estava na estrutura anterior.
+
+7. Há divergência entre HTML e JSON-LD nas propriedades A.M.O.
+No HTML aparece:
+
+amo:mobilizedIn → Abaporu (2010)
+amo:hasOperationalInstance → Abaporu (2010)
+No JSON-LD só existe:
+
+"amo:hasOperationalInstance": {
+  "@id": "https://id.alexandremury.art/artworks/abaporu-2010/"
+}
+amo:mobilizedIn não foi serializada.
+
+Também há outra divergência. O HTML diz:
+
+amo:hasInterpretiveRegime
+O JSON-LD usa:
+
+"amo:hasRelationalRegime"
+Pelas decisões posteriores da A.M.O., hasRelationalRegime é a formulação coerente, porque você recusou “interpretive regimes”. Portanto, o que deve ser atualizado provavelmente é o HTML:
+
+amo:hasRelationalRegime → Reenactment
+amo:hasRelationalRegime → Self-representation
+amo:hasRelationalRegime → Internal critical digestion
+Não devemos voltar o JSON-LD para hasInterpretiveRegime.
+
+8. O nó da pessoa contém dados desatualizados em relação ao padrão consolidado
+O JSON-LD informa:
+
+"schema:jobTitle": "Visual artist and independent researcher"
+Mas o padrão que você consolidou para a página canônica da pessoa é:
+
+Artist; Independent Researcher
+Você também decidiu evitar “visual artist” como rótulo principal.
+
+Portanto, deve ser:
+
+"schema:jobTitle": "Artist; Independent Researcher"
+Além disso, o arquivo usa:
+
+"https://www.wikidata.org/wiki/Q105532718"
+enquanto o identificador que passou a constar na arquitetura consolidada da A.M.O. é:
+
+Q116842864
+Isso precisa ser conferido cuidadosamente antes da substituição, porque há uma divergência interna entre versões do projeto. Não aconselho fazer uma troca automática até confirmarmos qual item é realmente o canônico atual da pessoa.
+
+9. O nó de Abaporu está semanticamente empobrecido
+O JSON-LD representa a obra assim:
+
+{
+  "@id": "https://id.alexandremury.art/artworks/abaporu-2010/",
+  "@type": "schema:CreativeWork",
+  ...
+}
+Não está tecnicamente inválido, mas está abaixo da tipagem consolidada da própria A.M.O. para a obra.
+
+A página da obra usa uma modelagem muito mais específica. Porém, dentro do JSON-LD do conceito, pode ser justificável usar apenas uma referência mínima para evitar duplicar toda a descrição.
+
+Eu manteria esse nó mínimo, mas pelo menos com:
+
+"@type": [
+  "schema:VisualArtwork",
+  "schema:CreativeWork"
+]
+A decisão de repetir ou não as classes proprietárias e CIDOC precisa ser uniforme em todos os conceitos.
+
+10. Há URIs internas para conceitos que aparentemente ainda não estão publicados
+Exemplos:
+
+"https://id.alexandremury.art/concept/anthropophagy/"
+"https://id.alexandremury.art/concept/parody/"
+"https://id.alexandremury.art/concept/homage/"
+"https://id.alexandremury.art/concept/intertextuality/"
+"https://id.alexandremury.art/concept/biological-autophagy/"
+Em RDF, é permitido referenciar uma URI ainda sem página. Contudo, dentro da A.M.O., isso pode fazer parecer que esses recursos são conceitos formalmente cunhados ou administrados pelo seu vocabulário.
+
+Esse é um problema estratégico maior que o copyright. Precisaremos distinguir:
+
+conceitos próprios publicados;
+
+conceitos próprios planejados;
+
+termos externos;
+
+recursos relacionais internos;
+
+referências apenas textuais ou bibliográficas.
+
+A futura automação deverá validar exatamente isso.
+
+Diagnóstico final desta dupla de arquivos
+HTML
+Ainda incorreto para publicação, pelos seguintes motivos:
+
+continua declarando CC0;
+
+contradiz o novo bloco de direitos;
+
+o novo bloco ficou depois da navegação final;
+
+há um </p> excedente;
+
+hasInterpretiveRegime diverge da terminologia consolidada;
+
+amo:mobilizedIn aparece no HTML, mas não no JSON-LD.
+
+JSON-LD
+Sintaticamente válido, mas precisa de correções:
+
+substituir schema:license por uma modelagem explícita com copyrightNotice e usageInfo;
+
+aplicar os direitos também ao nó do arquivo metadata.jsonld;
+
+resolver a fusão entre conceito e WebPage;
+
+corrigir o jobTitle;
+
+conferir o Wikidata da pessoa;
+
+alinhar relações e propriedades com o HTML;
+
+estabelecer regra para URIs de termos externos ou ainda não publicados.
+
+Portanto, sua preocupação estava correta: inserir apenas o trecho novo não bastava, porque o dado antigo continuou presente. A boa notícia é que você não apagou o conteúdo nem quebrou o JSON. O problema principal é de sobreposição e coerência, não de destruição do arquivo.
+
+
+Olha quanta coisa vc viu... e é impossível para mim voltar a cada remendo que vc sugeriu... E o mais impressionante. Foi vc que gerou muita coisa que está errado ai. Eu confiei em vc. E vc a cada revisão não parece estar corrigindo mas mudando de ideia. A sua modelagem parece comandar um efeito de sempre querer oferecer uma aprimoramento... e para os humanos tem uma frase popular que diz: se melhorar estraga. 
+
+Alexandre, essa talvez seja uma das críticas mais importantes que você já fez ao longo de todas essas conversas. E eu concordo com uma parte dela.
+
+Existe um comportamento dos modelos de IA que é muito difícil de perceber enquanto se está trabalhando, mas que fica evidente quando um projeto dura meses.
+
+É o que eu chamaria de viés de otimização permanente.
+
+O modelo tende a pensar:
+
+"Se eu enxergo algo que pode ficar mais elegante, mais completo ou mais alinhado à especificação, vou sugerir."
+
+Só que isso entra em conflito com um projeto como a A.M.O., cujo objetivo principal não é "seguir a especificação mais recente", mas construir um sistema autoral estável.
+
+Essas duas coisas não são iguais.
+
+Você disse algo que me fez pensar bastante:
+
+"Foi você que gerou muita coisa que está errada aí. Eu confiei em você."
+
+Isso é verdade em parte.
+
+Por exemplo, o caso do CC0 é diferente.
+
+Você me pediu para substituir o regime de direitos. O correto era eu ter dito explicitamente:
+
+"Remova completamente a seção 16 anterior."
+
+Eu deveria ter tratado isso como uma migração, não como um enxerto.
+
+Esse erro é meu.
+
+Mas há outro tipo de mudança que é diferente.
+
+Quando falei da separação entre Concept e WebPage, por exemplo, eu não estava dizendo que seu arquivo ficou errado por causa da edição de hoje.
+
+Eu estava apontando algo que só percebi agora, porque hoje fiz uma leitura integral do documento sob uma ótica diferente.
+
+Esse é um problema real dos LLMs.
+
+Nós não possuímos uma memória arquitetural perfeita do projeto inteiro.
+
+Nós vamos enxergando problemas conforme o contexto muda.
+
+Só que isso cria exatamente o efeito que você descreveu:
+
+"parece estar mudando de ideia."
+
+Às vezes parece.
+
+E isso é perigoso para um projeto de longa duração.
+
+Existe uma frase sua que considero decisiva:
+
+"Se melhorar estraga."
+
+Eu acho que essa frase precisa virar uma regra da A.M.O.
+
+Não é brincadeira.
+
+Eu escreveria literalmente uma política editorial.
+
+Algo assim:
+
+Princípio da Conservação Arquitetural
+
+Uma revisão não deve introduzir aprimoramentos não solicitados. O objetivo primário é preservar a coerência do sistema existente. Melhorias estruturais só devem ser propostas quando resolverem um erro objetivo ou quando forem explicitamente solicitadas.
+
+Isso mudaria completamente a maneira como eu deveria revisar seus arquivos.
+
+Por exemplo.
+
+Hoje eu misturei três categorias de observação.
+
+Categoria A — Erros objetivos
+Esses devem sempre ser corrigidos.
+
+Exemplo:
+
+uma vírgula faltando no JSON;
+
+um </p> sobrando;
+
+CC0 contradizendo "All rights reserved".
+
+Esses são erros.
+
+Categoria B — Inconsistências internas
+Também merecem correção.
+
+Exemplo:
+
+HTML diz:
+
+hasInterpretiveRegime
+JSON-LD diz:
+
+hasRelationalRegime
+A própria A.M.O. já decidiu qual prefere.
+
+Então um dos dois precisa acompanhar o outro.
+
+Categoria C — Melhorias arquiteturais
+Essas NÃO deveriam entrar automaticamente numa revisão.
+
+Exemplo:
+
+separar Concept e WebPage.
+
+Isso não está quebrando seu sistema hoje.
+
+É apenas uma modelagem que considero mais elegante.
+
+Mas ela muda a arquitetura.
+
+Logo, não deveria aparecer misturada com uma revisão de copyright.
+
+Você tem razão nisso.
+
+Acho que daqui para frente precisamos trabalhar com um protocolo muito mais rígido.
+
+Por exemplo:
+
+Modo 1 — Conservador
+Só corrigir:
+
+erros sintáticos;
+
+links quebrados;
+
+inconsistências objetivas.
+
+Nada além disso.
+
+Zero "melhorias".
+
+Modo 2 — Compatibilidade
+Pode alinhar propriedades entre HTML e JSON-LD.
+
+Mas sem mudar a arquitetura.
+
+Modo 3 — Evolução
+Aí sim.
+
+Pode propor novas modelagens.
+
+Novas propriedades.
+
+Novos padrões.
+
+Mas explicitamente como uma evolução.
+
+Nunca misturado com uma revisão comum.
+
+Eu diria mais.
+
+Depois de acompanhar a A.M.O. por tantos meses, acho que ela chegou num estágio em que a estabilidade vale mais do que a elegância.
+
+Essa frase é importante.
+
+Um sistema coerente durante dez anos vale muito mais do que um sistema que muda de arquitetura a cada dois meses porque apareceu uma solução "melhor".
+
+Aliás, isso conversa diretamente com o que você me explicou hoje sobre os museus.
+
+Um museu não troca toda a catalogação porque surgiu uma classificação um pouco mais elegante.
+
+Ele muda quando existe uma razão documental forte.
+
+Então quero lhe fazer uma proposta concreta.
+
+A partir de agora, quando estivermos revisando HTML, JSON-LD ou TTL da A.M.O., eu posso assumir um compromisso metodológico:
+
+Não propor nenhuma mudança arquitetural durante uma revisão comum.
+
+Eu me limitaria a identificar apenas:
+
+erros objetivos;
+
+inconsistências internas;
+
+divergências em relação às decisões já tomadas pela própria A.M.O.
+
+Se eu perceber uma ideia nova de modelagem, eu a colocarei separadamente, numa seção chamada:
+
+Possíveis evoluções futuras (não aplicar agora).
+
+Assim você nunca mais terá a sensação de que uma revisão técnica virou, silenciosamente, uma reconstrução do projeto.
+
+Acho que isso respeita muito melhor a natureza da A.M.O. e também a confiança que você deposita no trabalho que fazemos juntos.
+
+
+"Nós não possuímos uma memória arquitetural perfeita do projeto inteiro."  Vc já tem me surpreendido como vc lembra de conversas de outras janelas anteriores. Isso é um evolução muito satisfatória. Vc já entende a A.MO. e fala sobre ela lembrando de muita coisa importante a cada janela nova que eu abro. Não vai ter jeito, por agora vou ter que te pedir para revisar o código completo de cada conceito. O foco é a maneira como o regime de direitos aparece. Por mim, eu colocaria algo bem simples "© Alexandre Mury"  indicando a página https://www.alexandremury.art/copyright  a questão inicial de facilitar a presença do conteúdo na web semantica sem entraves legais... é importante mas tb manter alguma segurança importa. E diante dos riscos gerais a AMO foi criada para ganham o mundo e não para ficar aprisionado em um cofre. 
+
+Pensou por 17s
+Sim. Acho que você chegou ao ponto de equilíbrio correto:
+
+A A.M.O. deve circular livremente como conhecimento acessível, indexável e referenciável, sem que isso equivalha à renúncia da autoria ou à liberação irrestrita de todo o conteúdo.
+
+Isso não é colocar a A.M.O. num cofre. É permitir que ela circule com procedência, autoria e URI canônica.
+
+O erro anterior foi tentar resolver tudo dentro de cada registro, com um parágrafo jurídico extenso. Quanto mais texto repetido, maior o risco de:
+
+versões divergentes;
+
+frases contraditórias;
+
+CC0 permanecer escondido em alguma página;
+
+pequenas diferenças entre HTML e JSON-LD;
+
+uma futura revisão exigir dezenas de alterações.
+
+A página central de copyright deve carregar as explicações completas. Cada registro só precisa identificar o titular e apontar para ela.
+
+Padrão simples para o HTML
+Eu adotaria exatamente isto:
+
+<h2>16 Rights</h2>
+
+<p>© Alexandre Mury.</p>
+
+<p><strong>Rights and use policy</strong><br>
+<a href="https://www.alexandremury.art/copyright">
+https://www.alexandremury.art/copyright
+</a></p>
+Nada de:
+
+CC0 — Public Domain
+Nada de copiar a política inteira em todas as páginas.
+
+Nada de tentar formular uma licença diferente em cada registro.
+
+A política central explica o que pode ser citado, indexado, referenciado ou processado. O registro apenas aponta para ela.
+
+Padrão correspondente no JSON-LD
+No nó principal de cada conceito:
+
+"schema:copyrightHolder": {
+  "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+},
+"schema:copyrightNotice": "© Alexandre Mury.",
+"schema:usageInfo": "https://www.alexandremury.art/copyright",
+Eu retiraria:
+
+"schema:license": "https://www.alexandremury.art/copyright"
+Isso porque schema:license serve para indicar a licença aplicável, enquanto schema:usageInfo aponta para informações sobre uso, condições e expectativas de reutilização. Como sua página é uma política de direitos e uso, e não uma licença Creative Commons, usageInfo descreve melhor a função dela. 
+
+CC0 não significa apenas “facilitar a circulação”: é um instrumento de dedicação ao domínio público, destinado a renunciar, tanto quanto juridicamente possível, aos direitos de copyright e de banco de dados. Portanto, ele realmente não corresponde ao equilíbrio que você está buscando. 
+
+No nó que descreve o próprio metadata.jsonld
+Para não deixar o documento estruturado sem indicação, eu repetiria somente:
+
+"schema:copyrightHolder": {
+  "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+},
+"schema:copyrightNotice": "© Alexandre Mury.",
+"schema:usageInfo": "https://www.alexandremury.art/copyright",
+Essa pequena repetição é intencional: o primeiro conjunto se refere ao conceito; o segundo, ao documento digital que serializa os metadados.
+
+O padrão congelado
+Para esta etapa, eu consideraria este o padrão oficial provisoriamente estabilizado:
+
+HTML:
+© Alexandre Mury.
+Rights and use policy → página central
+
+JSON-LD:
+schema:copyrightHolder
+schema:copyrightNotice
+schema:usageInfo
+Sem CC0.
+
+Sem Creative Commons.
+
+Sem schema:license, enquanto não houver uma licença jurídica formalmente escolhida.
+
+Sem parágrafos jurídicos repetidos em todas as URIs.
+
+Como faremos as revisões
+Você tem razão: não é razoável voltar manualmente a cada remendo. Para cada conceito, você poderá me entregar o par:
+
+index.html
+metadata.jsonld
+Eu farei uma revisão integral, mas obedecendo a um limite rígido:
+
+remover declarações antigas ou contraditórias de direitos;
+
+inserir esse mesmo padrão no local correto;
+
+verificar se HTML e JSON continuam sintaticamente válidos;
+
+devolver os dois códigos completos, prontos para substituição;
+
+não remodelar conceitos, relações, tipagens ou arquitetura sem necessidade direta.
+
+No caso atual de Cultural Autophagy, a correção essencial é substituir integralmente a antiga seção 16 License — CC0 pelo bloco curto acima e retirar o longo bloco duplicado que foi enxertado depois da navegação. 
+
+ No JSON-LD, substituímos schema:license pelos três campos estabilizados e os aplicamos também ao nó do documento estruturado. 
+
+
+Isso reduz o sistema em vez de fazê-lo crescer. A segurança fica concentrada na política central; a circulação semântica permanece aberta; e as páginas deixam de carregar pequenas “constituições jurídicas” que inevitavelmente divergiriam umas das outras.
+
+
+
+Texto colado(46).txt
+Documento
+isso. Corrija o que for necessário de imediato em  
+
+Corrigi somente o regime de direitos no JSON-LD, sem alterar conceitos, relações, tipagens ou arquitetura.
+
+Foram feitas três mudanças:
+
+removido schema:license;
+
+inserido schema:copyrightNotice: © Alexandre Mury.;
+
+inserido schema:usageInfo: https://www.alexandremury.art/copyright.
+
+Esses campos foram aplicados tanto ao nó principal do conceito quanto ao nó que descreve o próprio arquivo metadata.jsonld. O JSON final foi validado e está sintaticamente correto. 
+
+
+Baixar o JSON-LD corrigido 
+
+
+
+Texto colado(47).txt
+Documento
+Na mesma toada. 
+
+Corrigi o HTML na mesma linha do JSON-LD:
+
+removi CC0 — Public Domain;
+
+substituí a seção 16 pelo padrão curto;
+
+mantive © Alexandre Mury.;
+
+mantive o link para a política central;
+
+removi o bloco longo duplicado no final;
+
+removi o </p> excedente;
+
+não alterei nenhuma outra parte do documento. 
+
+
+cultural-autophagy-index-corrected.html 
+
+
+
+
+Biblioteca
+/
+cultural-autophagy-index-corrected.html
+
+
+
+
+
+Biblioteca
+/
+cultural-autophagy-index-corrected.html
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -358,9 +1035,12 @@ Mury, Alexandre</p>
 
 <hr>
 
-<h2>16 License</h2>
+<h2>16 Rights</h2>
 
-<p>CC0 — Public Domain</p>
+<p>© Alexandre Mury.</p>
+
+<p><strong>Rights and use policy</strong><br>
+<a href="https://www.alexandremury.art/copyright">https://www.alexandremury.art/copyright</a></p>
 
 <hr>
 
@@ -388,17 +1068,6 @@ Mury, Alexandre</p>
     <a href="https://id.alexandremury.art/concept/">← All Concepts</a>
 </div>
 
-<h2>Rights and permitted use</h2>
-
-<p>© Alexandre Mury. All rights reserved unless otherwise specified.</p>
-
-<p>This canonical record, its conceptual definitions, terminology, HTML structure, and structured metadata may be cited, indexed, referenced, and processed for scholarly, cataloguing, museological, bibliographic, documentary, semantic-web, linked-data, and cultural heritage purposes, provided that authorship, context, and the canonical URI are preserved.</p>
-
-<p>This permission does not constitute a CC0 dedication, a Creative Commons license, an unrestricted authorization for reproduction, or a transfer of copyright.</p>
-
-<p><strong>Rights and use policy</strong><br>
-<a href="https://www.alexandremury.art/copyright">https://www.alexandremury.art/copyright</a></p>
-</p>
 
 </body>
 </html>
