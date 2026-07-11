@@ -31,13 +31,14 @@
       "schema:creator": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
+      "schema:copyrightNotice": "© Alexandre Mury.",
+      "schema:usageInfo": "https://www.alexandremury.art/copyright",
       "schema:author": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
       "schema:copyrightHolder": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
-      "schema:license": "https://www.alexandremury.art/copyright",
       "schema:isPartOf": {
         "@id": "https://id.alexandremury.art/ontology/"
       },
@@ -466,7 +467,11 @@
       "schema:creator": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
-      "schema:license": "https://www.alexandremury.art/copyright"
+      "schema:copyrightHolder": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:copyrightNotice": "© Alexandre Mury.",
+      "schema:usageInfo": "https://www.alexandremury.art/copyright"
     },
     {
       "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/#webpage",
@@ -478,13 +483,17 @@
       "schema:author": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
+      "schema:copyrightHolder": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:copyrightNotice": "© Alexandre Mury.",
+      "schema:usageInfo": "https://www.alexandremury.art/copyright",
       "schema:about": {
         "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
       },
       "schema:mainEntity": {
         "@id": "https://id.alexandremury.art/concept/imagetic-disappropriation/"
       },
-      "schema:license": "https://www.alexandremury.art/copyright",
       "schema:sameAs": [
         "https://www.wikidata.org/wiki/Q136744908"
       ],
@@ -520,7 +529,11 @@
       "schema:creator": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
-      "schema:license": "https://www.alexandremury.art/copyright",
+      "schema:copyrightHolder": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:copyrightNotice": "© Alexandre Mury.",
+      "schema:usageInfo": "https://www.alexandremury.art/copyright",
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
       }
