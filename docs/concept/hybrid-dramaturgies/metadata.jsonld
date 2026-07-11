@@ -133,7 +133,7 @@
       },
       "skos:historyNote": {
         "@language": "en",
-        "@value": "The concept is situated at the intersection of artistic research, practice as research, epistemology of the image, semiotics, hermeneutics, performance studies, critical reenactment, postdramatic dramaturgy, the expanded field of the image, techno-aesthetics, and debates on circulation, infrastructure, and algorithmic regimes of visibility. Its specificity lies in displacing dramaturgy beyond theatre and dramatic text toward situations in which images, bodies, devices, archives, objects, discourses, infrastructures, and circuits of reception become simultaneous agents in the production of meaning."
+        "@value": "The concept is situated at the intersection of artistic research, practice as research, poietic epistemology of the image, semiotics, hermeneutics, performance studies, critical reenactment, postdramatic dramaturgy, the expanded field of the image, techno-aesthetics, and debates on circulation, infrastructure, and algorithmic regimes of visibility. Its specificity lies in displacing dramaturgy beyond theatre and dramatic text toward situations in which images, bodies, devices, archives, objects, discourses, infrastructures, and circuits of reception become simultaneous agents in the production of meaning."
       },
       "skos:note": [
         {
@@ -162,7 +162,7 @@
         }
       ],
       "skos:inScheme": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       },
       "skos:related": [
         {
@@ -270,7 +270,7 @@
       "amo:hasFieldOfDialogue": [
         "artistic research",
         "practice as research",
-        "epistemology of the image",
+        "poietic epistemology of the image",
         "semiotics",
         "hermeneutics",
         "performance studies",
@@ -306,7 +306,7 @@
         "A.M.O.",
         "Alexandre Mury Ontology",
         "artistic-epistemic practice",
-        "epistemology of the image",
+        "poietic epistemology of the image",
         "polysemy",
         "polyphony",
         "critical reenactment",
@@ -328,12 +328,12 @@
       }
     },
     {
-      "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/",
+      "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/",
       "@type": [
         "schema:DefinedTermSet",
         "skos:ConceptScheme"
       ],
-      "schema:name": "Epistemology of the Image",
+      "schema:name": "Poietic Epistemology of the Image",
       "schema:description": "Concept scheme for theoretical concepts developed within the Alexandre Mury Ontology."
     },
     {
