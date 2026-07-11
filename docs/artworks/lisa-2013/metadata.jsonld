@@ -235,8 +235,8 @@
         "DefinedTermSet",
         "skos:ConceptScheme"
       ],
-      "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/",
-      "name": "Epistemology of the Image",
+      "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/",
+      "name": "Poietic Epistemology of the Image",
       "description": "Theoretical concepts developed by Alexandre Mury in the field of contemporary image, post-conceptual practice and machine-readable art documentation."
     },
     {
@@ -253,7 +253,7 @@
       "description": "Conceptual operation in which image, body, text, voice, music, staging, duration and documentation produce meaning through overlapping temporal and symbolic layers.",
       "url": "https://id.alexandremury.art/concept/hybrid-dramaturgies/",
       "inDefinedTermSet": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
@@ -270,7 +270,7 @@
       "description": "Methodological and artistic operation in which the artist, critic or interpreter becomes implicated in the very image, discourse or system being activated.",
       "url": "https://id.alexandremury.art/concept/self-implicative-method/",
       "inDefinedTermSet": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
@@ -289,7 +289,7 @@
       "sameAs": "https://www.wikidata.org/wiki/Q136744908",
       "url": "https://id.alexandremury.art/concept/imagetic-disappropriation/",
       "inDefinedTermSet": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
@@ -307,7 +307,7 @@
       "sameAs": "https://www.wikidata.org/wiki/Q136831273",
       "url": "https://id.alexandremury.art/concept/cultural-autophagy/",
       "inDefinedTermSet": {
-        "@id": "https://id.alexandremury.art/scheme/epistemology-of-the-image/"
+        "@id": "https://id.alexandremury.art/scheme/poietic-epistemology-of-the-image/"
       }
     },
     {
