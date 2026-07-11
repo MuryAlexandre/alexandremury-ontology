@@ -40,14 +40,14 @@
       "schema:creator": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
+      "schema:copyrightNotice": "© Alexandre Mury. All rights reserved unless otherwise specified.",
+      "schema:usageInfo": "https://www.alexandremury.art/copyright",
       "schema:author": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
       "schema:copyrightHolder": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
-      "schema:copyrightNotice": "© Alexandre Mury. All rights reserved unless otherwise specified.",
-      "schema:license": "https://www.alexandremury.art/copyright",
       "schema:isAccessibleForFree": true,
       "dct:issued": {
         "@value": "2026-06-19",
@@ -202,13 +202,17 @@
       "schema:author": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
+      "schema:copyrightHolder": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:copyrightNotice": "© Alexandre Mury.",
+      "schema:usageInfo": "https://www.alexandremury.art/copyright",
       "schema:about": {
         "@id": "https://id.alexandremury.art/ontology/"
       },
       "schema:mainEntity": {
         "@id": "https://id.alexandremury.art/ontology/"
       },
-      "schema:license": "https://www.alexandremury.art/copyright",
       "schema:isPartOf": {
         "@id": "https://id.alexandremury.art/"
       },
@@ -228,13 +232,17 @@
       "schema:creator": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
+      "schema:copyrightHolder": {
+        "@id": "https://id.alexandremury.art/person/alexandre-mury/"
+      },
+      "schema:copyrightNotice": "© Alexandre Mury.",
+      "schema:usageInfo": "https://www.alexandremury.art/copyright",
       "schema:about": {
         "@id": "https://id.alexandremury.art/ontology/"
       },
       "schema:mainEntity": {
         "@id": "https://id.alexandremury.art/ontology/"
       },
-      "schema:license": "https://www.alexandremury.art/copyright",
       "rdfs:isDefinedBy": {
         "@id": "https://id.alexandremury.art/ontology/"
       },
