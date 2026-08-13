@@ -432,7 +432,7 @@
       "schema:author": {
         "@id": "https://id.alexandremury.art/person/alexandre-mury/"
       },
-      "schema:datePublished": "2025",
+      "schema:datePublished": "2026",
       "schema:url": "https://doi.org/10.5281/zenodo.17548245",
       "schema:identifier": {
         "@type": "schema:PropertyValue",
